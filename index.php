@@ -10,7 +10,7 @@
  * resta api services
  */
 
-error_reporting(0);
+//error_reporting(0);
 
 //micro time starter for resta response time
 define("time_start",microtime(true));
@@ -38,6 +38,9 @@ require_once './vendor/autoload.php';
 |
 */
 
-$app=new Resta\Foundation\Application();
+//load spl autoload register
+(new \Resta\autoloadRegister())->register();
+
+$app=new Resta\Foundation\Application('development');
 echo $app->handle();
 
