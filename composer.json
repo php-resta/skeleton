@@ -1,0 +1,42 @@
+{
+    "name": "aligurbuz/resta",
+    "description": "restfull api framework with php",
+    "authors": [
+        {
+            "name": "aligurbuz",
+            "email": "galiant781@gmail.com"
+        }
+    ],
+    "require": {
+        "php-di/php-di": "^5.4",
+        "ocramius/proxy-manager": "~1.0|~2.0",
+        "symfony/yaml": "2.*",
+        "sinergi/browser-detector": "^6.1",
+        "nesbot/carbon": "^1.21",
+        "symfony/http-foundation": "^3.2",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "predis/predis": "^1.0",
+        "symfony/var-dumper": "*",
+        "monolog/monolog": "^1.22",
+        "symfony/console": "^3.2",
+        "symfony/debug": "^3.2",
+        "vlucas/phpdotenv": "^2.4",
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/finder": "^3.3",
+        "symfony/security-csrf": "^3.2",
+        "symfony/filesystem": "^3.2",
+        "elasticsearch/elasticsearch": "~5.0",
+        "twig/twig": "~1.0",
+        "symfony/cache": "^3.2",
+        "respect/validation": "^1.1",
+        "tightenco/collect": "^5.4",
+        "illuminate/database": "^5.4",
+        "illuminate/pagination": "^5.4",
+        "symfony/event-dispatcher": "^3.2",
+        "fzaninotto/faker": "^1.6",
+        "spatie/array-to-xml": "^2.3",
+        "facebook/graph-sdk": "^5.5",
+        "league/pipeline": "^0.3.0",
+        "phpunit/phpunit": "^6.3"
+    }
+}
