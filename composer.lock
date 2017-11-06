@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92bc54dd07ebf5baf165a22f0b6ce001",
-    "content-hash": "527e218561bc114c8c9a669db45e9c5f",
+    "hash": "629da35eff1fe95bedf981aef5665376",
+    "content-hash": "a08c3ce0071f000bf4a96ebd277c75a5",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -2537,6 +2537,45 @@
             "time": "2017-10-17 10:15:51"
         },
         {
+            "name": "restapix/resta",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/restapix/resta.git",
+                "reference": "43c9f31b1fe044b2a114a46da21f7f9b43b7d68d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/43c9f31b1fe044b2a114a46da21f7f9b43b7d68d",
+                "reference": "43c9f31b1fe044b2a114a46da21f7f9b43b7d68d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Resta\\": "src/resta/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "aligurbuz",
+                    "email": "galiant781@gmail.com"
+                }
+            ],
+            "description": "resta php api restfull framework",
+            "homepage": "https://github.com/restapix/resta",
+            "keywords": [
+                "php",
+                "restapi",
+                "restfull"
+            ],
+            "time": "2017-11-06 19:59:25"
+        },
+        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -4503,7 +4542,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "restapix/resta": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
