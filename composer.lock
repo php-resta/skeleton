@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "629da35eff1fe95bedf981aef5665376",
+    "hash": "e05b063d3b21bdf0ca47dd019d8c6159",
     "content-hash": "a08c3ce0071f000bf4a96ebd277c75a5",
     "packages": [
         {
@@ -2542,12 +2542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "43c9f31b1fe044b2a114a46da21f7f9b43b7d68d"
+                "reference": "c0798754eb94806e424da302f21db8fc4b633a07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/43c9f31b1fe044b2a114a46da21f7f9b43b7d68d",
-                "reference": "43c9f31b1fe044b2a114a46da21f7f9b43b7d68d",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/c0798754eb94806e424da302f21db8fc4b633a07",
+                "reference": "c0798754eb94806e424da302f21db8fc4b633a07",
                 "shasum": ""
             },
             "type": "library",
@@ -2573,7 +2573,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2017-11-06 19:59:25"
+            "time": "2017-11-06 22:24:08"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
