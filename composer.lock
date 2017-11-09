@@ -161,16 +161,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "50e5b1c63db68839b8acc1f4766769570a27a448"
+                "reference": "4b29a4121e790bbfe690d5ee77da348b62d48eb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/50e5b1c63db68839b8acc1f4766769570a27a448",
-                "reference": "50e5b1c63db68839b8acc1f4766769570a27a448",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/4b29a4121e790bbfe690d5ee77da348b62d48eb8",
+                "reference": "4b29a4121e790bbfe690d5ee77da348b62d48eb8",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2017-07-19 18:44:30"
+            "time": "2017-11-08 17:04:47"
         },
         {
             "name": "facebook/graph-sdk",
@@ -1994,16 +1994,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.4.3",
+            "version": "6.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "06b28548fd2b4a20c3cd6e247dc86331a7d4db13"
+                "reference": "562f7dc75d46510a4ed5d16189ae57fbe45a9932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/06b28548fd2b4a20c3cd6e247dc86331a7d4db13",
-                "reference": "06b28548fd2b4a20c3cd6e247dc86331a7d4db13",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/562f7dc75d46510a4ed5d16189ae57fbe45a9932",
+                "reference": "562f7dc75d46510a4ed5d16189ae57fbe45a9932",
                 "shasum": ""
             },
             "require": {
@@ -2074,7 +2074,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-10-16 13:18:59"
+            "time": "2017-11-08 11:26:09"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2542,12 +2542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "c0798754eb94806e424da302f21db8fc4b633a07"
+                "reference": "75a0d6f4c607a5ee2f08a1f5dda5940766fdcaae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/c0798754eb94806e424da302f21db8fc4b633a07",
-                "reference": "c0798754eb94806e424da302f21db8fc4b633a07",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/75a0d6f4c607a5ee2f08a1f5dda5940766fdcaae",
+                "reference": "75a0d6f4c607a5ee2f08a1f5dda5940766fdcaae",
                 "shasum": ""
             },
             "type": "library",
@@ -2573,7 +2573,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2017-11-06 22:24:08"
+            "time": "2017-11-09 20:49:21"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
