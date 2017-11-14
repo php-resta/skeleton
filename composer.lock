@@ -8,6 +8,37 @@
     "content-hash": "a08c3ce0071f000bf4a96ebd277c75a5",
     "packages": [
         {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14 19:40:03"
+        },
+        {
             "name": "doctrine/inflector",
             "version": "v1.2.0",
             "source": {
@@ -822,64 +853,6 @@
             "time": "2017-10-17 12:18:29"
         },
         {
-            "name": "jeremeamia/SuperClosure",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "443c3df3207f176a1b41576ee2a66968a507b3db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/443c3df3207f176a1b41576ee2a66968a507b3db",
-                "reference": "443c3df3207f176a1b41576ee2a66968a507b3db",
-                "shasum": ""
-            },
-            "require": {
-                "nikic/php-parser": "^1.2|^2.0|^3.0",
-                "php": ">=5.4",
-                "symfony/polyfill-php56": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0|^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SuperClosure\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeremy Lindblom",
-                    "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Serialize Closure objects, including their context and binding",
-            "homepage": "https://github.com/jeremeamia/super_closure",
-            "keywords": [
-                "closure",
-                "function",
-                "lambda",
-                "parser",
-                "serializable",
-                "serialize",
-                "tokenizer"
-            ],
-            "time": "2016-12-07 09:37:55"
-        },
-        {
             "name": "league/pipeline",
             "version": "0.3.0",
             "source": {
@@ -1155,57 +1128,6 @@
             "time": "2017-01-16 07:55:07"
         },
         {
-            "name": "nikic/php-parser",
-            "version": "v3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "08131e7ff29de6bb9f12275c7d35df71f25f4d89"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/08131e7ff29de6bb9f12275c7d35df71f25f4d89",
-                "reference": "08131e7ff29de6bb9f12275c7d35df71f25f4d89",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0|~5.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpParser\\": "lib/PhpParser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov"
-                }
-            ],
-            "description": "A PHP parser written in PHP",
-            "keywords": [
-                "parser",
-                "php"
-            ],
-            "time": "2017-11-04 11:48:34"
-        },
-        {
             "name": "ocramius/package-versions",
             "version": "1.1.3",
             "source": {
@@ -1471,20 +1393,20 @@
         },
         {
             "name": "php-di/invoker",
-            "version": "2.0.0",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/Invoker.git",
-                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a"
+                "reference": "1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/540c27c86f663e20fe39a24cd72fa76cdb21d41a",
-                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a",
+                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7",
+                "reference": "1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7",
                 "shasum": ""
             },
             "require": {
-                "psr/container": "~1.0"
+                "container-interop/container-interop": "~1.1"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
@@ -1510,51 +1432,56 @@
                 "invoke",
                 "invoker"
             ],
-            "time": "2017-03-20 19:28:22"
+            "time": "2016-07-14 13:09:58"
         },
         {
             "name": "php-di/php-di",
-            "version": "5.4.4",
+            "version": "5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "6b9342ad230b72dfd0ba527139a9337848a68fa6"
+                "reference": "770064f4e9c7199ca93397a005aa36e9d13a5a4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/6b9342ad230b72dfd0ba527139a9337848a68fa6",
-                "reference": "6b9342ad230b72dfd0ba527139a9337848a68fa6",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/770064f4e9c7199ca93397a005aa36e9d13a5a4f",
+                "reference": "770064f4e9c7199ca93397a005aa36e9d13a5a4f",
                 "shasum": ""
             },
             "require": {
-                "jeremeamia/superclosure": "^2.0",
-                "nikic/php-parser": "^2.0|^3.0",
-                "php": ">=7.0.0",
-                "php-di/invoker": "^2.0",
+                "container-interop/container-interop": "~1.2",
+                "php": ">=5.5.0",
+                "php-di/invoker": "^1.3.2",
                 "php-di/phpdoc-reader": "^2.0.1",
-                "psr/container": "^1.0"
+                "psr/container": "~1.0"
             },
             "provide": {
+                "container-interop/container-interop-implementation": "^1.0",
                 "psr/container-implementation": "^1.0"
+            },
+            "replace": {
+                "mnapoli/php-di": "*"
             },
             "require-dev": {
                 "doctrine/annotations": "~1.2",
-                "friendsofphp/php-cs-fixer": "^2.4",
-                "mnapoli/phpunit-easymock": "~0.2.3",
-                "ocramius/proxy-manager": "~2.0.2",
-                "phpunit/phpunit": "~5.7"
+                "doctrine/cache": "~1.4",
+                "mnapoli/phpunit-easymock": "~0.2.0",
+                "ocramius/proxy-manager": "~1.0|~2.0",
+                "phpbench/phpbench": "@dev",
+                "phpunit/phpunit": "~4.5"
             },
             "suggest": {
                 "doctrine/annotations": "Install it if you want to use annotations (version ~1.2)",
-                "ocramius/proxy-manager": "Install it if you want to use lazy injection (version ~2.0)"
+                "doctrine/cache": "Install it if you want to use the cache (version ~1.4)",
+                "ocramius/proxy-manager": "Install it if you want to use lazy injection (version ~1.0 or ~2.0)"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "DI\\": "src/"
+                    "DI\\": "src/DI/"
                 },
                 "files": [
-                    "src/functions.php"
+                    "src/DI/functions.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1564,15 +1491,11 @@
             "description": "The dependency injection container for humans",
             "homepage": "http://php-di.org/",
             "keywords": [
-                "PSR-11",
                 "container",
-                "container-interop",
                 "dependency injection",
-                "di",
-                "ioc",
-                "psr11"
+                "di"
             ],
-            "time": "2017-11-11 11:33:20"
+            "time": "2017-11-11 15:09:16"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -2620,12 +2543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "4b1f919ff8a970846240dd87b5a647183078dbe3"
+                "reference": "c45c89ae10e8c75fe94d2ff77af4e57143bc282e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/4b1f919ff8a970846240dd87b5a647183078dbe3",
-                "reference": "4b1f919ff8a970846240dd87b5a647183078dbe3",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/c45c89ae10e8c75fe94d2ff77af4e57143bc282e",
+                "reference": "c45c89ae10e8c75fe94d2ff77af4e57143bc282e",
                 "shasum": ""
             },
             "type": "library",
@@ -2651,7 +2574,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2017-11-11 20:36:49"
+            "time": "2017-11-14 20:45:53"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3312,7 +3235,7 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
@@ -3382,16 +3305,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c"
+                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/fd684d68f83568d8293564b4971928a2c4bdfc5c",
-                "reference": "fd684d68f83568d8293564b4971928a2c4bdfc5c",
+                "url": "https://api.github.com/repos/symfony/console/zipball/099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
+                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
                 "shasum": ""
             },
             "require": {
@@ -3446,11 +3369,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-07 14:16:22"
+            "time": "2017-11-12 16:53:41"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -3506,7 +3429,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -3569,7 +3492,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -3618,7 +3541,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -3667,16 +3590,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "873ccdf8c1cae20da0184862820c434e20fdc8ce"
+                "reference": "5943f0f19817a7e05992d20a90729b0dc93faf36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/873ccdf8c1cae20da0184862820c434e20fdc8ce",
-                "reference": "873ccdf8c1cae20da0184862820c434e20fdc8ce",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5943f0f19817a7e05992d20a90729b0dc93faf36",
+                "reference": "5943f0f19817a7e05992d20a90729b0dc93faf36",
                 "shasum": ""
             },
             "require": {
@@ -3716,7 +3639,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05 19:07:00"
+            "time": "2017-11-13 18:13:16"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -4002,7 +3925,7 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
@@ -4067,7 +3990,7 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
@@ -4189,7 +4112,7 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
@@ -4257,7 +4180,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.29",
+            "version": "v2.8.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
