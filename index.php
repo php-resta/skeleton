@@ -10,7 +10,7 @@
  * resta api services
  */
 
-//error_reporting(0);
+error_reporting(0);
 
 //micro time starter for resta response time
 define("time_start",microtime(true));
