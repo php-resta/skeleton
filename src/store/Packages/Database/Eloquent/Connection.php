@@ -2,8 +2,10 @@
 
 namespace Store\Packages\Database\Eloquent;
 
+use Resta\Utils;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Database\Eloquent\Model as Eloquent;
+use Resta\StaticPathModel;
 
 class Connection extends Eloquent  {
 
@@ -15,8 +17,8 @@ class Connection extends Eloquent  {
     public function __construct(){
 
         $this->capsule = new Capsule;
-        $config=
-        $configdb=$config::dbsettings();
+        $configdb=StaticPathModel::appConfig(true).'\Database';
+        $configdb=(Utils::makeBind($configdb))->handle();
 
         $this->capsule->addConnection([
             'driver'    => $configdb['driver'],
