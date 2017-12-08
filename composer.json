@@ -45,6 +45,7 @@
         "spatie/array-to-xml": "^2.3",
         "facebook/graph-sdk": "^5.5",
         "league/pipeline": "^0.3.0",
-        "phpunit/phpunit": "^6.3"
+        "phpunit/phpunit": "^6.3",
+        "defuse/php-encryption": "^2.1"
     }
 }
