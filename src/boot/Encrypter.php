@@ -25,7 +25,7 @@ class Encrypter extends EncrypterProvider implements EncrypterContracts {
         //The keyGenerate method is very important. If it is deleted, you can not generate a key on console.
         //The console uses this method. If you are going to generate your own encrypter,
         //you must create a key according to the structure you are using here.
-        return $this->makeBind(EncrypterProduction::class)->createNewRandomKey();
+        return $this->makeBind(EncrypterProduction::class)->setCipherText();
     }
 
 }
