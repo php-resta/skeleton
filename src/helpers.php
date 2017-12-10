@@ -12,6 +12,19 @@ if (!function_exists('dd')) {
 if (!function_exists('environment')) {
     function environment()
     {
-        return 'env';
+        return \Resta\Environment\EnvironmentConfiguration::environment(
+            func_get_args(),app()->singleton()->var
+        );
+    }
+}
+
+if (!function_exists('app')) {
+
+    /**
+     * @return \Resta\ApplicationProvider
+     */
+    function app()
+    {
+        return unserialize(base64_decode(appInstance));
     }
 }
