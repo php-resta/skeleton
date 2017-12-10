@@ -1,0 +1,25 @@
+<?php
+
+namespace App\__project__\__version__\__controller__\__service__;
+
+class GetService extends App {
+
+    /**
+     * Production forbidden.
+     *
+     * if it is true,you can't access on the production
+     * restrictions method is comprehensive on app class
+     */
+     public $forbidden=false;
+
+    /**
+     * @method getIndexAction
+     * @return array
+     */
+    public function getIndexAction(){
+
+        return [
+            'endpoint'=>'__service__'
+        ];
+    }
+}

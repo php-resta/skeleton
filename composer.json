@@ -1,6 +1,10 @@
 {
-    "name": "aligurbuz/resta",
-    "description": "restfull api framework with php",
+    "name": "restapix/resta",
+    "type": "library",
+    "description": "resta php api restfull framework",
+    "keywords": ["php","restapi","restfull"],
+    "homepage": "https://github.com/restapix/resta",
+    "license": "MIT",
     "authors": [
         {
             "name": "aligurbuz",
