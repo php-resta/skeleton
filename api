@@ -45,6 +45,6 @@ define ('arguments',$argv);
 //load spl autoload register
 (new \Resta\autoloadRegister())->register();
 
-$app=new Resta\Foundation\Application('development',true);
+$app=new Resta\Foundation\Application(true);
 echo $app->handle();
 

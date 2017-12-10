@@ -41,6 +41,6 @@ require_once './vendor/autoload.php';
 //load spl autoload register
 (new \Resta\autoloadRegister())->register();
 
-$app=new Resta\Foundation\Application('development');
+$app=new Resta\Foundation\Application();
 echo $app->handle();
 

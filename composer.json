@@ -12,7 +12,8 @@
             "App\\": "src/app",
             "Boot\\": "src/boot",
             "Store\\": "src/store"
-        }
+        },
+        "files": ["src/helpers.php"]
     },
     "require": {
         "restapix/resta":"dev-master",

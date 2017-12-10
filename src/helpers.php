@@ -8,3 +8,10 @@ if (!function_exists('dd')) {
         die();
     }
 }
+
+if (!function_exists('environment')) {
+    function environment()
+    {
+        return 'env';
+    }
+}
