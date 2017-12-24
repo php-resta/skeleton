@@ -2615,12 +2615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "7f4805ae4137eebe9c4b0bdaad7eb67f29898868"
+                "reference": "62efcd56e75b4678ca0ba6c7b3a44daf4f4e4f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/7f4805ae4137eebe9c4b0bdaad7eb67f29898868",
-                "reference": "7f4805ae4137eebe9c4b0bdaad7eb67f29898868",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/62efcd56e75b4678ca0ba6c7b3a44daf4f4e4f47",
+                "reference": "62efcd56e75b4678ca0ba6c7b3a44daf4f4e4f47",
                 "shasum": ""
             },
             "type": "library",
@@ -2646,7 +2646,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2017-12-19 20:12:52"
+            "time": "2017-12-24 11:44:34"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -2695,16 +2695,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "1174d9018191e93cb9d719edec01257fc05f8158"
+                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1174d9018191e93cb9d719edec01257fc05f8158",
-                "reference": "1174d9018191e93cb9d719edec01257fc05f8158",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
+                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
                 "shasum": ""
             },
             "require": {
@@ -2755,7 +2755,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-11-03 07:16:52"
+            "time": "2017-12-22 14:50:35"
         },
         {
             "name": "sebastian/diff",
