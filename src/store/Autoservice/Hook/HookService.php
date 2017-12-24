@@ -6,7 +6,7 @@ use Resta\ApplicationProvider;
 
 /**
  * Class HookService
- * @package Store\Autoservice\Webhook
+ * @package Store\Autoservice\Hook
  */
 class HookService extends ApplicationProvider {
 
