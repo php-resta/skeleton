@@ -25,6 +25,6 @@ if (!function_exists('app')) {
      */
     function app()
     {
-        return unserialize(base64_decode(appInstance));
+        return \application::getAppInstance();
     }
 }
