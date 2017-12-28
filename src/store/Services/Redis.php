@@ -18,12 +18,11 @@ class Redis {
      */
     public function __construct(){
 
-        //app redis config
-        $redisDb=StaticPathModel::appConfig(true).'\Redis';
-        $redisDb=(Utils::makeBind($redisDb))->handle();
+        //redis configuration for app
+        $redisConfig=app()->config('redis')->connection;
 
         //redis client
-        $this->client=new Client($redisDb['connection']);
+        $this->client=new Client($redisConfig);
     }
 
     /**
