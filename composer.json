@@ -51,6 +51,7 @@
         "facebook/graph-sdk": "^5.5",
         "league/pipeline": "^0.3.0",
         "phpunit/phpunit": "^6.3",
-        "defuse/php-encryption": "^2.1"
+        "defuse/php-encryption": "^2.1",
+        "symfony/process": "^4.0"
     }
 }
