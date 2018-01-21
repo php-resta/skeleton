@@ -9,9 +9,9 @@ use Resta\Utils;
 class Redis {
 
     /**
-     * @var client
+     * @var
      */
-    private $client;
+    private $redisConfig;
 
     /**
      * redis constructor.
@@ -19,10 +19,7 @@ class Redis {
     public function __construct(){
 
         //redis configuration for app
-        $redisConfig=app()->config('redis')->connection;
-
-        //redis client
-        $this->client=new Client($redisConfig);
+        $this->redisConfig=app()->config('redis')->connection;
     }
 
     /**
@@ -31,7 +28,7 @@ class Redis {
     public function client(){
 
         //redis client object
-        return $this->client;
+        return new Client($this->redisConfig);
     }
 
 }
