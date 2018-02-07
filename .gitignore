@@ -7,9 +7,6 @@ encrypt.yaml
 src/app/*
 package-lock.json
 !important src/app/app.resta
-src/store/provisions/limitation/yaml/*
-src/store/packages/providers/database/doctrine/bootstrap.php
-!important src/store/provisions/limitation/yaml/index.html
 src/store/commands/*
 !important src/store/commands/index.html
 !important tests/index.html
