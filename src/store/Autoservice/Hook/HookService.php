@@ -13,7 +13,7 @@ class HookService extends ApplicationProvider {
     /**
      * @return array
      */
-    public function getIndex(){
+    public function getIndexAction(){
 
         return [
             'hookservice'=>'do somethings'
