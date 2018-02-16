@@ -15,7 +15,6 @@ class App extends ApplicationProvider  {
     public function boot(){
 
         //do somethings
-        dd($this->redis()->get('ali'));
     }
 
 }
