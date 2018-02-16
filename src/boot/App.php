@@ -3,8 +3,11 @@
 namespace Boot;
 
 use Resta\ApplicationProvider;
+use Store\Traits\Annotations;
 
 class App extends ApplicationProvider  {
+
+    use Annotations;
 
     /**
      * @method boot
@@ -12,6 +15,7 @@ class App extends ApplicationProvider  {
     public function boot(){
 
         //do somethings
+        dd($this->redis()->get('ali'));
     }
 
 }
