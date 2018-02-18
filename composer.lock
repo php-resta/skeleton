@@ -1565,20 +1565,20 @@
         },
         {
             "name": "php-di/phpdoc-reader",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PhpDocReader.git",
-                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68"
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/83f5ead159defccfa8e7092e5b6c1c533b326d68",
-                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68",
+                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/7d0de60b9341933c8afd172a6255cd7557601e0e",
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.6"
@@ -1598,7 +1598,7 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2015-11-29T10:34:25+00:00"
+            "time": "2018-02-18T17:39:01+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2549,12 +2549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "3952b4753147dc40915940494379d3105ce03dc9"
+                "reference": "2ae800be81e941dcdf1a5addfb477d271327bb6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/3952b4753147dc40915940494379d3105ce03dc9",
-                "reference": "3952b4753147dc40915940494379d3105ce03dc9",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/2ae800be81e941dcdf1a5addfb477d271327bb6a",
+                "reference": "2ae800be81e941dcdf1a5addfb477d271327bb6a",
                 "shasum": ""
             },
             "type": "library",
@@ -2580,7 +2580,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-02-18T12:52:33+00:00"
+            "time": "2018-02-18T19:04:31+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
