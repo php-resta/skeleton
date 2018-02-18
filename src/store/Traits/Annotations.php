@@ -7,6 +7,7 @@ namespace Store\Traits;
  * @method \Store\Services\HttpSession session
  * @method \Predis\Client redis
  * @method \Store\Services\AppCollection collection
+ * @method \Store\Services\DateCollection date
  * @package App\Mobi\V1
  */
 trait Annotations {
@@ -17,6 +18,8 @@ trait Annotations {
      * @return mixed
      */
     public function __call($service,$arg){
+
+        $arg[]=$this;
 
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.

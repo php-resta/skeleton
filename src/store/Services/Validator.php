@@ -3,8 +3,7 @@
 namespace Store\Services;
 
 use Zend\Validator\EmailAddress;
-use Zend\Validator\StringLength;
-use Zend\Validator\ValidatorChain;
+use Zend\Validator\CreditCard;
 
 class Validator {
 
@@ -15,7 +14,7 @@ class Validator {
     public static function email($email){
 
         //is array control for email
-        $email=(is_array($email)) ? $email : [$email];
+        $email=self::checkArrayValidator($email);
 
         //validator object for email
         $validator = new EmailAddress();
@@ -32,6 +31,31 @@ class Validator {
         return true;
     }
 
+
+    /**
+     * @param $creditCardNo
+     * @return bool
+     */
+    public static function creditCard($creditCardNo){
+
+        //is array control for credit card
+        $creditCardNo=self::checkArrayValidator($creditCardNo);
+
+        //validator object for credit card
+        $validator = new CreditCard();
+
+        foreach ($creditCardNo as $credit){
+
+            //validator valid
+            if (!$validator->isValid($credit)) {
+                self::getMessage($validator,$credit);
+            }
+        }
+
+
+        return true;
+    }
+
     /**
      * @param $validator
      * @param $name
@@ -41,6 +65,15 @@ class Validator {
         foreach ($validator->getMessages() as $messageId => $message) {
             throw new \InvalidArgumentException($message.' ('.$messageId.' for ['.$name.'])');
         }
+    }
+
+    /**
+     * @param $data
+     * @return array
+     */
+    private static function checkArrayValidator($data){
+
+        return (is_array($data)) ? $data : [$data];
     }
 
 
