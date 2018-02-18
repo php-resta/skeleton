@@ -14,20 +14,6 @@ class DateCollection extends ApplicationProvider {
     protected $locale=null;
 
     /**
-     * DateCollection constructor.
-     * @param ApplicationContracts $app
-     */
-    public function __construct(ApplicationContracts $app)
-    {
-        parent::__construct($app);
-
-        //set date timezone
-        if(date_default_timezone_get()=="UTC"){
-            date_default_timezone_set('Europe/Istanbul');
-        }
-    }
-
-    /**
      * @param null $locale
      * @return object
      */
