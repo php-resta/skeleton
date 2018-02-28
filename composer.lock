@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aea4aaf820172e408a3429f63c32b66d",
+    "content-hash": "9c2ffc711ad9babc276d4c1dcbb7f2b1",
     "packages": [
         {
             "name": "aligurbuz/lingua",
-            "version": "v1.03",
+            "version": "v1.04",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/Lingua.git",
-                "reference": "643d599e36ed812c4d1fece75f3a0e24b45bac4f"
+                "reference": "cdef728fbe2463ba1f95be247f2aca2060e8f37d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/Lingua/zipball/643d599e36ed812c4d1fece75f3a0e24b45bac4f",
-                "reference": "643d599e36ed812c4d1fece75f3a0e24b45bac4f",
+                "url": "https://api.github.com/repos/aligurbuz/Lingua/zipball/cdef728fbe2463ba1f95be247f2aca2060e8f37d",
+                "reference": "cdef728fbe2463ba1f95be247f2aca2060e8f37d",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                     "email": "galiant781@gmail.com"
                 }
             ],
-            "time": "2018-02-28T14:20:49+00:00"
+            "time": "2018-02-28T18:30:37+00:00"
         },
         {
             "name": "container-interop/container-interop",

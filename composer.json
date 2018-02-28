@@ -51,6 +51,6 @@
         "defuse/php-encryption": "^2.1",
         "symfony/process": "^4.0",
         "zendframework/zend-validator": "^2.10",
-        "aligurbuz/lingua": "^1.03"
+        "aligurbuz/lingua": "^1.0"
     }
 }
