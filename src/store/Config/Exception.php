@@ -252,7 +252,7 @@ class Exception
         ];
 
         if($type!==null){
-            return $exceptionTypes[$type];
+            return (isset($exceptionTypes[$type])) ? $exceptionTypes[$type] : $exceptionTypes['BadFunctionCallException'] ;
         }
         return $exceptionTypes;
 
