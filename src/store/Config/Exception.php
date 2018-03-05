@@ -6,12 +6,12 @@ class Exception
 {
 
     /**
-     * project exception handler.
+     * project exception handler for local.
      *
      * class exception container call access for every service.
      * @return array
      */
-    public static function handler($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $errContext=null)
+    public static function local($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $errContext=null)
     {
         return [
 
@@ -64,6 +64,68 @@ class Exception
              * @value $errContext
              */
             'Context'=>$errContext
+        ];
+    }
+
+    /**
+     * project exception handler for production.
+     *
+     * class exception container call access for every service.
+     * @return array
+     */
+    public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $errContext=null)
+    {
+        return [
+
+            /**
+             * Error file.
+             * @key errorFile
+             * @value $errFile
+             */
+            //'errorFile'=>$errFile,
+
+            /**
+             * Error Line.
+             * @key errorLine
+             * @value $errLine
+             */
+            //'errorLine'=>$errLine,
+
+            /**
+             * Error Type.
+             * @key errorType
+             * @value $errType
+             */
+            //'errorType'=>$errType,
+
+            /**
+             * Error String.
+             * @key errorString
+             * @value $errStr
+             */
+            'errorString'=>$errStr,
+
+            /**
+             * Error No.
+             * @key errorNo
+             * @value $errNo
+             */
+            //'errorNo'=>$errNo,
+
+            /**
+             * user information.
+             * @key user
+             * @value fingerPrint from base
+             * @return array
+             */
+            //'user'=>'asa',
+
+            /**
+             * Context.
+             * @key context
+             * @value $errContext
+             */
+            //'Context'=>$errContext
         ];
     }
 
