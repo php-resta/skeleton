@@ -701,7 +701,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.7",
+            "version": "v5.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -745,7 +745,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.7",
+            "version": "v5.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -789,16 +789,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.7",
+            "version": "v5.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "8e60170e3c96973d38b004fd6c98ac5436bde7df"
+                "reference": "2e375da72827d1bbb20fcc42a0fd190badd341e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/8e60170e3c96973d38b004fd6c98ac5436bde7df",
-                "reference": "8e60170e3c96973d38b004fd6c98ac5436bde7df",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/2e375da72827d1bbb20fcc42a0fd190badd341e2",
+                "reference": "2e375da72827d1bbb20fcc42a0fd190badd341e2",
                 "shasum": ""
             },
             "require": {
@@ -844,11 +844,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-02-28T13:47:08+00:00"
+            "time": "2018-03-06T03:35:04+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.7",
+            "version": "v5.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -2530,12 +2530,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "ca7437cb3ee205422bffd6d71892feba01cd734f"
+                "reference": "185c38bfda3238dd140e17a77a40bac5fd09fc11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/ca7437cb3ee205422bffd6d71892feba01cd734f",
-                "reference": "ca7437cb3ee205422bffd6d71892feba01cd734f",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/185c38bfda3238dd140e17a77a40bac5fd09fc11",
+                "reference": "185c38bfda3238dd140e17a77a40bac5fd09fc11",
                 "shasum": ""
             },
             "type": "library",
@@ -2561,7 +2561,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-03-05T20:18:10+00:00"
+            "time": "2018-03-06T19:09:16+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3480,16 +3480,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "552e244df10237f845a94fd64b194f848805e34b"
+                "reference": "44a796d2ecc2a16a5fc8f2956a34ee617934d55f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/552e244df10237f845a94fd64b194f848805e34b",
-                "reference": "552e244df10237f845a94fd64b194f848805e34b",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/44a796d2ecc2a16a5fc8f2956a34ee617934d55f",
+                "reference": "44a796d2ecc2a16a5fc8f2956a34ee617934d55f",
                 "shasum": ""
             },
             "require": {
@@ -3525,7 +3525,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-11T17:17:44+00:00"
+            "time": "2018-03-05T18:28:26+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -3920,7 +3920,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -3969,7 +3969,7 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
@@ -4160,7 +4160,7 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
