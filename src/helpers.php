@@ -32,7 +32,7 @@ if (!function_exists('app')) {
 if (!function_exists('request')) {
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Request
+     * @return \Store\Services\RequestService|\Symfony\Component\HttpFoundation\Request
      */
     function request()
     {
@@ -64,5 +64,16 @@ if (!function_exists('get')) {
     function get($param=null)
     {
         return app()->get($param);
+    }
+}
+
+if (!function_exists('applicationKey')) {
+
+    /**
+     * @return string
+     */
+    function applicationKey()
+    {
+        return app()->app->kernel()->applicationKey;
     }
 }
