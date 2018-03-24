@@ -77,3 +77,15 @@ if (!function_exists('applicationKey')) {
         return app()->app->kernel()->applicationKey;
     }
 }
+
+if (!function_exists('config')) {
+
+    /**
+     * @param $config null
+     * @return string
+     */
+    function config($config=null)
+    {
+        return app()->singleton()->appClass->configLoaders($config);
+    }
+}
