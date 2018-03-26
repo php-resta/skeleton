@@ -74,7 +74,11 @@ if (!function_exists('applicationKey')) {
      */
     function applicationKey()
     {
-        return app()->app->kernel()->applicationKey;
+        if(property_exists($kernel=app()->app->kernel(),'applicationKey')){
+            return $kernel->applicationKey;
+        }
+        return null;
+
     }
 }
 
