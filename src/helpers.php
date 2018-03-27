@@ -111,7 +111,7 @@ if (!function_exists('container')) {
 
     /**
      * @param $class
-     * @param array $bind
+     * @param $bind array
      * @return mixed
      */
     function container($class,$bind=array())
