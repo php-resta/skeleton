@@ -93,3 +93,29 @@ if (!function_exists('config')) {
         return app()->singleton()->appClass->configLoaders($config);
     }
 }
+
+if (!function_exists('resolve')) {
+
+    /**
+     * @param $class
+     * @param array $bind
+     * @return mixed
+     */
+    function resolve($class,$bind=array())
+    {
+        return app()->makeBind($class,$bind);
+    }
+}
+
+if (!function_exists('container')) {
+
+    /**
+     * @param $class
+     * @param array $bind
+     * @return mixed
+     */
+    function container($class,$bind=array())
+    {
+        return app()->singleton()->appClass->container(app(),$class,$bind);
+    }
+}
