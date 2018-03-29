@@ -18,14 +18,25 @@ if (!function_exists('environment')) {
     }
 }
 
-if (!function_exists('app')) {
+if (!function_exists('appInstance')) {
 
     /**
      * @return \Resta\ApplicationProvider
      */
-    function app()
+    function appInstance()
     {
         return \application::getAppInstance();
+    }
+}
+
+if (!function_exists('app')) {
+
+    /**
+     * @return \Resta\Contracts\ApplicationContracts
+     */
+    function app()
+    {
+        return appInstance()->app;
     }
 }
 
@@ -36,7 +47,7 @@ if (!function_exists('request')) {
      */
     function request()
     {
-        return app()->request();
+        return appInstance()->request();
     }
 }
 
@@ -49,7 +60,7 @@ if (!function_exists('post')) {
      */
     function post($param=null)
     {
-        return app()->post($param);
+        return appInstance()->post($param);
     }
 }
 
@@ -63,7 +74,7 @@ if (!function_exists('get')) {
      */
     function get($param=null)
     {
-        return app()->get($param);
+        return appInstance()->get($param);
     }
 }
 
@@ -74,7 +85,7 @@ if (!function_exists('applicationKey')) {
      */
     function applicationKey()
     {
-        if(property_exists($kernel=app()->app->kernel(),'applicationKey')){
+        if(property_exists($kernel=app()->kernel(),'applicationKey')){
             return $kernel->applicationKey;
         }
         return null;
@@ -103,7 +114,7 @@ if (!function_exists('resolve')) {
      */
     function resolve($class,$bind=array())
     {
-        return app()->makeBind($class,$bind);
+        return appInstance()->makeBind($class,$bind);
     }
 }
 
