@@ -127,6 +127,6 @@ if (!function_exists('container')) {
      */
     function container($class,$bind=array())
     {
-        return app()->singleton()->appClass->container(app(),$class,$bind);
+        return app()->singleton()->appClass->container(appInstance(),$class,$bind);
     }
 }
