@@ -130,3 +130,15 @@ if (!function_exists('container')) {
         return app()->singleton()->appClass->container(appInstance(),$class,$bind);
     }
 }
+
+if (!function_exists('route')) {
+
+    /**
+     * @param $key
+     * @return mixed
+     */
+    function route($key=null)
+    {
+        return app()->singleton()->appClass->route($key);
+    }
+}
