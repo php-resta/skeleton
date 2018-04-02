@@ -2582,12 +2582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "49ae39d6a840948d7a2c72b0c24303b66cd15ded"
+                "reference": "99047da2c3bcd37c0570abf88bd4a31ce9d79848"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/49ae39d6a840948d7a2c72b0c24303b66cd15ded",
-                "reference": "49ae39d6a840948d7a2c72b0c24303b66cd15ded",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/99047da2c3bcd37c0570abf88bd4a31ce9d79848",
+                "reference": "99047da2c3bcd37c0570abf88bd4a31ce9d79848",
                 "shasum": ""
             },
             "type": "library",
@@ -2613,7 +2613,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-03-30T18:49:50+00:00"
+            "time": "2018-04-02T18:01:54+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4281,7 +4281,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.36",
+            "version": "v2.8.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
