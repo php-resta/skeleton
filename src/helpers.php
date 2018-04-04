@@ -142,3 +142,15 @@ if (!function_exists('route')) {
         return app()->singleton()->appClass->route($key);
     }
 }
+
+if (!function_exists('exception')) {
+
+    /**
+     * @return \Store\Exception\ExceptionContracts
+     */
+    function exception()
+    {
+        $exceptionManager=Store\Exception\ExceptionManager::class;
+        return new $exceptionManager;
+    }
+}
