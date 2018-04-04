@@ -5,6 +5,11 @@ namespace Store\Exception;
 class ExceptionManager implements ExceptionContracts {
 
     /**
+     * @var array
+     */
+    protected $data=[];
+
+    /**
      * @param null $msg
      */
     public function invalidArgument($msg=null){
@@ -86,6 +91,13 @@ class ExceptionManager implements ExceptionContracts {
      */
     public function unexpectedValue($msg=null){
         throw new \UnexpectedValueException($msg);
+    }
+
+    public function __get($name)
+    {
+        $nameException=ucfirst($name).'Exception';
+        $nameNamespace=app()->namespace()->optionalException().'\\'.$nameException;
+        throw new $nameNamespace();
     }
 
 }
