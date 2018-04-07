@@ -97,7 +97,12 @@ class ExceptionManager implements ExceptionContracts {
     {
         $nameException=ucfirst($name).'Exception';
         $nameNamespace=app()->namespace()->optionalException().'\\'.$nameException;
-        throw new $nameNamespace();
+        $callNamespace=new $nameNamespace;
+
+        if(method_exists($callNamespace,'event')){
+            $callNamespace->event();
+        }
+        throw new $callNamespace();
     }
 
 }

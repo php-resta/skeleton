@@ -154,3 +154,17 @@ if (!function_exists('exception')) {
         return new $exceptionManager;
     }
 }
+
+if (!function_exists('logger')) {
+
+    /**
+     * @param $output
+     * @param $file
+     * @param string $type
+     * @return mixed
+     */
+    function logger($output,$file,$type="access")
+    {
+        return app()->singleton()->appClass->logger($output,$file,$type);
+    }
+}
