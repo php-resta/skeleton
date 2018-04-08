@@ -63,7 +63,8 @@ class Cache {
      */
     public function expire($expire){
 
-        //
+        //Cache data is set at the time.
+        //Data will be valid in this time.
         $this->expire=$expire;
         return $this;
     }
@@ -74,13 +75,14 @@ class Cache {
      */
     public function get(callable $callback){
 
-        //
+        //cache adapter state.
         $this->{$this->adapter}();
 
-        //
+        //With backtrace, we can specify an automatic name.
+        //This will automatically detect which service is running in the service.
         $backtrace=debug_backtrace()[1];
 
-        //
+        //If name is null, we name it with backtrace.
         if($this->name===null) {
             $this->name=md5($backtrace['function'].'_'.$backtrace['class']);
         }
