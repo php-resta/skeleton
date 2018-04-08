@@ -8,6 +8,7 @@ namespace Store\Traits;
  * @method \Predis\Client redis
  * @method \Store\Services\AppCollection collection
  * @method \Store\Services\DateCollection date
+ * @method \Store\Services\Cache cache
  * @package App\Mobi\V1
  */
 trait Annotations {

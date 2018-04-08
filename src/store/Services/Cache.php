@@ -1,0 +1,103 @@
+<?php
+
+namespace Store\Services;
+
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+
+class Cache {
+
+    /**
+     * @var string $file
+     */
+    protected $adapter='file';
+
+    /**
+     * @var $cache FilesystemAdapter
+     */
+    protected $cache;
+
+    /**
+     * @var $name
+     */
+    protected $name;
+
+    /**
+     * @var int $expire
+     */
+    protected $expire=30;
+
+
+    /**
+     * return mixed
+     */
+    public function file(){
+
+        $this->cache = new FilesystemAdapter(
+        // the subdirectory of the main cache directory where cache items are stored
+            $namespace = '',
+            // in seconds; applied to cache items that don't define their own lifetime
+            // 0 means to store the cache items indefinitely (i.e. until the files are deleted)
+            $defaultLifetime = $this->expire,
+            // the main cache directory (the application needs read-write permissions on it)
+            // if none is specified, a directory is created inside the system temporary directory
+            $directory=app()->path()->appResourche().'/Cache'
+        );
+
+    }
+
+    /**
+     * @param $name
+     * @return $this
+     */
+    public function name($name){
+
+        //name variable is
+        //the name of the cache dataset to be created.
+        $this->name=$name;
+        return $this;
+    }
+
+    /**
+     * @param $expire
+     * @return $this
+     */
+    public function expire($expire){
+
+        //
+        $this->expire=$expire;
+        return $this;
+    }
+
+    /**
+     * @param callable $callback
+     * @return mixed
+     */
+    public function get(callable $callback){
+
+        //
+        $this->{$this->adapter}();
+
+        //
+        $backtrace=debug_backtrace()[1];
+
+        //
+        if($this->name===null) {
+            $this->name=md5($backtrace['function'].'_'.$backtrace['class']);
+        }
+
+        // retrieve the cache item
+        $cacheItem = $this->cache->getItem($this->name);
+
+        if (!$cacheItem->isHit()) {
+
+            $data=call_user_func($callback);
+            $cacheItem->set($data);
+            $this->cache->save($cacheItem);
+            return $data;
+        }
+
+        // retrieve the value stored by the item
+        return $cacheItem->get();
+    }
+
+}
