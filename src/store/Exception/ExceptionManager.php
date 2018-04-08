@@ -93,15 +93,24 @@ class ExceptionManager implements ExceptionContracts {
         throw new \UnexpectedValueException($msg);
     }
 
+    /**
+     * @param $name
+     */
     public function __get($name)
     {
+        //We use the magic method for the exception and
+        //call the exception class in the application to get the instance.
         $nameException=ucfirst($name).'Exception';
         $nameNamespace=app()->namespace()->optionalException().'\\'.$nameException;
         $callNamespace=new $nameNamespace;
 
+        //If the developer wants to execute an event when calling a special exception,
+        //we process the event method.
         if(method_exists($callNamespace,'event')){
             $callNamespace->event();
         }
+
+        //throw exception
         throw new $callNamespace();
     }
 
