@@ -2,7 +2,7 @@
 
 namespace Store\Services;
 
-class RequestClient {
+class RequestClient{
 
     /**
      * @var array $inputs
@@ -17,7 +17,7 @@ class RequestClient {
     }
 
     /**
-     * @return mixed
+     * @return void
      */
     private function handle(){
 
@@ -28,18 +28,25 @@ class RequestClient {
         //we update the input values ​​after we receive and check the saved objects.
         foreach ($this->getClientObjects() as $key=>$value){
 
-            $this->inputs[$key]=$value;
+            if(get($key)!==null){
 
-            if($value===null){
-                $this->{$key}=get($key);
-                $this->inputs[$key]=$this->{$key};
+                $this->inputs[$key]=$value;
+
+                if($value===null){
+                    $this->{$key}=get($key);
+                    $this->inputs[$key]=$this->{$key};
+                }
+
+                //if there is method for key
+                if(method_exists($this,$key)){
+                    $this->inputs[$key]=$this->{$key}();
+                }
             }
 
-            //if there is method for key
-            if(method_exists($this,$key)){
-                $this->inputs[$key]=$this->{$key}();
-            }
         }
+
+        $this->autoInjection();
+
     }
 
     /**
@@ -58,7 +65,7 @@ class RequestClient {
 
     /**
      * @method initClient
-     * @return mixed
+     * @return void
      */
     private function initClient(){
         foreach(get() as $key=>$value){
@@ -71,6 +78,24 @@ class RequestClient {
      */
     public function get(){
         return $this->inputs;
+    }
+
+    /**
+     * @return void
+     */
+    public function autoInjection(){
+
+        $autoInject=$this->getObjects()['autoInject'];
+
+        if(count($autoInject)){
+            foreach($autoInject as $autoMethod){
+                if(method_exists($this,$autoMethod)){
+                    $this->inputs[$autoMethod]=$this->{$autoMethod}();
+                }
+
+            }
+        }
+
     }
 
 }
