@@ -701,7 +701,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.15",
+            "version": "v5.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -745,16 +745,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.15",
+            "version": "v5.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "965b814964cc4649cd7e933bba2ae3eeb11f2927"
+                "reference": "322ec80498b3bf85bc4025d028e130a9b50242b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/965b814964cc4649cd7e933bba2ae3eeb11f2927",
-                "reference": "965b814964cc4649cd7e933bba2ae3eeb11f2927",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/322ec80498b3bf85bc4025d028e130a9b50242b9",
+                "reference": "322ec80498b3bf85bc4025d028e130a9b50242b9",
                 "shasum": ""
             },
             "require": {
@@ -785,20 +785,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2018-03-25T12:54:46+00:00"
+            "time": "2018-04-07T17:05:26+00:00"
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.15",
+            "version": "v5.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "56c2ab0b8a2f75764082d9087d43d2a3d46c59b0"
+                "reference": "10ae33d266d71e43ca60a3a9675237836bf7b89d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/56c2ab0b8a2f75764082d9087d43d2a3d46c59b0",
-                "reference": "56c2ab0b8a2f75764082d9087d43d2a3d46c59b0",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/10ae33d266d71e43ca60a3a9675237836bf7b89d",
+                "reference": "10ae33d266d71e43ca60a3a9675237836bf7b89d",
                 "shasum": ""
             },
             "require": {
@@ -844,11 +844,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-03-30T13:11:54+00:00"
+            "time": "2018-04-09T13:16:47+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.15",
+            "version": "v5.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -2099,16 +2099,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.7",
+            "version": "6.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9"
+                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6bd77b57707c236833d2b57b968e403df060c9d9",
-                "reference": "6bd77b57707c236833d2b57b968e403df060c9d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
+                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
                 "shasum": ""
             },
             "require": {
@@ -2179,7 +2179,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-02-26T07:01:09+00:00"
+            "time": "2018-04-10T11:38:34+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2582,12 +2582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "268fedfd153001cfc6d54cfd2425443a7627d964"
+                "reference": "5dca04f5231caa7d5dc92fd5f2e8ed18f8336e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/268fedfd153001cfc6d54cfd2425443a7627d964",
-                "reference": "268fedfd153001cfc6d54cfd2425443a7627d964",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/5dca04f5231caa7d5dc92fd5f2e8ed18f8336e42",
+                "reference": "5dca04f5231caa7d5dc92fd5f2e8ed18f8336e42",
                 "shasum": ""
             },
             "type": "library",
@@ -2613,7 +2613,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-04-08T17:04:04+00:00"
+            "time": "2018-04-10T20:50:03+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
