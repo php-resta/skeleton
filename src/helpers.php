@@ -168,3 +168,18 @@ if (!function_exists('logger')) {
         return app()->singleton()->appClass->logger($output,$file,$type);
     }
 }
+
+
+if (!function_exists('trans')) {
+
+
+    /**
+     * @param $lang
+     * @param array $select
+     * @return mixed
+     */
+    function trans($lang,$select=array())
+    {
+        return app()->singleton()->appClass->translator($lang,$select);
+    }
+}
