@@ -183,3 +183,16 @@ if (!function_exists('trans')) {
         return app()->singleton()->appClass->translator($lang,$select);
     }
 }
+
+if (!function_exists('call')) {
+
+
+    /**
+     * @param $call
+     * @return mixed
+     */
+    function call($call)
+    {
+        return app()->namespace()->call($call);
+    }
+}
