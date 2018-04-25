@@ -32,7 +32,7 @@ if (!function_exists('appInstance')) {
 if (!function_exists('app')) {
 
     /**
-     * @return \Resta\Contracts\ApplicationContracts|\Resta\Contracts\ApplicationHelpersContracts
+     * @return \Resta\Contracts\ApplicationContracts|\Resta\Contracts\ApplicationHelpersContracts|\Resta\Contracts\ContainerContracts
      */
     function app()
     {
