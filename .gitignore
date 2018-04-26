@@ -5,6 +5,7 @@ node_modules
 .env
 src/app/*
 !important src/app/app.resta
+!important src/app/appKernel.php
 package-lock.json
 src/store/commands/*
 !important src/store/commands/index.html
