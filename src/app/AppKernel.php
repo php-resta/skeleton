@@ -4,7 +4,7 @@ namespace App;
 
 use Resta\Foundation\Kernel;
 
-class appKernel extends Kernel {
+class AppKernel extends Kernel {
 
     /**
      * Here you can take over the middlewareGroups and bootstrappers properties
