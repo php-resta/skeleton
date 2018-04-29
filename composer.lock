@@ -2577,19 +2577,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "9402df8b56d66991f09523995c60d162a2651acc"
+                "reference": "1da8d90ab2980349aea65e01f3e724bed38768d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/9402df8b56d66991f09523995c60d162a2651acc",
-                "reference": "9402df8b56d66991f09523995c60d162a2651acc",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/1da8d90ab2980349aea65e01f3e724bed38768d1",
+                "reference": "1da8d90ab2980349aea65e01f3e724bed38768d1",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Resta\\": "src/resta/"
-                }
+                },
+                "files": [
+                    "src/resta/ApplicationHelpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2608,7 +2611,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-04-27T20:23:21+00:00"
+            "time": "2018-04-29T09:41:15+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
