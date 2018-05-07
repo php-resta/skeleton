@@ -19,7 +19,7 @@ class Redis {
     public function __construct(){
 
         //redis configuration for app
-        $this->redisConfig=config('redis')->connection;
+        $this->redisConfig=config('redis.connection');
     }
 
     /**
