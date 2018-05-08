@@ -21,6 +21,7 @@
     },
     "require": {
         "restapix/resta":"dev-master",
-        "phpunit/phpunit": "^6.3"
+        "phpunit/phpunit": "^6.3",
+        "optimus/onion": "~1.0"
     }
 }
