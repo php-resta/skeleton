@@ -57,7 +57,7 @@ class Validator {
     }
 
     /**
-     * @param $validator
+     * @param $validator EmailAddress|CreditCard
      * @param $name
      */
     private static function getMessage($validator,$name){
