@@ -7,7 +7,7 @@ class RequestClient{
     /**
      * @var array $inputs
      */
-    private $inputs=[];
+    protected $inputs=[];
 
     /**
      * RequestClient constructor.
@@ -28,21 +28,27 @@ class RequestClient{
         //we update the input values ​​after we receive and check the saved objects.
         foreach ($this->getClientObjects() as $key=>$value){
 
-            if(get($key)!==null){
+            $method=appInstance()->httpMethod();
+
+            if($method($key)!==null){
 
                 $this->inputs[$key]=$value;
 
                 if($value===null){
-                    $this->{$key}=get($key);
+                    $this->{$key}=$method($key);
                     $this->inputs[$key]=$this->{$key};
                 }
 
                 //if there is method for key
+                $requestMethod=$method.''.ucfirst($key);
+                if(method_exists($this,$requestMethod)){
+                    $this->inputs[$key]=$this->{$requestMethod}();
+                }
+
                 if(method_exists($this,$key)){
                     $this->inputs[$key]=$this->{$key}();
                 }
             }
-
         }
 
         $this->autoInjection();
