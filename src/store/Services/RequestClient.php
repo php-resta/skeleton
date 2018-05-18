@@ -2,7 +2,7 @@
 
 namespace Store\Services;
 
-class RequestClient{
+class RequestClient {
 
     /**
      * @var array $inputs
@@ -21,14 +21,15 @@ class RequestClient{
      */
     private function handle(){
 
+        //get http method
+        $method=appInstance()->httpMethod();
+
         //we record the values ​​
         //that coming with the post.
-        $this->initClient();
+        $this->initClient($method);
 
         //we update the input values ​​after we receive and check the saved objects.
         foreach ($this->getClientObjects() as $key=>$value){
-
-            $method=appInstance()->httpMethod();
 
             if($method($key)!==null){
 
@@ -71,10 +72,11 @@ class RequestClient{
 
     /**
      * @method initClient
+     * @param $method
      * @return void
      */
-    private function initClient(){
-        foreach(get() as $key=>$value){
+    private function initClient($method){
+        foreach($method() as $key=>$value){
             $this->inputs[$key]=$value;
         }
     }
