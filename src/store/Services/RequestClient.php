@@ -2,12 +2,12 @@
 
 namespace Store\Services;
 
-class RequestClient{
+class RequestClient {
 
     /**
      * @var array $inputs
      */
-    private $inputs=[];
+    protected $inputs=[];
 
     /**
      * RequestClient constructor.
@@ -21,28 +21,35 @@ class RequestClient{
      */
     private function handle(){
 
+        //get http method
+        $method=appInstance()->httpMethod();
+
         //we record the values ​​
         //that coming with the post.
-        $this->initClient();
+        $this->initClient($method);
 
         //we update the input values ​​after we receive and check the saved objects.
         foreach ($this->getClientObjects() as $key=>$value){
 
-            if(get($key)!==null){
+            if($method($key)!==null){
 
                 $this->inputs[$key]=$value;
 
                 if($value===null){
-                    $this->{$key}=get($key);
+                    $this->{$key}=$method($key);
                     $this->inputs[$key]=$this->{$key};
                 }
 
                 //if there is method for key
+                $requestMethod=$method.''.ucfirst($key);
+                if(method_exists($this,$requestMethod)){
+                    $this->inputs[$key]=$this->{$requestMethod}();
+                }
+
                 if(method_exists($this,$key)){
                     $this->inputs[$key]=$this->{$key}();
                 }
             }
-
         }
 
         $this->autoInjection();
@@ -65,32 +72,36 @@ class RequestClient{
 
     /**
      * @method initClient
+     * @param $method
      * @return void
      */
-    private function initClient(){
-        foreach(get() as $key=>$value){
+    private function initClient($method){
+        foreach($method() as $key=>$value){
             $this->inputs[$key]=$value;
         }
+
+        $this->autoInjection();
     }
 
     /**
      * @return array
      */
-    public function get(){
+    protected function get(){
         return $this->inputs;
     }
 
     /**
      * @return void
      */
-    public function autoInjection(){
+    protected function autoInjection(){
 
         $autoInject=$this->getObjects()['autoInject'];
 
         if(count($autoInject)){
-            foreach($autoInject as $autoMethod){
+            foreach($autoInject as $key=>$autoMethod){
+                $autoMethod='auto'.ucfirst($autoMethod);
                 if(method_exists($this,$autoMethod)){
-                    $this->inputs[$autoMethod]=$this->{$autoMethod}();
+                    $this->inputs[$key]=$this->{$autoMethod}();
                 }
 
             }
