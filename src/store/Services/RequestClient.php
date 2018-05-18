@@ -86,14 +86,14 @@ class RequestClient {
     /**
      * @return array
      */
-    public function get(){
+    protected function get(){
         return $this->inputs;
     }
 
     /**
      * @return void
      */
-    public function autoInjection(){
+    protected function autoInjection(){
 
         $autoInject=$this->getObjects()['autoInject'];
 
