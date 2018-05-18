@@ -79,6 +79,8 @@ class RequestClient {
         foreach($method() as $key=>$value){
             $this->inputs[$key]=$value;
         }
+
+        $this->autoInjection();
     }
 
     /**
@@ -96,9 +98,10 @@ class RequestClient {
         $autoInject=$this->getObjects()['autoInject'];
 
         if(count($autoInject)){
-            foreach($autoInject as $autoMethod){
+            foreach($autoInject as $key=>$autoMethod){
+                $autoMethod='auto'.ucfirst($autoMethod);
                 if(method_exists($this,$autoMethod)){
-                    $this->inputs[$autoMethod]=$this->{$autoMethod}();
+                    $this->inputs[$key]=$this->{$autoMethod}();
                 }
 
             }
