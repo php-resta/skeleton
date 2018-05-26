@@ -3,8 +3,6 @@
 namespace Store\Services;
 
 use Predis\Client as Client;
-use Resta\StaticPathModel;
-use Resta\Utils;
 
 class Redis {
 

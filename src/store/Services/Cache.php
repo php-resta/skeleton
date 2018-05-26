@@ -72,6 +72,7 @@ class Cache {
     /**
      * @param callable $callback
      * @return mixed
+     * @throws \Psr\Cache\InvalidArgumentException
      */
     public function get(callable $callback){
 

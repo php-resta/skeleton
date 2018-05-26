@@ -4,7 +4,6 @@ namespace Store\Services;
 
 use Resta\ApplicationProvider;
 use Carbon\Carbon;
-use Resta\Contracts\ApplicationContracts;
 
 class DateCollection extends ApplicationProvider {
 
