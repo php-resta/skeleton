@@ -2,8 +2,8 @@
 
 namespace Boot;
 
-use Resta\ApplicationProvider;
 use Store\Traits\Annotations;
+use Resta\ApplicationProvider;
 
 class App extends ApplicationProvider  {
 
