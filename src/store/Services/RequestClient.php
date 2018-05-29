@@ -2,12 +2,24 @@
 
 namespace Store\Services;
 
+use Resta\Utils;
+
 class RequestClient {
 
     /**
      * @var array $inputs
      */
     protected $inputs=[];
+
+    /**
+     * @var array $except
+     */
+    protected $except=[];
+
+    /**
+     * @var $capsule
+     */
+    protected $capsule;
 
     /**
      * RequestClient constructor.
@@ -53,6 +65,8 @@ class RequestClient {
         }
 
         $this->autoInjection();
+
+        $this->capsule();
 
     }
 
@@ -106,6 +120,44 @@ class RequestClient {
 
             }
         }
+
+    }
+
+    /**
+     * @param $except
+     * @return $this
+     */
+    public function except($except){
+
+        if(is_callable($except)){
+            $call=call_user_func_array($except,[$this]);
+            $except=$call;
+        }
+
+        $this->except=array_merge($this->except,$except);
+        $this->inputs=array_diff_key($this->inputs,array_flip($this->except));
+        return $this;
+    }
+
+    /**
+     * @return void
+     */
+    private function capsule(){
+
+        if(count($this->capsule)){
+
+            foreach ($this->inputs as $key=>$value){
+                if(!in_array($key,$this->capsule)){
+                    exception()->invalidArgument($key .' input  as value sent is not invalid ');
+                }
+            }
+
+            if(Utils::isArrayEqual(array_keys($this->inputs),$this->capsule)===false){
+                exception()->invalidArgument('the values wanted by the server are not valid');
+            }
+        }
+
+
 
     }
 
