@@ -144,7 +144,7 @@ class RequestClient {
      */
     private function capsule(){
 
-        if(count($this->capsule)){
+        if(is_array($this->capsule) && count($this->capsule)){
 
             foreach ($this->inputs as $key=>$value){
                 if(!in_array($key,$this->capsule)){
