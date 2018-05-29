@@ -153,7 +153,7 @@ class RequestClient {
             }
 
             if(Utils::isArrayEqual(array_keys($this->inputs),$this->capsule)===false){
-                exception()->invalidArgument('the values wanted by the server are not valid');
+                exception()->invalidArgument('the values accepted by the server are not the same with values you sent');
             }
         }
 
