@@ -68,6 +68,8 @@ class RequestClient {
 
         $this->capsule();
 
+        $this->validation();
+
     }
 
     /**
@@ -156,9 +158,22 @@ class RequestClient {
                 exception()->invalidArgument('the values accepted by the server are not the same with values you sent');
             }
         }
+    }
 
+    /**
+     * @return void
+     */
+    private function validation(){
 
+        if(method_exists($this,'rule')){
+            $this->rule();
+        }
 
+        $validName=strtolower(str_replace('Request','',class_basename($this))).'Rule';
+
+        if(method_exists($this,$validName)){
+            $this->{$validName}();
+        }
     }
 
 }
