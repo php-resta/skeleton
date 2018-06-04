@@ -7,6 +7,11 @@ use Resta\Utils;
 class RequestClient {
 
     /**
+     * @var array $origin
+     */
+    protected $origin=[];
+
+    /**
      * @var array $inputs
      */
     protected $inputs=[];
@@ -50,6 +55,7 @@ class RequestClient {
                 if($value===null){
                     $this->{$key}=$method($key);
                     $this->inputs[$key]=$this->{$key};
+                    $this->origin[$key]=$this->{$key};
                 }
 
                 //if there is method for key
