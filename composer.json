@@ -25,6 +25,7 @@
         "optimus/onion": "~1.0",
         "zendframework/zend-db": "^2.9",
         "doctrine/dbal": "^2.7",
-        "symfony/stopwatch": "^4.1"
+        "symfony/stopwatch": "^4.1",
+        "fzaninotto/faker": "^1.7"
     }
 }
