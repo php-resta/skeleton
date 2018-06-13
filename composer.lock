@@ -898,7 +898,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -942,7 +942,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -986,16 +986,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "a31e39433a97404d90ea12af4f0d3f6fc1818a9e"
+                "reference": "747a8896392cf4e7af151a71324222392c6a3631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/a31e39433a97404d90ea12af4f0d3f6fc1818a9e",
-                "reference": "a31e39433a97404d90ea12af4f0d3f6fc1818a9e",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/747a8896392cf4e7af151a71324222392c6a3631",
+                "reference": "747a8896392cf4e7af151a71324222392c6a3631",
                 "shasum": ""
             },
             "require": {
@@ -1041,11 +1041,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-06-04T14:50:35+00:00"
+            "time": "2018-06-12T14:27:22+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1089,16 +1089,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "b13296a75443797d6a71d0ccd437ca801b12d300"
+                "reference": "192a3c3690a90467974f547ff648899679a4243c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/b13296a75443797d6a71d0ccd437ca801b12d300",
-                "reference": "b13296a75443797d6a71d0ccd437ca801b12d300",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/192a3c3690a90467974f547ff648899679a4243c",
+                "reference": "192a3c3690a90467974f547ff648899679a4243c",
                 "shasum": ""
             },
             "require": {
@@ -1143,7 +1143,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-06-02T14:30:18+00:00"
+            "time": "2018-06-12T14:37:15+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1277,16 +1277,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/478465659fd987669df0bd8a9bf22a8710e5f1b6",
-                "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
+                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
                 "shasum": ""
             },
             "require": {
@@ -1321,7 +1321,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-05-29T17:25:09+00:00"
+            "time": "2018-06-11T23:09:50+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2718,12 +2718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "f31c69690854d2e99c7e2fafa923da606fad4f14"
+                "reference": "f91bcd0d2c3c602576757a1524e5d43150ac1824"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/f31c69690854d2e99c7e2fafa923da606fad4f14",
-                "reference": "f31c69690854d2e99c7e2fafa923da606fad4f14",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/f91bcd0d2c3c602576757a1524e5d43150ac1824",
+                "reference": "f91bcd0d2c3c602576757a1524e5d43150ac1824",
                 "shasum": ""
             },
             "require": {
@@ -2780,7 +2780,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-06-11T19:28:01+00:00"
+            "time": "2018-06-13T00:51:37+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
