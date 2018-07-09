@@ -15,7 +15,8 @@
         "psr-4": {
             "App\\": "src/app",
             "Boot\\": "src/boot",
-            "Store\\": "src/store"
+            "Store\\": "src/store",
+            "Bootstrapper" : "Bootstrapper"
         },
         "files": ["src/helpers.php"]
     },
