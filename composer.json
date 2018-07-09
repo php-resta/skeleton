@@ -16,7 +16,7 @@
             "App\\": "src/app",
             "Boot\\": "src/boot",
             "Store\\": "src/store",
-            "Bootstrapper" : "Bootstrapper"
+            "Bootstrapper\\" : "Bootstrapper"
         },
         "files": ["src/helpers.php"]
     },
