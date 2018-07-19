@@ -714,7 +714,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.27",
+            "version": "v5.6.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -758,7 +758,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.27",
+            "version": "v5.6.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -802,16 +802,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.27",
+            "version": "v5.6.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "9def0c0f7f20d38ba65685d94a5152bd76e15cf5"
+                "reference": "950527c6138d0ef9011e9106d2647efc05a9e5ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/9def0c0f7f20d38ba65685d94a5152bd76e15cf5",
-                "reference": "9def0c0f7f20d38ba65685d94a5152bd76e15cf5",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/950527c6138d0ef9011e9106d2647efc05a9e5ce",
+                "reference": "950527c6138d0ef9011e9106d2647efc05a9e5ce",
                 "shasum": ""
             },
             "require": {
@@ -857,11 +857,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-07-10T13:35:15+00:00"
+            "time": "2018-07-16T13:32:36+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.27",
+            "version": "v5.6.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -905,7 +905,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.6.27",
+            "version": "v5.6.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -2541,12 +2541,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "a5efe5ac7694ea29171c75c4eef9b9e0ea69f187"
+                "reference": "f0ea01e2db85ad2dab456d35849a980a28bad36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/a5efe5ac7694ea29171c75c4eef9b9e0ea69f187",
-                "reference": "a5efe5ac7694ea29171c75c4eef9b9e0ea69f187",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/f0ea01e2db85ad2dab456d35849a980a28bad36b",
+                "reference": "f0ea01e2db85ad2dab456d35849a980a28bad36b",
                 "shasum": ""
             },
             "require": {
@@ -2603,7 +2603,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-07-14T08:55:20+00:00"
+            "time": "2018-07-17T18:38:31+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
