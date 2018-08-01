@@ -10,7 +10,9 @@ class LogoutService {
     public function getIndexAction(){
 
         return [
-            'authenticate'=>null
+            'authenticate'=>[
+                'logout'   => auth()->logout()
+            ]
         ];
     }
 
@@ -20,7 +22,9 @@ class LogoutService {
     public function postIndexAction(){
 
         return [
-            'authenticate'=>auth()->logout()
+            'authenticate'=>[
+                'logout'   => auth()->logout()
+            ]
         ];
     }
 
