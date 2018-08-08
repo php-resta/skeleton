@@ -11,7 +11,7 @@ class Exception
      * class exception container call access for every service.
      * @return array
      */
-    public static function local($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $errContext=null)
+    public static function local($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null)
     {
         return [
 
@@ -49,21 +49,6 @@ class Exception
              * @value $errNo
              */
             'errorNo'=>$errNo,
-
-            /**
-             * user information.
-             * @key user
-             * @value fingerPrint from base
-             * @return array
-             */
-            'user'=>'asa',
-
-            /**
-             * Context.
-             * @key context
-             * @value $errContext
-             */
-            'Context'=>$errContext
         ];
     }
 
@@ -73,7 +58,7 @@ class Exception
      * class exception container call access for every service.
      * @return array
      */
-    public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $errContext=null)
+    public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null)
     {
         return [
 
@@ -111,21 +96,6 @@ class Exception
              * @value $errNo
              */
             //'errorNo'=>$errNo,
-
-            /**
-             * user information.
-             * @key user
-             * @value fingerPrint from base
-             * @return array
-             */
-            //'user'=>'asa',
-
-            /**
-             * Context.
-             * @key context
-             * @value $errContext
-             */
-            //'Context'=>$errContext
         ];
     }
 
