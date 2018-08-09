@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "afc9da59373d3815fb348085626711c8",
+    "content-hash": "4dca2cc83f621aea00f41ce6ec5e6309",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -4927,6 +4927,10 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-json": "*"
+    },
     "platform-dev": []
 }
