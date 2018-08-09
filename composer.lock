@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "afc9da59373d3815fb348085626711c8",
     "packages": [
         {
             "name": "aligurbuz/lingua",
-            "version": "v1.06",
+            "version": "v1.07",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/Lingua.git",
-                "reference": "74e09caf5ffcb629815fc3a8148797c7a5318f2b"
+                "reference": "9027e3b15f57bad22a6817c6a8eb92ce3281a4eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/Lingua/zipball/74e09caf5ffcb629815fc3a8148797c7a5318f2b",
-                "reference": "74e09caf5ffcb629815fc3a8148797c7a5318f2b",
+                "url": "https://api.github.com/repos/aligurbuz/Lingua/zipball/9027e3b15f57bad22a6817c6a8eb92ce3281a4eb",
+                "reference": "9027e3b15f57bad22a6817c6a8eb92ce3281a4eb",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                     "email": "galiant781@gmail.com"
                 }
             ],
-            "time": "2018-04-20T13:58:04+00:00"
+            "time": "2018-08-08T12:36:33+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -714,7 +714,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.30",
+            "version": "v5.6.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -758,7 +758,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.30",
+            "version": "v5.6.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -802,7 +802,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.30",
+            "version": "v5.6.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -861,7 +861,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.30",
+            "version": "v5.6.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -905,7 +905,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.6.30",
+            "version": "v5.6.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -2185,16 +2185,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.9",
+            "version": "5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "141129c578f58f38f55eccf15a1039bd413ea57c"
+                "reference": "cd1cf05c553ecfec36b170070573e540b67d3f1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/141129c578f58f38f55eccf15a1039bd413ea57c",
-                "reference": "141129c578f58f38f55eccf15a1039bd413ea57c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/cd1cf05c553ecfec36b170070573e540b67d3f1f",
+                "reference": "cd1cf05c553ecfec36b170070573e540b67d3f1f",
                 "shasum": ""
             },
             "require": {
@@ -2207,7 +2207,7 @@
                 "phpunit/phpunit": "<6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5"
+                "phpunit/phpunit": "^6.5.11"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -2240,7 +2240,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-08-07T07:02:44+00:00"
+            "time": "2018-08-09T05:50:03+00:00"
         },
         {
             "name": "predis/predis",
