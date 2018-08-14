@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "4dca2cc83f621aea00f41ce6ec5e6309",
@@ -2538,12 +2538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "7cee565a2e01738373b478eefbb9c691316a19d1"
+                "reference": "e23c0de803059439d30ea9903d1cf50accf537a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/7cee565a2e01738373b478eefbb9c691316a19d1",
-                "reference": "7cee565a2e01738373b478eefbb9c691316a19d1",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/e23c0de803059439d30ea9903d1cf50accf537a7",
+                "reference": "e23c0de803059439d30ea9903d1cf50accf537a7",
                 "shasum": ""
             },
             "require": {
@@ -2600,7 +2600,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-08-11T07:39:13+00:00"
+            "time": "2018-08-14T18:24:44+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
