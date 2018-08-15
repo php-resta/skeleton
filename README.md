@@ -12,3 +12,16 @@ Slogan; If the machine can make itself the code that you write, do not write it.
 
 Developments are still in progress. The documentation section of the code will be available in beta soon.
 https://github.com/restapix/resta
+
+# Quick Start
+
+### Installation : 
+
+- Via Composer :
+
+```sh
+$ git clone https://github.com/aligurbuz/resta.git companyName
+$ cd companyName
+$ composer install
+$ composer dump-autoload -o
+```
