@@ -3,3 +3,6 @@ install: composer install
 php:
 - '7.2'
 - nightly
+script:
+- php api project create resta
+- php api service create resta service:user
