@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/aligurbuz/resta.svg?branch=master)](https://travis-ci.org/aligurbuz/resta)
+
 # resta
 php restfull api
 resta php api restfull framework
