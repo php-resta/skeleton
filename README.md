@@ -25,3 +25,31 @@ $ cd companyName
 $ composer install
 $ composer dump-autoload -o
 ```
+
+- Via Docker
+
+```sh
+$ git clone https://github.com/aligurbuz/resta-dockerized
+$ cd resta-dockerized
+$ mkdir code
+```
+
+> Then,run the following commands
+
+```sh
+$ sudo docker build -t php:fpm .
+$ sudo docker-compose up -d
+```
+
+ > Docker machine ready.
+ Now you can see running container list by running the following command.
+ 
+ ```sh
+ $ sudo docker ps
+ ```
+ 
+ > Then,run the following commands
+ 
+  ```sh
+  $ sudo docker exec -it php:fpm /bin/bash
+  ```
