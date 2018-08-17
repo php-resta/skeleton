@@ -3,15 +3,15 @@ namespace Test\Unit;
 
 use PHPUnit\Framework\TestCase;
 
-class ExampleTest extends TestCase
+class exampleTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testFooBar()
     {
-        $this->assertTrue(true);
+        $this->assertTrue(false);
     }
 }

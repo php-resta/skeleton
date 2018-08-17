@@ -1,0 +1,9 @@
+language: php
+install: composer install
+php:
+- '7.2'
+- nightly
+script:
+- composer dump-autoload -o
+- php api key generate
+- php api env create mobi
