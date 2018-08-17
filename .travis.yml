@@ -7,3 +7,4 @@ script:
 - composer dump-autoload -o
 - php api key generate
 - php api env create mobi
+- php api project create mobi
