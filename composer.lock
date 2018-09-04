@@ -715,7 +715,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -759,7 +759,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -803,16 +803,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "580a19b3c9bdb6ff1fa8c81a61dd3bc46af86c5c"
+                "reference": "4895c3734986c5b7b59d6342ce89c6b92c199412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/580a19b3c9bdb6ff1fa8c81a61dd3bc46af86c5c",
-                "reference": "580a19b3c9bdb6ff1fa8c81a61dd3bc46af86c5c",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/4895c3734986c5b7b59d6342ce89c6b92c199412",
+                "reference": "4895c3734986c5b7b59d6342ce89c6b92c199412",
                 "shasum": ""
             },
             "require": {
@@ -858,11 +858,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-08-26T13:56:10+00:00"
+            "time": "2018-09-02T13:49:42+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -906,7 +906,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.6.35",
+            "version": "v5.6.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -964,16 +964,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.32",
+            "version": "2.8.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "ec69a0c381b5fe44547680d3c7db6ced08e5abb3"
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/ec69a0c381b5fe44547680d3c7db6ced08e5abb3",
-                "reference": "ec69a0c381b5fe44547680d3c7db6ced08e5abb3",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/cd385290f9a0d609d2eddd165a1e44ec1bf12102",
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102",
                 "shasum": ""
             },
             "require": {
@@ -1012,7 +1012,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2018-06-03T13:13:04+00:00"
+            "time": "2018-09-01T15:05:15+00:00"
         },
         {
             "name": "monolog/monolog",
