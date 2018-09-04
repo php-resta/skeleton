@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dca2cc83f621aea00f41ce6ec5e6309",
+    "content-hash": "ec25e260a9df1277d2fdc2fd655eca44",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -38,6 +38,39 @@
                 }
             ],
             "time": "2018-08-08T12:36:33+00:00"
+        },
+        {
+            "name": "aligurbuz/migratio",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aligurbuz/migratio.git",
+                "reference": "d60d0eb1ff5f09aa72eaa9d309386bef62da191d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/d60d0eb1ff5f09aa72eaa9d309386bef62da191d",
+                "reference": "d60d0eb1ff5f09aa72eaa9d309386bef62da191d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Migratio\\": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "aligurbuz",
+                    "email": "galiant781@gmail.com"
+                }
+            ],
+            "description": "It is a package that automatically creates your migration files",
+            "time": "2018-09-04T10:14:49+00:00"
         },
         {
             "name": "container-interop/container-interop",
