@@ -41,16 +41,16 @@
         },
         {
             "name": "aligurbuz/migratio",
-            "version": "v1.2",
+            "version": "v1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "e7527a41d7680f5b1809f272fc5cb06dda0a22cb"
+                "reference": "549f293fa2299e5aba97fe3766f68201d6552e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/e7527a41d7680f5b1809f272fc5cb06dda0a22cb",
-                "reference": "e7527a41d7680f5b1809f272fc5cb06dda0a22cb",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/549f293fa2299e5aba97fe3766f68201d6552e26",
+                "reference": "549f293fa2299e5aba97fe3766f68201d6552e26",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "It is a package that automatically creates your migration files",
-            "time": "2018-09-04T13:24:17+00:00"
+            "time": "2018-09-06T08:14:43+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -748,7 +748,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.7.0",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -792,7 +792,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.0",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -836,7 +836,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.7.0",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -895,7 +895,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.7.0",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -939,7 +939,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.0",
+            "version": "v5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
