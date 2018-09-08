@@ -41,16 +41,16 @@
         },
         {
             "name": "aligurbuz/migratio",
-            "version": "v1.5",
+            "version": "v1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "9f5775ccc5f8582cd7bf5c8afb14cce9adaa66d2"
+                "reference": "039e39f8d4cd897b26c3c7710b2f47aef408fc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/9f5775ccc5f8582cd7bf5c8afb14cce9adaa66d2",
-                "reference": "9f5775ccc5f8582cd7bf5c8afb14cce9adaa66d2",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/039e39f8d4cd897b26c3c7710b2f47aef408fc56",
+                "reference": "039e39f8d4cd897b26c3c7710b2f47aef408fc56",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "It is a package that automatically creates your migration files",
-            "time": "2018-09-06T13:19:46+00:00"
+            "time": "2018-09-07T21:02:38+00:00"
         },
         {
             "name": "container-interop/container-interop",
