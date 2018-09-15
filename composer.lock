@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec25e260a9df1277d2fdc2fd655eca44",
+    "content-hash": "548e12ad54e9ac536e7c5c16c569cd2c",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -41,16 +41,16 @@
         },
         {
             "name": "aligurbuz/migratio",
-            "version": "v1.9",
+            "version": "v2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "6b2301fb44d521cc076021b8e147867cdb1a7661"
+                "reference": "864d72ff271809d18562f437a2ff996eeb3fd718"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/6b2301fb44d521cc076021b8e147867cdb1a7661",
-                "reference": "6b2301fb44d521cc076021b8e147867cdb1a7661",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/864d72ff271809d18562f437a2ff996eeb3fd718",
+                "reference": "864d72ff271809d18562f437a2ff996eeb3fd718",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "It is a package that automatically creates your migration files",
-            "time": "2018-09-12T13:02:13+00:00"
+            "time": "2018-09-15T09:59:23+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2573,12 +2573,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "8be91cbd412ceac1979e1be2dcfa3276fbc6fc49"
+                "reference": "ba67319fba515df6bf1ee9b918df91c6242765dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/8be91cbd412ceac1979e1be2dcfa3276fbc6fc49",
-                "reference": "8be91cbd412ceac1979e1be2dcfa3276fbc6fc49",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/ba67319fba515df6bf1ee9b918df91c6242765dd",
+                "reference": "ba67319fba515df6bf1ee9b918df91c6242765dd",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2635,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-09-12T13:00:50+00:00"
+            "time": "2018-09-15T10:02:35+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
