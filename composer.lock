@@ -41,16 +41,16 @@
         },
         {
             "name": "aligurbuz/migratio",
-            "version": "v2.0",
+            "version": "v2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "864d72ff271809d18562f437a2ff996eeb3fd718"
+                "reference": "54c1aee401a4f784e814028521ad27f6995802e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/864d72ff271809d18562f437a2ff996eeb3fd718",
-                "reference": "864d72ff271809d18562f437a2ff996eeb3fd718",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/54c1aee401a4f784e814028521ad27f6995802e3",
+                "reference": "54c1aee401a4f784e814028521ad27f6995802e3",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "It is a package that automatically creates your migration files",
-            "time": "2018-09-15T09:59:23+00:00"
+            "time": "2018-09-18T06:30:48+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -3198,16 +3198,16 @@
         },
         {
             "name": "spatie/array-to-xml",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/array-to-xml.git",
-                "reference": "cb8befcd0c58ccf8baa5491e61a5c1d02a3acbba"
+                "reference": "2b01cb1a04b4b65f0db03cd8a78df4b978fe5cd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/array-to-xml/zipball/cb8befcd0c58ccf8baa5491e61a5c1d02a3acbba",
-                "reference": "cb8befcd0c58ccf8baa5491e61a5c1d02a3acbba",
+                "url": "https://api.github.com/repos/spatie/array-to-xml/zipball/2b01cb1a04b4b65f0db03cd8a78df4b978fe5cd7",
+                "reference": "2b01cb1a04b4b65f0db03cd8a78df4b978fe5cd7",
                 "shasum": ""
             },
             "require": {
@@ -3243,7 +3243,7 @@
                 "convert",
                 "xml"
             ],
-            "time": "2018-02-20T15:21:24+00:00"
+            "time": "2018-09-17T11:45:05+00:00"
         },
         {
             "name": "symfony/cache",
