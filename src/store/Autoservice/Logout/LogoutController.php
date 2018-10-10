@@ -2,13 +2,13 @@
 
 namespace Store\Autoservice\Logout;
 
-class LogoutController {
-
+class LogoutController
+{
     /**
      * @return array
      */
-    public function getIndexAction(){
-
+    public function getIndexAction()
+    {
         return [
             'authenticate'=>[
                 'logout'   => auth()->logout()
@@ -19,8 +19,8 @@ class LogoutController {
     /**
      * @return array
      */
-    public function postIndexAction(){
-
+    public function postIndexAction()
+    {
         return [
             'authenticate'=>[
                 'logout'   => auth()->logout()

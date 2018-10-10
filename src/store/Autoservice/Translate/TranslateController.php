@@ -8,13 +8,13 @@ use Resta\ApplicationProvider;
  * Class TranslateController
  * @package Store\Autoservice\Translate
  */
-class TranslateController extends ApplicationProvider {
-
+class TranslateController extends ApplicationProvider
+{
     /**
      * @return array
      */
-    public function getIndexAction(){
-
+    public function getIndexAction()
+    {
         return [
             'data'=>trans(get('trans'))
         ];

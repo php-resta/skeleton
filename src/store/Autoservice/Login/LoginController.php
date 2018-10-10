@@ -2,13 +2,13 @@
 
 namespace Store\Autoservice\Login;
 
-class LoginController {
-
+class LoginController
+{
     /**
      * @return array
      */
-    public function getIndexAction(){
-
+    public function getIndexAction()
+    {
         return [
             'authenticate'=>auth()->login()
         ];
@@ -17,8 +17,8 @@ class LoginController {
     /**
      * @return array
      */
-    public function postIndexAction(){
-
+    public function postIndexAction()
+    {
         return [
             'authenticate'=>auth()->login()
         ];
