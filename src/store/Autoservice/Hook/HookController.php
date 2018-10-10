@@ -5,10 +5,10 @@ namespace Store\Autoservice\Hook;
 use Resta\ApplicationProvider;
 
 /**
- * Class HookService
+ * Class HookController
  * @package Store\Autoservice\Hook
  */
-class HookService extends ApplicationProvider {
+class HookController extends ApplicationProvider {
 
     /**
      * @return array
@@ -16,7 +16,7 @@ class HookService extends ApplicationProvider {
     public function getIndexAction(){
 
         return [
-            'hookservice'=>'do somethings'
+            'hook'=>'do somethings'
         ];
     }
 

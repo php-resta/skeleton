@@ -2,7 +2,7 @@
 
 namespace Store\Autoservice\Login;
 
-class LoginService {
+class LoginController {
 
     /**
      * @return array

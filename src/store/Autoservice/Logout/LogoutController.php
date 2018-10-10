@@ -2,7 +2,7 @@
 
 namespace Store\Autoservice\Logout;
 
-class LogoutService {
+class LogoutController {
 
     /**
      * @return array

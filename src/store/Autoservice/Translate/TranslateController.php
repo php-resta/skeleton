@@ -5,10 +5,10 @@ namespace Store\Autoservice\Translate;
 use Resta\ApplicationProvider;
 
 /**
- * Class TranslateService
+ * Class TranslateController
  * @package Store\Autoservice\Translate
  */
-class TranslateService extends ApplicationProvider {
+class TranslateController extends ApplicationProvider {
 
     /**
      * @return array
