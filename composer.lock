@@ -41,16 +41,16 @@
         },
         {
             "name": "aligurbuz/migratio",
-            "version": "v2.4",
+            "version": "v2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "818270f3ac653a5104dd5c4a9e5ed258fa1212dc"
+                "reference": "a136f166cfc13e7e5acd499cfc7fe4466bf00f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/818270f3ac653a5104dd5c4a9e5ed258fa1212dc",
-                "reference": "818270f3ac653a5104dd5c4a9e5ed258fa1212dc",
+                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/a136f166cfc13e7e5acd499cfc7fe4466bf00f20",
+                "reference": "a136f166cfc13e7e5acd499cfc7fe4466bf00f20",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "It is a package that automatically creates your migration files",
-            "time": "2018-10-03T14:33:19+00:00"
+            "time": "2018-10-14T17:46:22+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -748,20 +748,21 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.7.7",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "0fc33b14ae6cf9a1e694fd43f2a274e590a824b2"
+                "reference": "73cde7bd4985eefb1d468a745e1d50d03e276121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/0fc33b14ae6cf9a1e694fd43f2a274e590a824b2",
-                "reference": "0fc33b14ae6cf9a1e694fd43f2a274e590a824b2",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/73cde7bd4985eefb1d468a745e1d50d03e276121",
+                "reference": "73cde7bd4985eefb1d468a745e1d50d03e276121",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.7.*",
+                "illuminate/support": "5.7.*",
                 "php": "^7.1.3",
                 "psr/container": "^1.0"
             },
@@ -788,20 +789,20 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2018-05-28T08:50:10+00:00"
+            "time": "2018-10-07T15:52:17+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.7",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "72e125b25d3f7aabbf4b2ef68590db7637b8223c"
+                "reference": "64df81d3382d876f1c1d3d5481d89c93b61b8279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/72e125b25d3f7aabbf4b2ef68590db7637b8223c",
-                "reference": "72e125b25d3f7aabbf4b2ef68590db7637b8223c",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/64df81d3382d876f1c1d3d5481d89c93b61b8279",
+                "reference": "64df81d3382d876f1c1d3d5481d89c93b61b8279",
                 "shasum": ""
             },
             "require": {
@@ -832,20 +833,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2018-09-27T14:15:29+00:00"
+            "time": "2018-10-08T13:34:14+00:00"
         },
         {
             "name": "illuminate/database",
-            "version": "v5.7.7",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "88bf47e1c125e5b261b984c9a6a9eb8d1c26da61"
+                "reference": "1f4a0881ca0012732ae7b73809cf50ef8d964547"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/88bf47e1c125e5b261b984c9a6a9eb8d1c26da61",
-                "reference": "88bf47e1c125e5b261b984c9a6a9eb8d1c26da61",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/1f4a0881ca0012732ae7b73809cf50ef8d964547",
+                "reference": "1f4a0881ca0012732ae7b73809cf50ef8d964547",
                 "shasum": ""
             },
             "require": {
@@ -891,11 +892,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-10-02T13:58:04+00:00"
+            "time": "2018-10-06T18:48:42+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.7.7",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -939,16 +940,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.7",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "d01c9ac04dee022ff3cd931e60e989a0d950812a"
+                "reference": "ea95697233b06650382eb0f5798be22b4e520dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/d01c9ac04dee022ff3cd931e60e989a0d950812a",
-                "reference": "d01c9ac04dee022ff3cd931e60e989a0d950812a",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/ea95697233b06650382eb0f5798be22b4e520dea",
+                "reference": "ea95697233b06650382eb0f5798be22b4e520dea",
                 "shasum": ""
             },
             "require": {
@@ -994,7 +995,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-10-01T13:13:54+00:00"
+            "time": "2018-10-07T15:51:39+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2573,12 +2574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "26bb49c615a9e0954d2e63d607a8c18d149ccf8b"
+                "reference": "64d9bb2fae47c0d7d11c8621b1e1fe934655b692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/26bb49c615a9e0954d2e63d607a8c18d149ccf8b",
-                "reference": "26bb49c615a9e0954d2e63d607a8c18d149ccf8b",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/64d9bb2fae47c0d7d11c8621b1e1fe934655b692",
+                "reference": "64d9bb2fae47c0d7d11c8621b1e1fe934655b692",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2636,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-10-03T14:36:52+00:00"
+            "time": "2018-10-14T17:50:26+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
