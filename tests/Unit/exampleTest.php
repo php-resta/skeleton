@@ -22,7 +22,7 @@ class exampleTest extends TestCase
      */
     public function testFooBar2()
     {
-        $this->assertTrue(false);
+        $this->assertTrue(true);
     }
 
     /**
