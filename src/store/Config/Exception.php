@@ -147,7 +147,7 @@ class Exception
              *
              * @define Exception thrown if an argument is not of the expected type.
              */
-            'InvalidArgumentException'=>422,
+            'InvalidArgumentException'=>400,
 
             /**
              * LengthException.
@@ -218,7 +218,7 @@ class Exception
              * Typically this happens when a function calls another function and expects
              * the return value to be of a certain type or value not including arithmetic or buffer related errors.
              */
-            'UnexpectedValueException'=>422
+            'UnexpectedValueException'=>400
         ];
 
         if($type!==null){
