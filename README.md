@@ -71,7 +71,7 @@ If you discover a security vulnerability within Resta, please send an e-mail to 
 
 ## License
 
-The Resta framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Resta api structure is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
 
