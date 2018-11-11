@@ -38,4 +38,4 @@ $ sudo docker exec -it php:fpm /bin/bash
 
 # Documentation Links
 
-- [Installation](https://github.com/aligurbuz/resta).
+- **[Installation](https://github.com/aligurbuz/resta)**
