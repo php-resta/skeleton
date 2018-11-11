@@ -65,4 +65,13 @@ $ sudo docker exec -it php:fpm /bin/bash
 - **[Versioning](https://github.com/aligurbuz/resta)**
 
 
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Resta, please send an e-mail to Ali Gürbüz via [Ali Gurbuz](mailto:galiant781@gmail.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
 
