@@ -1,11 +1,10 @@
 
 [![Build Status](https://travis-ci.org/aligurbuz/resta.svg?branch=master)](https://travis-ci.org/aligurbuz/resta)
 
-# resta
-php restfull api
+# Resta Api Structure
 resta php api restfull framework
 
-# Introduction
+# About Resta
 
 Developing rest api with php has never been so enjoyable.. We are claiming.You will so love this structure.
 Slogan; If the machine can make itself the code that you write, do not write it.
