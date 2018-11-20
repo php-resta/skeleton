@@ -7,7 +7,7 @@ use Predis\Client as Client;
 class Redis
 {
     /**
-     * @var
+     * @var \Resta\Config\ConfigProcess
      */
     private $redisConfig;
 
