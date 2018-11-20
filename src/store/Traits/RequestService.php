@@ -8,8 +8,8 @@ use Store\Services\MobileDetectService;
  * Trait RequestService
  * @method \Store\Services\MobileDetectService device
  */
-trait RequestService {
-
+trait RequestService
+{
     /**
      * @var $instance array
      */
@@ -27,8 +27,8 @@ trait RequestService {
      * @param $arg
      * @return mixed
      */
-    public function __call($service,$arg){
-
+    public function __call($service,$arg)
+    {
         //We are doing an instance object check for magic method and
         //if this object exists as an instance, this object is called directly.
         if(isset(self::$instance[$service])){
@@ -47,8 +47,4 @@ trait RequestService {
         return (isset($instance)) ? $instance : null;
 
     }
-
-
-
-
 }

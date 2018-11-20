@@ -3,17 +3,17 @@
 namespace Store\Services;
 
 use Zend\Validator\Date;
-use Zend\Validator\EmailAddress;
 use Zend\Validator\CreditCard;
+use Zend\Validator\EmailAddress;
 
-class Validator {
-
+class Validator
+{
     /**
      * @param $email
      * @return bool
      */
-    public static function email($email){
-
+    public static function email($email)
+    {
         //is array control for email
         $email=self::checkArrayValidator($email);
 
@@ -37,8 +37,8 @@ class Validator {
      * @param $creditCardNo
      * @return bool
      */
-    public static function creditCard($creditCardNo){
-
+    public static function creditCard($creditCardNo)
+    {
         //is array control for credit card
         $creditCardNo=self::checkArrayValidator($creditCardNo);
 
@@ -53,7 +53,6 @@ class Validator {
             }
         }
 
-
         return true;
     }
 
@@ -62,8 +61,8 @@ class Validator {
      * @param array $format
      * @return bool
      */
-    public static function date($date,$format=['format'=>'Y-m-d']){
-
+    public static function date($date,$format=['format'=>'Y-m-d'])
+    {
         //is array control for credit card
         $date=self::checkArrayValidator($date);
 
@@ -78,7 +77,6 @@ class Validator {
             }
         }
 
-
         return true;
     }
 
@@ -86,8 +84,8 @@ class Validator {
      * @param $validator EmailAddress|CreditCard
      * @param $name
      */
-    private static function getMessage($validator,$name){
-
+    private static function getMessage($validator,$name)
+    {
         if($validator===null){
             throw new \UnexpectedValueException('it is not invalid as the date format for ['.$name.'])');
         }
@@ -100,7 +98,8 @@ class Validator {
      * @param $data
      * @return array
      */
-    private static function checkArrayValidator($data){
+    private static function checkArrayValidator($data)
+    {
         return (is_array($data)) ? $data : [$data];
     }
 

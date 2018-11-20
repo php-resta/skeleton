@@ -2,8 +2,8 @@
 
 namespace Store\Services;
 
-class MobileDetectService {
-
+class MobileDetectService
+{
     /**
      * @var $mobile mixed
      */
@@ -12,7 +12,8 @@ class MobileDetectService {
     /**
      * MobileDetectService constructor.
      */
-    public function __construct() {
+    public function __construct()
+    {
         require_once(root . '/vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php');
         $this->mobile=new \Mobile_Detect();
     }
@@ -20,7 +21,8 @@ class MobileDetectService {
     /**
      * @return bool true|false
      */
-    public function isMobile() {
+    public function isMobile()
+    {
         return $this->mobile->isMobile();
     }
 }
