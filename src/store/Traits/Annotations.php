@@ -11,21 +11,19 @@ namespace Store\Traits;
  * @method \Store\Services\Cache cache
  * @package App\Mobi\V1
  */
-trait Annotations {
-
+trait Annotations
+{
     /**
      * @param $service
      * @param $arg
      * @return mixed
      */
-    public function __call($service,$arg){
-
+    public function __call($service,$arg)
+    {
         $arg[]=$this;
 
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
         return \application::annotationsLoaders($service,$arg);
     }
-
-
 }

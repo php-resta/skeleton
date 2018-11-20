@@ -2,8 +2,8 @@
 
 namespace Store\Services;
 
-class RequestClient {
-
+class RequestClient
+{
     /**
      * @var bool
      */
@@ -12,9 +12,8 @@ class RequestClient {
     /**
      * @return void|mixed
      */
-    public function handle(){
-
+    public function handle()
+    {
         //
     }
-
 }

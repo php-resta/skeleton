@@ -2,8 +2,8 @@
 
 namespace Store\Contracts;
 
-interface HandleTraitContract {
-
+interface HandleTraitContract
+{
     /**
      * @return mixed|void
      */

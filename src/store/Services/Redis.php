@@ -4,18 +4,18 @@ namespace Store\Services;
 
 use Predis\Client as Client;
 
-class Redis {
-
+class Redis
+{
     /**
-     * @var
+     * @var \Resta\Config\ConfigProcess
      */
     private $redisConfig;
 
     /**
-     * redis constructor.
+     * Redis constructor.
      */
-    public function __construct(){
-
+    public function __construct()
+    {
         //redis configuration for app
         $this->redisConfig=config('redis.connection');
     }
@@ -23,8 +23,8 @@ class Redis {
     /**
      * @return Client
      */
-    public function client(){
-
+    public function client()
+    {
         //redis client object
         return new Client($this->redisConfig);
     }

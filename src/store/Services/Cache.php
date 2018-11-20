@@ -4,8 +4,8 @@ namespace Store\Services;
 
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
-class Cache {
-
+class Cache
+{
     /**
      * @var string $file
      */
@@ -26,12 +26,11 @@ class Cache {
      */
     protected $expire=30;
 
-
     /**
      * return mixed
      */
-    public function file(){
-
+    public function file()
+    {
         $this->cache = new FilesystemAdapter(
         // the subdirectory of the main cache directory where cache items are stored
             $namespace = '',
@@ -49,10 +48,10 @@ class Cache {
      * @param $name
      * @return $this
      */
-    public function name($name){
-
+    public function name($name)
+    {
         //name variable is
-        //the name of the cache dataset to be created.
+        //the name of the cache data set to be created.
         $this->name=$name;
         return $this;
     }
@@ -61,8 +60,8 @@ class Cache {
      * @param $expire
      * @return $this
      */
-    public function expire($expire){
-
+    public function expire($expire)
+    {
         //Cache data is set at the time.
         //Data will be valid in this time.
         $this->expire=$expire;
@@ -74,8 +73,8 @@ class Cache {
      * @return mixed
      * @throws \Psr\Cache\InvalidArgumentException
      */
-    public function get(callable $callback){
-
+    public function get(callable $callback)
+    {
         //cache adapter state.
         $this->{$this->adapter}();
 

@@ -2,8 +2,8 @@
 
 namespace Store\Packages\PushNotification\Slack;
 
-class SlackConnection {
-
+class SlackConnection
+{
     /**
      * @var $hook
      */
@@ -13,7 +13,8 @@ class SlackConnection {
      * SlackConnection constructor.
      * @param $hook
      */
-    public function __construct($hook) {
+    public function __construct($hook)
+    {
         $this->hook=$hook;
     }
 
@@ -22,8 +23,8 @@ class SlackConnection {
      * @param $message
      * @return bool
      */
-    public function handle($channel,$message){
-
+    public function handle($channel,$message)
+    {
         // for push notification
         // we have to specify the payload value.
         $data = "payload=" . json_encode(array(
