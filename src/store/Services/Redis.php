@@ -12,7 +12,7 @@ class Redis
     private $redisConfig;
 
     /**
-     * redis constructor.
+     * Redis constructor.
      */
     public function __construct()
     {
