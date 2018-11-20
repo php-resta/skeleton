@@ -2,8 +2,8 @@
 
 namespace Store\Services;
 
-use Resta\ApplicationProvider;
 use Carbon\Carbon;
+use Resta\ApplicationProvider;
 
 class DateCollection extends ApplicationProvider
 {
@@ -40,7 +40,6 @@ class DateCollection extends ApplicationProvider
         return Carbon::createFromTimestamp($int)->timezone(date_default_timezone_get())->diffForHumans();
     }
 
-
     /**
      * @return mixed
      */
@@ -48,5 +47,4 @@ class DateCollection extends ApplicationProvider
     {
         return Carbon::now();
     }
-
 }

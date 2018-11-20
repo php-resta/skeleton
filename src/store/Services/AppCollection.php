@@ -14,5 +14,4 @@ class AppCollection
     {
         return collect($data);
     }
-
 }
