@@ -2,8 +2,8 @@
 
 namespace Store\Packages\PushNotification\Slack;
 
-class Slack {
-
+class Slack
+{
     /**
      * @var $hook
      */
@@ -18,8 +18,8 @@ class Slack {
      * @param string $channel
      * @return Slack
      */
-    public static function channel($channel='default'){
-
+    public static function channel($channel='default')
+    {
         //we get configuration settings for slack.
         $config=config('slack.'.$channel);
 
@@ -35,8 +35,8 @@ class Slack {
      * @param $message
      * @return mixed
      */
-    public static function push($message){
-
+    public static function push($message)
+    {
         // if the hook object has a null value,
         // we will set the default value to channel.
         if(self::$hook===null){
