@@ -27,8 +27,6 @@ class Validator
                 self::getMessage($validator,$mail);
             }
         }
-
-
         return true;
     }
 
@@ -52,7 +50,6 @@ class Validator
                 self::getMessage($validator,$credit);
             }
         }
-
         return true;
     }
 
@@ -76,7 +73,6 @@ class Validator
                 self::getMessage($validator=null,$dateValue);
             }
         }
-
         return true;
     }
 
@@ -102,6 +98,4 @@ class Validator
     {
         return (is_array($data)) ? $data : [$data];
     }
-
-
 }
