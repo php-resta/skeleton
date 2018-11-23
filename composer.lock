@@ -1177,16 +1177,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.36.0",
+            "version": "1.36.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "f5e9fa283fa389ffa49e58391a02f063dcdd1815"
+                "reference": "63da8cdf89d7a5efe43aabc794365f6e7b7b8983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f5e9fa283fa389ffa49e58391a02f063dcdd1815",
-                "reference": "f5e9fa283fa389ffa49e58391a02f063dcdd1815",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/63da8cdf89d7a5efe43aabc794365f6e7b7b8983",
+                "reference": "63da8cdf89d7a5efe43aabc794365f6e7b7b8983",
                 "shasum": ""
             },
             "require": {
@@ -1231,7 +1231,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-11-16T11:47:11+00:00"
+            "time": "2018-11-22T18:23:02+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -2577,12 +2577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "87c4aa9ce02ab9ec5f09caf0ede58956a7de304b"
+                "reference": "3aa8e6529b583754c0397be6ef92330afebcdddf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/87c4aa9ce02ab9ec5f09caf0ede58956a7de304b",
-                "reference": "87c4aa9ce02ab9ec5f09caf0ede58956a7de304b",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/3aa8e6529b583754c0397be6ef92330afebcdddf",
+                "reference": "3aa8e6529b583754c0397be6ef92330afebcdddf",
                 "shasum": ""
             },
             "require": {
@@ -2639,7 +2639,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-11-21T19:08:22+00:00"
+            "time": "2018-11-23T19:00:16+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
