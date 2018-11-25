@@ -22,16 +22,6 @@
         "files": ["src/helpers.php"]
     },
     "require": {
-        "restapix/resta":"dev-master",
-        "aligurbuz/migratio": "^2.0",
-        "phpunit/phpunit": "^6.3",
-        "optimus/onion": "~1.0",
-        "zendframework/zend-db": "^2.9",
-        "doctrine/dbal": "^2.7",
-        "symfony/stopwatch": "^4.1",
-        "fzaninotto/faker": "^1.7",
-        "ext-curl": "*",
-        "ext-dom": "*",
-        "ext-json": "*"
+        "restapix/resta":"dev-master"
     }
 }
