@@ -22,6 +22,9 @@
         "files": ["src/helpers.php"]
     },
     "require": {
-        "restapix/resta":"dev-master"
+        "restapix/resta":"dev-master",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-json": "*"
     }
 }
