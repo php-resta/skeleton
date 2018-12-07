@@ -9,3 +9,10 @@ script:
 - php api key generate
 - php api env create mobi
 - php api project create mobi
+- php api controller create mobi controller:users
+- php api model create mobi model:user
+- php api request create mobi request:user
+- php api exception create mobi exception:user
+- php api repository create mobi repository:email
+- php api event generate mobi
+- php api command create mobi command:post
