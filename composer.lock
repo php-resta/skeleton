@@ -753,7 +753,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.7.15",
+            "version": "5.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -798,7 +798,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.15",
+            "version": "5.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -842,16 +842,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.7.15",
+            "version": "5.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "9e430b6172f11b10dd324f16342878607e36f00b"
+                "reference": "3594b0c207795acc78d666087ff4269c3a3ad738"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/9e430b6172f11b10dd324f16342878607e36f00b",
-                "reference": "9e430b6172f11b10dd324f16342878607e36f00b",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/3594b0c207795acc78d666087ff4269c3a3ad738",
+                "reference": "3594b0c207795acc78d666087ff4269c3a3ad738",
                 "shasum": ""
             },
             "require": {
@@ -897,11 +897,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-11-26T13:47:24+00:00"
+            "time": "2018-12-11T14:08:37+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.7.15",
+            "version": "5.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -945,16 +945,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.15",
+            "version": "5.7.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "249de04ac08676aa509b8b0f391858535b4e06bb"
+                "reference": "f8b9387034e11980d3953c814b6ad65e2cd244e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/249de04ac08676aa509b8b0f391858535b4e06bb",
-                "reference": "249de04ac08676aa509b8b0f391858535b4e06bb",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/f8b9387034e11980d3953c814b6ad65e2cd244e3",
+                "reference": "f8b9387034e11980d3953c814b6ad65e2cd244e3",
                 "shasum": ""
             },
             "require": {
@@ -1000,7 +1000,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2018-11-15T13:49:08+00:00"
+            "time": "2018-12-08T15:33:10+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "927177a3d49b495f51e70f76a2a4b198bf71ed1d"
+                "reference": "30827d68251f994ddef0f21dd041b79e1dd68af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/927177a3d49b495f51e70f76a2a4b198bf71ed1d",
-                "reference": "927177a3d49b495f51e70f76a2a4b198bf71ed1d",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/30827d68251f994ddef0f21dd041b79e1dd68af9",
+                "reference": "30827d68251f994ddef0f21dd041b79e1dd68af9",
                 "shasum": ""
             },
             "require": {
@@ -2691,7 +2691,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2018-12-07T11:54:05+00:00"
+            "time": "2018-12-12T12:44:44+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
