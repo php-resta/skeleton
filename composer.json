@@ -26,5 +26,10 @@
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "composer dump-autoload -o"
+        ]
     }
 }
