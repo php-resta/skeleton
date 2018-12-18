@@ -3,9 +3,8 @@
 namespace Bootstrapper;
 
 use Resta\Foundation\Kernel;
-use Resta\Contracts\BootContracts;
 
-class Manifest extends Kernel implements BootContracts
+class Manifest extends Kernel
 {
     /**
      * @var array $revision
@@ -20,7 +19,7 @@ class Manifest extends Kernel implements BootContracts
     /**
      * @return array
      */
-    public function boot() : array
+    public function afterOriginGroups() : array
     {
         return $this->afterOriginGroups;
     }
