@@ -32,6 +32,8 @@ class Manifest extends Kernel
     protected $reflectionGroupsExtend = [];
 
     /**
+     * extends kernel origin groups
+     *
      * @return array
      */
     public function originGroupsExtend() : array
@@ -40,6 +42,8 @@ class Manifest extends Kernel
     }
 
     /**
+     * extends kernel console groups
+     *
      * @return array
      */
     public function consoleGroupsExtend() : array
@@ -48,6 +52,8 @@ class Manifest extends Kernel
     }
 
     /**
+     * extends kernel middleware groups
+     *
      * @return array
      */
     public function middlewareGroupsExtend() : array
@@ -56,6 +62,8 @@ class Manifest extends Kernel
     }
 
     /**
+     * extends kernel reflection groups
+     *
      * @return array
      */
     public function reflectionGroupsExtend() : array
