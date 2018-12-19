@@ -9,6 +9,8 @@
  */
 require_once 'bootstrapper/applicationStart.php';
 
-$app=new Resta\Foundation\Application(\Resta\Support\Utils::isRequestConsole());
+use Resta\Support\Utils;
+
+$app=new Resta\Foundation\Application(Utils::isRequestConsole());
 echo $app->handle();
 
