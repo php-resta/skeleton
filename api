@@ -8,7 +8,7 @@
  * system main skeleton
  * return autoload file
  */
-require_once 'bootstrapper/applicationStart.php';
+require_once 'bootstrapper/ApplicationStart.php';
 
 use Resta\Support\Utils;
 
