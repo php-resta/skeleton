@@ -13,6 +13,6 @@ require_once 'bootstrapper/applicationStart.php';
 //set arguments
 define ('arguments',$argv);
 
-$app=new Resta\Foundation\Application(\Resta\Utils::isRequestConsole());
+$app=new Resta\Foundation\Application(\Resta\Support\Utils::isRequestConsole());
 echo $app->handle();
 
