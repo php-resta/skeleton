@@ -12,22 +12,22 @@ class Manifest extends Kernel
     protected $revision = [];
 
     /**
-     * @var array
+     * @var array $originGroupsExtend
      */
     protected $originGroupsExtend = [];
 
     /**
-     * @var array
+     * @var array $consoleGroupsExtend
      */
     protected $consoleGroupsExtend = [];
 
     /**
-     * @var array
+     * @var array $middlewareGroupsExtend
      */
     protected $middlewareGroupsExtend = [];
 
     /**
-     * @var array
+     * @var array $reflectionGroupsExtend
      */
     protected $reflectionGroupsExtend = [];
 
