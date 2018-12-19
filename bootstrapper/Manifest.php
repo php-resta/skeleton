@@ -14,13 +14,52 @@ class Manifest extends Kernel
     /**
      * @var array
      */
-    protected $afterOriginGroups = [];
+    protected $originGroupsExtend = [];
+
+    /**
+     * @var array
+     */
+    protected $consoleGroupsExtend = [];
+
+    /**
+     * @var array
+     */
+    protected $middlewareGroupsExtend = [];
+
+    /**
+     * @var array
+     */
+    protected $reflectionGroupsExtend = [];
 
     /**
      * @return array
      */
-    public function afterOriginGroups() : array
+    public function originGroupsExtend() : array
     {
-        return $this->afterOriginGroups;
+        return $this->originGroupsExtend;
+    }
+
+    /**
+     * @return array
+     */
+    public function consoleGroupsExtend() : array
+    {
+        return $this->consoleGroups;
+    }
+
+    /**
+     * @return array
+     */
+    public function middlewareGroupsExtend() : array
+    {
+        return $this->middlewareGroupsExtend;
+    }
+
+    /**
+     * @return array
+     */
+    public function reflectionGroupsExtend() : array
+    {
+        return $this->reflectionGroupsExtend;
     }
 }
