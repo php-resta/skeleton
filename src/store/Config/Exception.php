@@ -117,7 +117,7 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined function
              * or if some arguments are missing.
              */
-            'Undefined'=>422,
+            'Undefined'=>500,
 
             /**
              * BadFunctionCallException.
