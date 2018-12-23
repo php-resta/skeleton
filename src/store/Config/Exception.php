@@ -41,7 +41,14 @@ class Exception
              * @key errorString
              * @value $errStr
              */
-            'errorString'=>$errStr,
+            'errorInternalMessage'=>$errStr,
+
+            /**
+             * Error String.
+             * @key errorString
+             * @value $errStr
+             */
+            'errorMessage'=>$errStr,
 
             /**
              * Error No.
@@ -88,7 +95,7 @@ class Exception
              * @key errorString
              * @value $errStr
              */
-            'errorString'=>$errStr,
+            'errorMessage'=>$errStr,
 
             /**
              * Error No.
@@ -125,7 +132,7 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined function
              * or if some arguments are missing.
              */
-            'BadFunctionCallException'=>422,
+            'BadFunctionCallException'=>500,
 
             /**
              * BadMethodCallException.
@@ -133,7 +140,7 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined method
              * or if some arguments are missing.
              */
-            'BadMethodCallException'=>405,
+            'BadMethodCallException'=>500,
 
             /**
              * DomainException.
