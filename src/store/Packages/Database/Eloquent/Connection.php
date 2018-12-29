@@ -20,8 +20,7 @@ class Connection extends Eloquent
     public function __construct()
     {
         $this->capsule = new Capsule;
-        $configdb = StaticPathModel::appConfig(true).'\Database';
-        $configdb = (Utils::makeBind($configdb))->handle();
+        $configdb = config('database');
 
         $this->capsule->addConnection([
             'driver'    => $configdb['driver'],

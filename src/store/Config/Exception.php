@@ -41,13 +41,6 @@ class Exception
              * @key errorString
              * @value $errStr
              */
-            'errorInternalMessage'=>$errStr,
-
-            /**
-             * Error String.
-             * @key errorString
-             * @value $errStr
-             */
             'errorMessage'=>$errStr,
 
             /**
