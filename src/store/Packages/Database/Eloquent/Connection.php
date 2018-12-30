@@ -4,7 +4,6 @@ namespace Store\Packages\Database\Eloquent;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-
 class Connection
 {
     /**
