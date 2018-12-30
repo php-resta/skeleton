@@ -2,12 +2,10 @@
 
 namespace Store\Packages\Database\Eloquent;
 
-use Resta\Support\Utils;
-use Resta\StaticPathModel;
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Connection extends Eloquent
+
+class Connection
 {
     /**
      * @var Capsule $capsule
