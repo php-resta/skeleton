@@ -18,9 +18,15 @@ class UserCreate implements MigrationContract
 
             $wizard->auto_increment();
             $wizard->name('username')->varchar(255)->unique();
+            $wizard->name('name')->varchar(255)->index();
+            $wizard->name('surname')->varchar(255)->index();
+            $wizard->name('gender')->enum(['male','female'])->index();
+            $wizard->name('birthday')->date();
             $wizard->name('password')->varchar(255)->index();
             $wizard->name('email')->varchar(255)->unique();
-            $wizard->name('status')->int()->index();
+            $wizard->name('status')->enum([0,1])->index();
+            $wizard->name('is_deleted')->enum([0,1])->index();
+            $wizard->name('userCode')->int()->index();
             $wizard->name('token')->varchar(255)->index();
             $wizard->name('created_at')->dateTime();
             $wizard->name('updated_at')->dateTime();
