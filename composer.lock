@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "be090f8a743aa04e29b9ebc7e721e2ed7cdc5482"
+                "reference": "78b4ac4c70c117911f95715a4b7598eca42eb661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/be090f8a743aa04e29b9ebc7e721e2ed7cdc5482",
-                "reference": "be090f8a743aa04e29b9ebc7e721e2ed7cdc5482",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/78b4ac4c70c117911f95715a4b7598eca42eb661",
+                "reference": "78b4ac4c70c117911f95715a4b7598eca42eb661",
                 "shasum": ""
             },
             "require": {
@@ -2691,7 +2691,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-01-02T10:33:42+00:00"
+            "time": "2019-01-05T11:29:06+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4699,16 +4699,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
                 "shasum": ""
             },
             "require": {
@@ -4745,7 +4745,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-29T20:33:41+00:00"
+            "time": "2018-10-30T17:29:25+00:00"
         },
         {
             "name": "webmozart/assert",
