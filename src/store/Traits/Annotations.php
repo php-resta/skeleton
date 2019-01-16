@@ -26,4 +26,15 @@ trait Annotations
         //the application static preloader class to be loaded as requested by the application.
         return \application::annotationsLoaders($service,$arg);
     }
+
+    /**
+     * @param $name
+     * @return mixed
+     */
+    public function __get($name)
+    {
+        //in this magic way, the annotations described above are managed by
+        //the application static preloader class to be loaded as requested by the application.
+        return \application::annotationsLoaders($name,[]);
+    }
 }
