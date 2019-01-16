@@ -6,7 +6,6 @@ php:
 - nightly
 script:
 - composer dump-autoload -o
-- php api
 - php api key generate
 - php api env create mobi
 - php api project create mobi
