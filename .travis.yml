@@ -20,3 +20,4 @@ script:
 - php api repository create mobi repository:email
 - php api event generate mobi
 - php api command create mobi command:post
+- php api factory create mobi factory:products
