@@ -17,7 +17,10 @@ class Connection
     public function __construct()
     {
         $this->capsule = new Capsule;
-        $configdb = config('database');
+
+        $defaultConnection = config('database.default');
+
+        $configdb = config('database.connections.'.$defaultConnection);
 
         $this->capsule->addConnection([
             'driver'    => $configdb['driver'],
