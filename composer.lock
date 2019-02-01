@@ -2145,16 +2145,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.13",
+            "version": "6.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "0973426fb012359b2f18d3bd1e90ef1172839693"
+                "reference": "bac23fe7ff13dbdb461481f706f0e9fe746334b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0973426fb012359b2f18d3bd1e90ef1172839693",
-                "reference": "0973426fb012359b2f18d3bd1e90ef1172839693",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bac23fe7ff13dbdb461481f706f0e9fe746334b7",
+                "reference": "bac23fe7ff13dbdb461481f706f0e9fe746334b7",
                 "shasum": ""
             },
             "require": {
@@ -2225,7 +2225,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-09-08T15:10:43+00:00"
+            "time": "2019-02-01T05:22:47+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2622,12 +2622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "13ab72a892e6a58dbc64800be0fb77f0dc817fa2"
+                "reference": "0dfd402e035b9befc2c1a275195ddfbbe42fdcef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/13ab72a892e6a58dbc64800be0fb77f0dc817fa2",
-                "reference": "13ab72a892e6a58dbc64800be0fb77f0dc817fa2",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/0dfd402e035b9befc2c1a275195ddfbbe42fdcef",
+                "reference": "0dfd402e035b9befc2c1a275195ddfbbe42fdcef",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +2692,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-01-31T14:14:35+00:00"
+            "time": "2019-02-01T06:55:44+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
