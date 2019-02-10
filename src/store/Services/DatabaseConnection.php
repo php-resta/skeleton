@@ -7,7 +7,7 @@ class DatabaseConnection
     /**
      * @return array|null
      */
-    public static function getConnection()
+    public static function getConfig()
     {
         if(config('database')!==null){
 

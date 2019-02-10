@@ -19,7 +19,7 @@ class Connection
     {
         $this->capsule = new Capsule;
 
-        $configdb = DatabaseConnection::getConnection();
+        $configdb = DatabaseConnection::getConfig();
 
         $this->capsule->addConnection([
             'driver'    => $configdb['driver'],
