@@ -2,6 +2,7 @@
 
 namespace Store\Packages\Database\Eloquent;
 
+use Store\Services\DatabaseConnection;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 class Connection
@@ -18,9 +19,7 @@ class Connection
     {
         $this->capsule = new Capsule;
 
-        $defaultConnection = config('database.default');
-
-        $configdb = config('database.connections.'.$defaultConnection);
+        $configdb = DatabaseConnection::getConnection();
 
         $this->capsule->addConnection([
             'driver'    => $configdb['driver'],
