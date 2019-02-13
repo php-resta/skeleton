@@ -3,7 +3,7 @@
 namespace Store\Services;
 
 use Carbon\Carbon;
-use Resta\ApplicationProvider;
+use Resta\Foundation\ApplicationProvider;
 
 class DateCollection extends ApplicationProvider
 {

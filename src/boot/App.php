@@ -3,8 +3,8 @@
 namespace Boot;
 
 use Store\Traits\Annotations;
-use Resta\ApplicationProvider;
 use Resta\Contracts\BootContracts;
+use Resta\Foundation\ApplicationProvider;
 
 class App extends ApplicationProvider implements BootContracts
 {

@@ -2,7 +2,7 @@
 
 namespace Store\Autoservice\Hook;
 
-use Resta\ApplicationProvider;
+use Resta\Foundation\ApplicationProvider;
 
 /**
  * Class HookController

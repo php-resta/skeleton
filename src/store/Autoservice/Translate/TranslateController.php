@@ -2,7 +2,7 @@
 
 namespace Store\Autoservice\Translate;
 
-use Resta\ApplicationProvider;
+use Resta\Foundation\ApplicationProvider;
 
 /**
  * Class TranslateController
