@@ -2284,6 +2284,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -2622,12 +2623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "c4ae29721ba45a079abef805eee552485a341cfa"
+                "reference": "02a006418616637d4d981f122dbbdc885f44bcfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/c4ae29721ba45a079abef805eee552485a341cfa",
-                "reference": "c4ae29721ba45a079abef805eee552485a341cfa",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/02a006418616637d4d981f122dbbdc885f44bcfd",
+                "reference": "02a006418616637d4d981f122dbbdc885f44bcfd",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +2693,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-02-16T14:13:53+00:00"
+            "time": "2019-02-16T20:22:28+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
