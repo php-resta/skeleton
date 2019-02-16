@@ -53,13 +53,17 @@ class Exception
     }
 
     /**
-     * project exception handler for production.
-     *
-     * class exception container call access for every service.
+     * @param null $errNo
+     * @param null $errStr
+     * @param null $errFile
+     * @param null $errLine
+     * @param null $errType
+     * @param null $lang
      * @return array
      */
-    public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null)
+    public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null,$external=null)
     {
+
         return [
 
             /**
