@@ -753,7 +753,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -798,7 +798,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -842,7 +842,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -901,7 +901,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -945,7 +945,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -2623,12 +2623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "02a006418616637d4d981f122dbbdc885f44bcfd"
+                "reference": "04bca25649d1679a3dc310081bb5817f69b35591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/02a006418616637d4d981f122dbbdc885f44bcfd",
-                "reference": "02a006418616637d4d981f122dbbdc885f44bcfd",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/04bca25649d1679a3dc310081bb5817f69b35591",
+                "reference": "04bca25649d1679a3dc310081bb5817f69b35591",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-02-16T20:22:28+00:00"
+            "time": "2019-02-20T12:58:41+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
