@@ -25,7 +25,7 @@ return [
      |--------------------------------------------------------------------------
      |
      | These are the keys to be automatically included in the documentation parameters
-     | to be created for the application.WiResponseth these keys, we prevent you from writing
+     | to be created for the application.with response these keys, we prevent you from writing
      | the same keys over and over to the file that will create your documentation.
      |
      */
