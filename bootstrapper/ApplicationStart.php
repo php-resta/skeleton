@@ -24,4 +24,4 @@ require_once 'Bootstrap.php';
 */
 
 //load spl autoload register
-(new \Resta\autoloadRegister())->register();
+(new \Resta\Foundation\ApplicationAutoLoadRegister())->register();
