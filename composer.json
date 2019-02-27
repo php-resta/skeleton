@@ -17,6 +17,7 @@
             "Src\\": "src",
             "Boot\\": "src/boot",
             "Store\\": "src/store",
+            "Providers\\": "src/providers",
             "Bootstrapper\\" : "bootstrapper",
             "Test\\" : "tests"
         },

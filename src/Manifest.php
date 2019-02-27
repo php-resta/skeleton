@@ -3,6 +3,7 @@
 namespace Src;
 
 use Resta\Foundation\Kernel;
+use Providers\EloquentServiceProvider;
 
 class Manifest extends Kernel
 {
@@ -22,7 +23,7 @@ class Manifest extends Kernel
 
         /*
         |--------------------------------------------------------------------------
-        | Kernel Service Providers
+        | Kernel Service providers
         |--------------------------------------------------------------------------
         |
         | The kernel service providers listed here will be automatically loaded on the
@@ -30,7 +31,10 @@ class Manifest extends Kernel
         | this array to grant expanded functionality to your applications.
         |
         */
-        'providers' => []
+        'providers' => [
+
+            'EloquentServiceProvider' => EloquentServiceProvider::class
+        ]
 
     ];
 }
