@@ -20,7 +20,7 @@
             "Bootstrapper\\" : "bootstrapper",
             "Test\\" : "tests"
         },
-        "files": ["src/helpers.php"]
+        "files": []
     },
     "require": {
         "restapix/resta":"dev-master",
