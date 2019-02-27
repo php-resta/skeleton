@@ -1,6 +1,6 @@
 <?php
 
-namespace Bootstrapper;
+namespace Src;
 
 use Resta\Foundation\Kernel;
 
