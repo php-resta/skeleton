@@ -14,7 +14,7 @@ class Manifest extends Kernel
     protected $revision = [];
 
     /**
-     * this property changes the kernel life cycle.
+     * this property adds class to the kernel loaders on the user side.
      *
      * @var array $app
      */
