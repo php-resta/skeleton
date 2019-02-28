@@ -14,8 +14,8 @@ return [
     */
     'meta' => [
         'meta'=>[
-            'success'=>appInstance()->getSuccess(),
-            'status'=>appInstance()->getStatus(),
+            'success'=>core()->responseSuccess,
+            'status'=>core()->responseStatus,
         ]
     ],
 
