@@ -4,11 +4,18 @@ namespace Providers;
 
 use Resta\Contracts\BootContracts;
 use Illuminate\Pagination\Paginator;
-use Resta\Foundation\ApplicationProvider;
+use Resta\Provider\ServiceProviderManager;
 use Store\Packages\Database\Eloquent\Connection as Eloquent;
 
-class EloquentServiceProvider extends ApplicationProvider implements BootContracts
+class EloquentServiceProvider extends ServiceProviderManager implements BootContracts
 {
+    /**
+     * load dependencies for provider
+     *
+     * @var array $dependencies
+     */
+    protected $dependencies = [];
+
     /**
      * boot service provider
      *
