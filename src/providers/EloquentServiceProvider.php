@@ -10,13 +10,6 @@ use Store\Packages\Database\Eloquent\Connection as Eloquent;
 class EloquentServiceProvider extends ServiceProviderManager implements BootContracts
 {
     /**
-     * load dependencies for provider
-     *
-     * @var array $dependencies
-     */
-    protected $dependencies = [];
-
-    /**
      * boot service provider
      *
      * @return void
