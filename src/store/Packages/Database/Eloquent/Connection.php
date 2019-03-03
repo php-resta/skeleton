@@ -22,11 +22,11 @@ class Connection
         $configdb = DatabaseConnection::getConfig();
 
         $this->capsule->addConnection([
-            'driver'    => $configdb['driver'] ?: 'mysql',
-            'host'      => $configdb['host'] ?: '127.0.0.1',
-            'database'  => $configdb['database'] ?: 'test',
-            'username'  => $configdb['user'] ?: 'root',
-            'password'  => $configdb['password'] ?: 'root',
+            'driver'    => (isset($configdb['driver'])) ? $configdb['driver'] : 'mysql' ,
+            'host'      => (isset($configdb['host'])) ? $configdb['host'] : '127.0.0.1',
+            'database'  => (isset($configdb['database'])) ? $configdb['database'] : 'test',
+            'username'  => (isset($configdb['user'])) ? $configdb['user'] : 'root',
+            'password'  => (isset($configdb['password'])) ? $configdb['password'] : 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
