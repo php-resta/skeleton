@@ -19,3 +19,4 @@ script:
 - php api event generate mobi
 - php api command create mobi command:post
 - php api factory create mobi factory:products
+- php api provider create mobi provider:cacheServiceProvider
