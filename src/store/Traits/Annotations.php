@@ -4,12 +4,9 @@ namespace Store\Traits;
 
 /**
  * Trait ServiceAnnotationsController
- * @method \Store\Services\HttpSession session
  * @method \Predis\Client redis
  * @method \Store\Services\AppCollection collection
- * @method \Store\Services\DateCollection date
  * @method \Store\Services\Cache cache
- * @package App\Mobi\V1
  */
 trait Annotations
 {

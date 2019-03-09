@@ -36,23 +36,5 @@ class Manifest extends Kernel
             'EloquentServiceProvider' => EloquentServiceProvider::class
         ],
 
-        /*
-        |--------------------------------------------------------------------------
-        | Application Annotation Register
-        |--------------------------------------------------------------------------
-        |
-        | The annotation service is a magic method that allows you to write easy code.
-        | All services you register with this service are included in your application.
-        | You will be reminded via your ide the service you use within the application
-        | and you will have installed the service.
-        |
-        */
-        'annotations' => [
-
-            'redis'         => ['\Predis\Client'],
-            'cache'         => ['\Store\Services\Cache'],
-            'collection'    => ['\Store\Services\AppCollection']
-        ]
-
     ];
 }
