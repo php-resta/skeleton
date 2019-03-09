@@ -49,7 +49,9 @@ class Manifest extends Kernel
         */
         'annotations' => [
 
-            'redis' => []
+            'redis'         => ['\Predis\Client'],
+            'cache'         => ['\Store\Services\Cache'],
+            'collection'    => ['\Store\Services\AppCollection']
         ]
 
     ];
