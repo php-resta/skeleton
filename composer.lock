@@ -753,7 +753,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -798,7 +798,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -842,16 +842,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "9a0895e9237f61ce7b974c26fe0e52ded35f8668"
+                "reference": "d327d51f103d2579ca163cfe21dc6f8723b36623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/9a0895e9237f61ce7b974c26fe0e52ded35f8668",
-                "reference": "9a0895e9237f61ce7b974c26fe0e52ded35f8668",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/d327d51f103d2579ca163cfe21dc6f8723b36623",
+                "reference": "d327d51f103d2579ca163cfe21dc6f8723b36623",
                 "shasum": ""
             },
             "require": {
@@ -898,11 +898,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-03-05T13:45:48+00:00"
+            "time": "2019-03-10T22:31:50+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -947,16 +947,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "0f0291d1bc2f036af3fceb8e46900b58812533c4"
+                "reference": "07062f5750872a31e086ff37a7c50ac18b8c417c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/0f0291d1bc2f036af3fceb8e46900b58812533c4",
-                "reference": "0f0291d1bc2f036af3fceb8e46900b58812533c4",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/07062f5750872a31e086ff37a7c50ac18b8c417c",
+                "reference": "07062f5750872a31e086ff37a7c50ac18b8c417c",
                 "shasum": ""
             },
             "require": {
@@ -1004,7 +1004,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-03-05T13:38:58+00:00"
+            "time": "2019-03-12T13:17:00+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2628,12 +2628,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "af829c01aa2a64a7f30506096a8df92db6a3b9e5"
+                "reference": "d225bb7d804b2c98904a083db26ae59066ef7dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/af829c01aa2a64a7f30506096a8df92db6a3b9e5",
-                "reference": "af829c01aa2a64a7f30506096a8df92db6a3b9e5",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/d225bb7d804b2c98904a083db26ae59066ef7dac",
+                "reference": "d225bb7d804b2c98904a083db26ae59066ef7dac",
                 "shasum": ""
             },
             "require": {
@@ -2698,7 +2698,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-03-11T14:59:23+00:00"
+            "time": "2019-03-12T14:37:15+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4644,16 +4644,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.37.1",
+            "version": "v1.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62"
+                "reference": "754b8dfc0026585eb8498ec4bf5ff240b6b34db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66be9366c76cbf23e82e7171d47cbfa54a057a62",
-                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/754b8dfc0026585eb8498ec4bf5ff240b6b34db7",
+                "reference": "754b8dfc0026585eb8498ec4bf5ff240b6b34db7",
                 "shasum": ""
             },
             "require": {
@@ -4668,7 +4668,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.37-dev"
+                    "dev-master": "1.38-dev"
                 }
             },
             "autoload": {
@@ -4706,7 +4706,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-01-14T14:59:29+00:00"
+            "time": "2019-03-12T12:42:04+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
