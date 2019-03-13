@@ -5,6 +5,7 @@ namespace Store\Traits;
 /**
  * Trait ServiceAnnotationsController
  * @method \Predis\Client redis
+ * @method \Store\Services\GuzzleHttp http($base=array())
  * @method \Store\Services\AppCollection collection
  * @method \Store\Services\Cache cache
  */
