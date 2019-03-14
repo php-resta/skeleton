@@ -2,6 +2,7 @@
 
 namespace Src;
 
+use Providers\ConsoleExceptionHandlerServiceProvider;
 use Resta\Foundation\Kernel;
 use Providers\EloquentServiceProvider;
 
@@ -33,7 +34,8 @@ class Manifest extends Kernel
         */
         'providers' => [
 
-            'EloquentServiceProvider' => EloquentServiceProvider::class
+            'EloquentServiceProvider' => EloquentServiceProvider::class,
+            'ConsoleExceptionHandlerServiceProvider' => ConsoleExceptionHandlerServiceProvider::class,
         ],
 
     ];
