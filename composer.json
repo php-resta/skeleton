@@ -27,7 +27,8 @@
         "restapix/resta":"dev-master",
         "ext-curl": "*",
         "ext-dom": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "zendframework/zend-crypt": "^3.3"
     },
     "scripts": {
         "post-install-cmd": [
