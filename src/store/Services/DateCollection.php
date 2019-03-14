@@ -3,29 +3,14 @@
 namespace Store\Services;
 
 use Carbon\Carbon;
-use Resta\Foundation\ApplicationProvider;
+use Carbon\CarbonPeriod;
 
-class DateCollection extends ApplicationProvider
+class DateCollection
 {
     /**
      * @var null
      */
     protected $locale=null;
-
-    /**
-     * @param null $locale
-     * @return object
-     */
-    public function setLocale($locale=null)
-    {
-        $clientLocale=$this->request()->getDefaultLocale();
-
-        $locale=($locale===null) ? Carbon::setLocale($clientLocale) : $locale;
-
-        $this->locale=Carbon::setLocale($locale);
-
-        return $this;
-    }
 
     /**
      * @param $int integer
@@ -34,7 +19,7 @@ class DateCollection extends ApplicationProvider
     public function diff($int)
     {
         if($this->locale===null){
-            $this->setLocale();
+            $this->setLocale(config('app.locale','en'));
         }
 
         return Carbon::createFromTimestamp($int)->timezone(date_default_timezone_get())->diffForHumans();
@@ -47,4 +32,30 @@ class DateCollection extends ApplicationProvider
     {
         return Carbon::now();
     }
+
+    /**
+     * @param $date
+     * @param $period
+     * @return CarbonPeriod
+     */
+    public function period($date,$period)
+    {
+        return CarbonPeriod::create($date, $period);
+    }
+
+    /**
+     * @param null $locale
+     * @return $this
+     */
+    public function setLocale($locale=null)
+    {
+        $clientLocale = request()->getDefaultLocale();
+
+        $locale=($locale===null) ? Carbon::setLocale($clientLocale) : $locale;
+
+        $this->locale = Carbon::setLocale($locale);
+
+        return $this;
+    }
+
 }

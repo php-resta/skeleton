@@ -8,6 +8,7 @@ namespace Store\Traits;
  * @method \Store\Services\GuzzleHttp http($base=array())
  * @method \Store\Services\AppCollection collection
  * @method \Store\Services\Cache cache
+ * @method \Store\Services\DateCollection date($locale='en')
  */
 trait Annotations
 {
@@ -18,8 +19,6 @@ trait Annotations
      */
     public function __call($service,$arg)
     {
-        $arg[]=$this;
-
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
         return \application::annotationsLoaders($service,$arg);
