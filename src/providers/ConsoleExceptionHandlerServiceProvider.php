@@ -26,9 +26,7 @@ class ConsoleExceptionHandlerServiceProvider extends ServiceProviderManager
     {
         // this provider should only be run for the console.
         // the console will show you console errors in a more descriptive and colorful format.
-        if($this->app->console()){
-            (new ConsoleExceptionHandler)->register();
-        }
+        (new ConsoleExceptionHandler)->register();
 
     }
 }
