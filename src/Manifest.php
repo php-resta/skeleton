@@ -4,6 +4,7 @@ namespace Src;
 
 use Resta\Foundation\Kernel;
 use Providers\EloquentServiceProvider;
+use Resta\Contracts\ApplicationContracts;
 use Providers\ConsoleExceptionHandlerServiceProvider;
 
 class Manifest extends Kernel
@@ -39,4 +40,15 @@ class Manifest extends Kernel
         ],
 
     ];
+
+    /**
+     * reverts provider classes to a boolean value.
+     *
+     * @param ApplicationContracts $app
+     * @return void|mixed
+     */
+    protected function providers(ApplicationContracts $app)
+    {
+        $this->app['providers']['ConsoleExceptionHandlerServiceProvider'] = $app->console();
+    }
 }
