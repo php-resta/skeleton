@@ -11,7 +11,6 @@ script:
 - php api controller create mobi controller:users
 - php api controller create mobi controller:products
 - php api controller create mobi controller:blogs
-- php api controller all mobi
 - php api model create mobi model:user
 - php api request create mobi request:user
 - php api exception create mobi exception:user
