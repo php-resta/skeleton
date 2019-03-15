@@ -25,7 +25,7 @@ class ConsoleExceptionHandlerServiceProvider extends ServiceProviderManager
     public function register()
     {
         // this provider should only be run for the console.
-        // this is set in the providers method in the manifest class.
+        // this attribute is set in the providers method in the manifest class.
         // this class will show you console errors in a more descriptive and colorful format.
         (new ConsoleExceptionHandler)->register();
 
