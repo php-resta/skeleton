@@ -8,7 +8,7 @@
 # Resta Api Structure
 
 Developing restfull(presentational) api with php has never been so enjoyable.. We are claiming.You will so love this structure.
-Slogan; If the machine can make itself the code that you write, do not write it.
+Slogan; > <ins> If the machine can make itself the code that you write, do not write it.</ins>
 You can contact me if you want to be contributor in the core of the resta.We need you for a better stable core.
 Resta api offers the ideal structure for your application and gives you great pleasure in writing code.
 
