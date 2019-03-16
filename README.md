@@ -4,10 +4,8 @@
 [![License](https://poser.pugx.org/restapix/resta/license)](https://packagist.org/packages/restapix/resta)
 [![Latest Unstable Version](https://poser.pugx.org/restapix/resta/v/unstable)](//packagist.org/packages/restapix/resta)
 
-# Resta Api Structure
-resta php api restfull framework
 
-# About Resta
+# Resta Api Structure
 
 Developing restfull(presentational) api with php has never been so enjoyable.. We are claiming.You will so love this structure.
 Slogan; If the machine can make itself the code that you write, do not write it.
