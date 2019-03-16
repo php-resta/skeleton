@@ -9,6 +9,8 @@
 
 Developing restfull(presentational) api with php has never been so enjoyable.. We are claiming.You will so love this structure.
 Slogan; If the machine can make itself the code that you write, do not write it.
+You can contact me if you want to be included in the core of the resta.We need you for a better stable core.
+Resta api offers the ideal structure for your application and gives you great pleasure in writing code.
 
 Developments are still in progress. The documentation section of the code will be available in beta soon.
 https://github.com/restapix/resta
