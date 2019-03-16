@@ -18,6 +18,12 @@ https://github.com/restapix/resta
 ## What are the features of the Resta?
 
 - [Very powerful console generator structure]()
+- [Supported component integrity]()
+- [Excellent comfort support]()
+- [Easy and fast manageability.]()
+- [Eloquent or Doctrine Option]()
+- [Excellent model migration relationship]()
+- [A very stable exception management]()
 
 # Quick Start
 
