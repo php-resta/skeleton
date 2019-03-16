@@ -25,7 +25,6 @@ https://github.com/restapix/resta
 $ git clone https://github.com/aligurbuz/resta.git companyName
 $ cd companyName
 $ composer install
-$ composer dump-autoload -o
 ```
 
 - Via Docker
