@@ -18,6 +18,7 @@ https://github.com/restapix/resta
 ## What are the features of the Resta?
 
 - [Very powerful console generator structure]()
+- [Published documentation for each api endpoint.]()
 - [Supported component integrity]()
 - [Excellent comfort support]()
 - [Easy and fast manageability.]()
