@@ -24,6 +24,10 @@ https://github.com/restapix/resta
 - [Eloquent or Doctrine Option]()
 - [Excellent model migration relationship]()
 - [A very stable exception management]()
+- [A manageable versioning capsule]()
+- [Ideally friendly annotation system]()
+- [Multiple supported project management]()
+- [Interchangeable core structure]()
 
 # Quick Start
 
