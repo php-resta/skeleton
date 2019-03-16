@@ -26,7 +26,7 @@ https://github.com/restapix/resta
 - [Excellent model migration relationship]()
 - [A very stable exception management]()
 - [A manageable versioning capsule]()
-- [Ideally friendly annotation system]()
+- [Ide friendly annotation system]()
 - [Multiple supported project management]()
 - [Interchangeable core structure]()
 
