@@ -7,9 +7,8 @@
  */
 require_once 'bootstrapper'.DIRECTORY_SEPARATOR.'ApplicationStart.php';
 
-use Resta\Support\Utils;
 use Resta\Foundation\Application;
 
-$app = new Application(Utils::isRequestConsole());
+$app = new Application(false);
 echo $app->handle();
 
