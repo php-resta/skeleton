@@ -1,0 +1,42 @@
+<?php
+
+namespace Store\Traits;
+
+use Resta\Support\Utils;
+
+trait RepositoryTrait
+{
+    /**
+     * @method adapter
+     * @return mixed
+     */
+    public function adapter()
+    {
+        return app()->resolve($this->getRepositorySourceAdapter());
+    }
+
+    /**
+     * @return string
+     */
+    protected function getRepositorySourcePath()
+    {
+        return app()->namespace()->repository().'\\'.$this->getRepositoryName().'\Source\\'.$this->adapter;
+    }
+
+    /**
+     * @return string
+     */
+    protected function getRepositorySourceAdapter()
+    {
+        return $this->getRepositorySourcePath().'\\'.$this->getRepositoryName().''.$this->adapter;
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getRepositoryName()
+    {
+        return str_replace('Adapter','',Utils::getJustClassName(__CLASS__));
+    }
+
+}
