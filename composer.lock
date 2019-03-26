@@ -2630,12 +2630,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "953d4b96a3831c0b3d6737f38470b670efbb2974"
+                "reference": "90ceed4c54cf7837e9d554e634896c10070e3f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/953d4b96a3831c0b3d6737f38470b670efbb2974",
-                "reference": "953d4b96a3831c0b3d6737f38470b670efbb2974",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/90ceed4c54cf7837e9d554e634896c10070e3f91",
+                "reference": "90ceed4c54cf7837e9d554e634896c10070e3f91",
                 "shasum": ""
             },
             "require": {
@@ -2700,7 +2700,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-03-26T14:08:35+00:00"
+            "time": "2019-03-26T15:01:43+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
