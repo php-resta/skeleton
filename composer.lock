@@ -755,7 +755,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.4",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -800,7 +800,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.4",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -844,16 +844,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.4",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "d327d51f103d2579ca163cfe21dc6f8723b36623"
+                "reference": "05a0f0b4588b6376bfc7213e1a781dd8120e7c8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/d327d51f103d2579ca163cfe21dc6f8723b36623",
-                "reference": "d327d51f103d2579ca163cfe21dc6f8723b36623",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/05a0f0b4588b6376bfc7213e1a781dd8120e7c8e",
+                "reference": "05a0f0b4588b6376bfc7213e1a781dd8120e7c8e",
                 "shasum": ""
             },
             "require": {
@@ -900,20 +900,20 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-03-10T22:31:50+00:00"
+            "time": "2019-03-26T17:13:31+00:00"
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.8.4",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
-                "reference": "e02260a8a2719ca6b71562b13f222e5424c65bdc"
+                "reference": "391134bc87a47b3dfe5cf60df73e5e0080aec220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/pagination/zipball/e02260a8a2719ca6b71562b13f222e5424c65bdc",
-                "reference": "e02260a8a2719ca6b71562b13f222e5424c65bdc",
+                "url": "https://api.github.com/repos/illuminate/pagination/zipball/391134bc87a47b3dfe5cf60df73e5e0080aec220",
+                "reference": "391134bc87a47b3dfe5cf60df73e5e0080aec220",
                 "shasum": ""
             },
             "require": {
@@ -945,20 +945,20 @@
             ],
             "description": "The Illuminate Pagination package.",
             "homepage": "https://laravel.com",
-            "time": "2019-02-18T18:37:54+00:00"
+            "time": "2019-03-18T14:45:00+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.4",
+            "version": "v5.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "07062f5750872a31e086ff37a7c50ac18b8c417c"
+                "reference": "5bce502f0bdb97ebbda0eb4f6cb75455d5a01529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/07062f5750872a31e086ff37a7c50ac18b8c417c",
-                "reference": "07062f5750872a31e086ff37a7c50ac18b8c417c",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/5bce502f0bdb97ebbda0eb4f6cb75455d5a01529",
+                "reference": "5bce502f0bdb97ebbda0eb4f6cb75455d5a01529",
                 "shasum": ""
             },
             "require": {
@@ -1006,7 +1006,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-03-12T13:17:00+00:00"
+            "time": "2019-03-25T21:36:23+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2630,12 +2630,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/restapix/resta.git",
-                "reference": "90ceed4c54cf7837e9d554e634896c10070e3f91"
+                "reference": "38c32570a2c62a48eb5abb37fddb0c008783678c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/90ceed4c54cf7837e9d554e634896c10070e3f91",
-                "reference": "90ceed4c54cf7837e9d554e634896c10070e3f91",
+                "url": "https://api.github.com/repos/restapix/resta/zipball/38c32570a2c62a48eb5abb37fddb0c008783678c",
+                "reference": "38c32570a2c62a48eb5abb37fddb0c008783678c",
                 "shasum": ""
             },
             "require": {
@@ -2700,7 +2700,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-03-26T15:01:43+00:00"
+            "time": "2019-03-27T09:19:30+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
