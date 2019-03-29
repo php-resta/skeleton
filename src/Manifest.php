@@ -19,7 +19,7 @@ class Manifest extends Kernel
     /**
      * this property adds class to the kernel loaders on the user side.
      *
-     * @var array $core
+     * @var array $run
      */
     protected $run = [
 
