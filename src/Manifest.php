@@ -19,9 +19,9 @@ class Manifest extends Kernel
     /**
      * this property adds class to the kernel loaders on the user side.
      *
-     * @var array $app
+     * @var array $core
      */
-    protected $app = [
+    protected $run = [
 
         /*
         |--------------------------------------------------------------------------
@@ -49,6 +49,6 @@ class Manifest extends Kernel
      */
     protected function providers(ApplicationContracts $app)
     {
-        $this->app['providers']['ConsoleExceptionHandlerServiceProvider'] = $app->console();
+        $this->run['providers']['ConsoleExceptionHandlerServiceProvider'] = $app->console();
     }
 }
