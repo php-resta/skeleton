@@ -30,8 +30,8 @@ class Response
      * @param $outputter
      * @return string
      */
-    public function xml($outputter){
-
+    public function xml($outputter)
+    {
         header('Content-type:application/xml;charset=utf-8');
         return ArrayToXml::convert($outputter);
     }
