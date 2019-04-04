@@ -13,8 +13,8 @@ class Response
      * @param $outputter
      * @return mixed
      */
-    public function json($outputter){
-
+    public function json($outputter)
+    {
         //header set and symfony response call
         header('Content-type:application/json;charset=utf-8');
         $response = new HttpResponse();
