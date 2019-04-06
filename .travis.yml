@@ -19,6 +19,7 @@ script:
 - php api command create mobi command:post
 - php api post handle mobi
 - php api factory create mobi factory:products
+- php api factory create mobi factory:products resource:cakes
 - php api provider create mobi provider:cacheServiceProvider
 - php api provider create cacheServiceProvider
 - php api route list mobi
