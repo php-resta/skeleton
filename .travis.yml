@@ -5,7 +5,6 @@ php:
 - '7.2'
 script:
 - composer dump-autoload -o
-- php api key generate
 - php api env create mobi
 - php api project create mobi
 - php api controller create mobi controller:users
