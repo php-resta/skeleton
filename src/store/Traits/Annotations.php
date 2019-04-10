@@ -7,7 +7,7 @@ namespace Store\Traits;
  * @method \Predis\Client redis
  * @method \Store\Services\GuzzleHttp http($base=array())
  * @method \Store\Services\AppCollection collection
- * @method \Store\Services\Cache cache
+ * @method \Resta\Cache\CacheManager cache
  * @method \Store\Services\Crypt crypt
  * @method \Store\Services\DateCollection date($locale='en')
  */

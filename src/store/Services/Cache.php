@@ -9,7 +9,7 @@ class Cache
     /**
      * @var string $file
      */
-    protected $adapter='file';
+    protected $adapter = 'file';
 
     /**
      * @var $cache FilesystemAdapter
@@ -24,7 +24,7 @@ class Cache
     /**
      * @var int $expire
      */
-    protected $expire=30;
+    protected $expire = 30;
 
     /**
      * return mixed
@@ -32,11 +32,14 @@ class Cache
     public function file()
     {
         $this->cache = new FilesystemAdapter(
-        // the subdirectory of the main cache directory where cache items are stored
+
+            // the subdirectory of the main cache directory where cache items are stored
             $namespace = '',
+
             // in seconds; applied to cache items that don't define their own lifetime
             // 0 means to store the cache items indefinitely (i.e. until the files are deleted)
             $defaultLifetime = $this->expire,
+
             // the main cache directory (the application needs read-write permissions on it)
             // if none is specified, a directory is created inside the system temporary directory
             $directory=app()->path()->appResourche().'/Cache'
@@ -52,7 +55,7 @@ class Cache
     {
         //name variable is
         //the name of the cache data set to be created.
-        $this->name=$name;
+        $this->name = $name;
         return $this;
     }
 
@@ -64,13 +67,14 @@ class Cache
     {
         //Cache data is set at the time.
         //Data will be valid in this time.
-        $this->expire=$expire;
+        $this->expire = $expire;
         return $this;
     }
 
     /**
      * @param callable $callback
      * @return mixed
+     *
      * @throws \Psr\Cache\InvalidArgumentException
      */
     public function get(callable $callback)
@@ -80,11 +84,11 @@ class Cache
 
         //With backtrace, we can specify an automatic name.
         //This will automatically detect which service is running in the service.
-        $backtrace=debug_backtrace()[1];
+        $backtrace = debug_backtrace()[1];
 
         //If name is null, we name it with backtrace.
         if($this->name===null) {
-            $this->name=md5($backtrace['function'].'_'.$backtrace['class']);
+            $this->name = md5($backtrace['function'].'_'.$backtrace['class']);
         }
 
         // retrieve the cache item
