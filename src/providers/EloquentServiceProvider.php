@@ -7,18 +7,8 @@ use Illuminate\Pagination\Paginator;
 use Resta\Provider\ServiceProviderManager;
 use Store\Packages\Database\Eloquent\Connection as Eloquent;
 
-class EloquentServiceProvider extends ServiceProviderManager implements BootContracts
+class EloquentServiceProvider extends ServiceProviderManager
 {
-    /**
-     * boot service provider
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
-
     /**
      * Eloquent boot
      *

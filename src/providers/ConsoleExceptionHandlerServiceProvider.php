@@ -8,16 +8,6 @@ use NunoMaduro\Collision\Provider as ConsoleExceptionHandler;
 class ConsoleExceptionHandlerServiceProvider extends ServiceProviderManager
 {
     /**
-     * boot service provider
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
-    }
-
-    /**
      * register service provider
      *
      * @return void
