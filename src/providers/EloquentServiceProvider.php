@@ -2,7 +2,6 @@
 
 namespace Providers;
 
-use Resta\Contracts\BootContracts;
 use Illuminate\Pagination\Paginator;
 use Resta\Provider\ServiceProviderManager;
 use Store\Packages\Database\Eloquent\Connection as Eloquent;
