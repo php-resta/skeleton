@@ -9,6 +9,8 @@ script:
 - php api env create mobi
 - php api project create mobi
 - php api controller create mobi controller:users
+- php api controller create mobi controller:users resource:blog
+- php api controller create mobi controller:users file:me
 - php api controller create mobi controller:products
 - php api controller create mobi controller:blogs
 - php api model create mobi model:user
