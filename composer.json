@@ -1,5 +1,5 @@
 {
-    "name": "aligurbuz/resta",
+    "name": "php-resta/skeleton",
     "type": "library",
     "description": "resta php api restfull framework",
     "keywords": ["php","restapi","restfull"],
