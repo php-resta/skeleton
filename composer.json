@@ -24,7 +24,7 @@
         "files": []
     },
     "require": {
-        "restapix/resta":"dev-master",
+        "php-resta/resta-core":"dev-master",
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*",
