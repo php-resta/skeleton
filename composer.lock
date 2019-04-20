@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82f31edd89e31db268c798d44ee26c8c",
+    "content-hash": "e5ec05bed1223cbb247f89cc3d245beb",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -1740,6 +1740,85 @@
             "time": "2018-02-18T17:39:01+00:00"
         },
         {
+            "name": "php-resta/resta-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-resta/resta-core.git",
+                "reference": "4adbc1f72250e5f98d3e2caa37f278d037ba3719"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/4adbc1f72250e5f98d3e2caa37f278d037ba3719",
+                "reference": "4adbc1f72250e5f98d3e2caa37f278d037ba3719",
+                "shasum": ""
+            },
+            "require": {
+                "aligurbuz/lingua": "^1.0",
+                "aligurbuz/migratio": "^2.0",
+                "defuse/php-encryption": "^2.1",
+                "doctrine/dbal": "^2.7",
+                "fzaninotto/faker": "^1.7",
+                "guzzlehttp/guzzle": "^6.2",
+                "illuminate/database": "^5.4",
+                "illuminate/pagination": "^5.4",
+                "league/pipeline": "^1.0",
+                "mobiledetect/mobiledetectlib": "^2.8",
+                "monolog/monolog": "^1.22",
+                "nesbot/carbon": "^1.21",
+                "ocramius/proxy-manager": "~1.0|~2.0",
+                "optimus/onion": "~1.0",
+                "php-di/php-di": "^5.4",
+                "phpunit/phpunit": "^6.3",
+                "predis/predis": "^1.0",
+                "spatie/array-to-xml": "^2.3",
+                "symfony/cache": "^3.2",
+                "symfony/console": "^3.2",
+                "symfony/debug": "^3.2",
+                "symfony/event-dispatcher": "^3.2",
+                "symfony/filesystem": "^3.2",
+                "symfony/finder": "^4.0",
+                "symfony/http-foundation": "^3.2",
+                "symfony/process": "^4.0",
+                "symfony/security-csrf": "^3.2",
+                "symfony/stopwatch": "^4.1",
+                "symfony/var-dumper": "*",
+                "symfony/yaml": "2.*",
+                "twig/twig": "~1.0",
+                "vlucas/phpdotenv": "^2.4",
+                "zendframework/zend-db": "^2.9",
+                "zendframework/zend-validator": "^2.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Resta\\": "src/resta/",
+                    "Resta\\Core\\Tests\\": "tests"
+                },
+                "files": [
+                    "src/resta/Foundation/ApplicationHelpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "aligurbuz",
+                    "email": "galiant781@gmail.com"
+                }
+            ],
+            "description": "resta php api restfull framework",
+            "homepage": "https://github.com/restapix/resta",
+            "keywords": [
+                "php",
+                "restapi",
+                "restfull"
+            ],
+            "time": "2019-04-20T13:28:33+00:00"
+        },
+        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0.1",
             "source": {
@@ -2676,85 +2755,6 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
-        },
-        {
-            "name": "restapix/resta",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/restapix/resta.git",
-                "reference": "12ecb8a74c222b8f913ae9644f31a4b67fe5b5ac"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/restapix/resta/zipball/12ecb8a74c222b8f913ae9644f31a4b67fe5b5ac",
-                "reference": "12ecb8a74c222b8f913ae9644f31a4b67fe5b5ac",
-                "shasum": ""
-            },
-            "require": {
-                "aligurbuz/lingua": "^1.0",
-                "aligurbuz/migratio": "^2.0",
-                "defuse/php-encryption": "^2.1",
-                "doctrine/dbal": "^2.7",
-                "fzaninotto/faker": "^1.7",
-                "guzzlehttp/guzzle": "^6.2",
-                "illuminate/database": "^5.4",
-                "illuminate/pagination": "^5.4",
-                "league/pipeline": "^1.0",
-                "mobiledetect/mobiledetectlib": "^2.8",
-                "monolog/monolog": "^1.22",
-                "nesbot/carbon": "^1.21",
-                "ocramius/proxy-manager": "~1.0|~2.0",
-                "optimus/onion": "~1.0",
-                "php-di/php-di": "^5.4",
-                "phpunit/phpunit": "^6.3",
-                "predis/predis": "^1.0",
-                "spatie/array-to-xml": "^2.3",
-                "symfony/cache": "^3.2",
-                "symfony/console": "^3.2",
-                "symfony/debug": "^3.2",
-                "symfony/event-dispatcher": "^3.2",
-                "symfony/filesystem": "^3.2",
-                "symfony/finder": "^4.0",
-                "symfony/http-foundation": "^3.2",
-                "symfony/process": "^4.0",
-                "symfony/security-csrf": "^3.2",
-                "symfony/stopwatch": "^4.1",
-                "symfony/var-dumper": "*",
-                "symfony/yaml": "2.*",
-                "twig/twig": "~1.0",
-                "vlucas/phpdotenv": "^2.4",
-                "zendframework/zend-db": "^2.9",
-                "zendframework/zend-validator": "^2.10"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Resta\\": "src/resta/",
-                    "Resta\\Core\\Tests\\": "tests"
-                },
-                "files": [
-                    "src/resta/Foundation/ApplicationHelpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "aligurbuz",
-                    "email": "galiant781@gmail.com"
-                }
-            ],
-            "description": "resta php api restfull framework",
-            "homepage": "https://github.com/restapix/resta",
-            "keywords": [
-                "php",
-                "restapi",
-                "restfull"
-            ],
-            "time": "2019-04-19T13:09:10+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3947,7 +3947,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -5472,7 +5472,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "restapix/resta": 20
+        "php-resta/resta-core": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
