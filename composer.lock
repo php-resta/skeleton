@@ -1745,12 +1745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "4adbc1f72250e5f98d3e2caa37f278d037ba3719"
+                "reference": "b5151b67c9b34e04fea8c29b53f9731f86b3850c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/4adbc1f72250e5f98d3e2caa37f278d037ba3719",
-                "reference": "4adbc1f72250e5f98d3e2caa37f278d037ba3719",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b5151b67c9b34e04fea8c29b53f9731f86b3850c",
+                "reference": "b5151b67c9b34e04fea8c29b53f9731f86b3850c",
                 "shasum": ""
             },
             "require": {
@@ -1810,13 +1810,13 @@
                 }
             ],
             "description": "resta php api restfull framework",
-            "homepage": "https://github.com/restapix/resta",
+            "homepage": "https://github.com/php-resta/resta-core",
             "keywords": [
                 "php",
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-04-20T13:28:33+00:00"
+            "time": "2019-04-20T13:46:25+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
