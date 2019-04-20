@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e3de8997326631e780fd0979eab40e8",
+    "content-hash": "82f31edd89e31db268c798d44ee26c8c",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -5470,11 +5470,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "restapix/resta": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*",
