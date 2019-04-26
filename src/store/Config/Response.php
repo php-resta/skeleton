@@ -26,8 +26,9 @@ return [
     */
     'meta' => [
         'meta'=>[
-            'success'=>core()->responseSuccess,
-            'status'=>core()->responseStatus,
+            'success'       => app()->get('responseSuccess'),
+            'status'        => app()->get('responseStatus'),
+            'illuminator'   => app()->get('illuminator')
         ]
     ],
 
