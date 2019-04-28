@@ -1745,12 +1745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "127fda49e57afc7c2793c4156b4b3ae240a47da7"
+                "reference": "3c593b1b16c31c929370ced965d3edf981543fd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/127fda49e57afc7c2793c4156b4b3ae240a47da7",
-                "reference": "127fda49e57afc7c2793c4156b4b3ae240a47da7",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/3c593b1b16c31c929370ced965d3edf981543fd7",
+                "reference": "3c593b1b16c31c929370ced965d3edf981543fd7",
                 "shasum": ""
             },
             "require": {
@@ -1816,7 +1816,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-04-26T15:35:37+00:00"
+            "time": "2019-04-28T10:40:13+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4700,16 +4700,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.39.1",
+            "version": "v1.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec"
+                "reference": "34021eec1d4648518aabedaf27d3915439c35933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec",
-                "reference": "23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/34021eec1d4648518aabedaf27d3915439c35933",
+                "reference": "34021eec1d4648518aabedaf27d3915439c35933",
                 "shasum": ""
             },
             "require": {
@@ -4724,7 +4724,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.39-dev"
+                    "dev-master": "1.40-dev"
                 }
             },
             "autoload": {
@@ -4762,7 +4762,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-04-16T17:12:57+00:00"
+            "time": "2019-04-28T06:53:10+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
