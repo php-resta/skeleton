@@ -25,5 +25,8 @@ class QueueServiceProvider extends ServiceProviderManager
 
         // Make this Capsule instance available globally via static methods... (optional)
         $queue->setAsGlobal();
+
+        //container register for queue
+        $this->app->register('queue',$queue);
     }
 }
