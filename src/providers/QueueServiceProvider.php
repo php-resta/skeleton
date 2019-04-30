@@ -11,22 +11,27 @@ use Illuminate\Database\DatabaseServiceProvider;
 class QueueServiceProvider extends ServiceProviderManager
 {
     /**
+     * @var \Illuminate\Contracts\Foundation\Application $container
+     */
+    protected $container;
+
+    /**
      * register service provider
      *
      * @return void
      */
     public function register()
     {
-        $container = new Container();
+        $this->container = new Container();
 
-        $eventServiceProvider = new EventServiceProvider($container);
+        $eventServiceProvider = new EventServiceProvider($this->container);
         $eventServiceProvider->register();
 
-        $databaseServiceProvider = new DatabaseServiceProvider($container);
+        $databaseServiceProvider = new DatabaseServiceProvider($this->container);
         $databaseServiceProvider->register();
         $databaseServiceProvider->boot();
 
-        $queue = new Queue($container);
+        $queue = new Queue($this->container);
 
         $queue->addConnection([
             'driver' => 'database',
