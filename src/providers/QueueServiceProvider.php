@@ -2,8 +2,10 @@
 
 namespace Providers;
 
+use Illuminate\Container\Container;
 use Resta\Provider\ServiceProviderManager;
 use Illuminate\Queue\Capsule\Manager as Queue;
+use Illuminate\Database\DatabaseServiceProvider;
 
 class QueueServiceProvider extends ServiceProviderManager
 {
@@ -14,7 +16,13 @@ class QueueServiceProvider extends ServiceProviderManager
      */
     public function register()
     {
-        $queue = new Queue;
+        $container = new Container();
+
+        $databaseServiceProvider = new DatabaseServiceProvider($container);
+        $databaseServiceProvider->register();
+        $databaseServiceProvider->boot();
+
+        $queue = new Queue($container);
 
         $queue->addConnection([
             'driver' => 'database',
