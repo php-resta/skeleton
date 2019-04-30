@@ -4,6 +4,7 @@ namespace Providers;
 
 use Illuminate\Container\Container;
 use Resta\Provider\ServiceProviderManager;
+use Illuminate\Events\EventServiceProvider;
 use Illuminate\Queue\Capsule\Manager as Queue;
 use Illuminate\Database\DatabaseServiceProvider;
 
@@ -17,6 +18,9 @@ class QueueServiceProvider extends ServiceProviderManager
     public function register()
     {
         $container = new Container();
+
+        $eventServiceProvider = new EventServiceProvider($container);
+        $eventServiceProvider->register();
 
         $databaseServiceProvider = new DatabaseServiceProvider($container);
         $databaseServiceProvider->register();
