@@ -3,6 +3,7 @@
 namespace Src;
 
 use Resta\Foundation\Kernel;
+use Providers\QueueServiceProvider;
 use Providers\EloquentServiceProvider;
 use Resta\Contracts\ApplicationContracts;
 use Providers\ConsoleExceptionHandlerServiceProvider;
@@ -35,6 +36,7 @@ class Manifest extends Kernel
         */
         'providers' => [
 
+            'QueueServiceProvider'                      => QueueServiceProvider::class,
             'EloquentServiceProvider'                   => EloquentServiceProvider::class,
             'ConsoleExceptionHandlerServiceProvider'    => ConsoleExceptionHandlerServiceProvider::class,
         ],
