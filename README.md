@@ -13,7 +13,7 @@ You can contact me if you want to be contributor in the core of the resta.We nee
 Resta api offers the ideal structure for your application and gives you great pleasure in writing code.
 
 Developments are still in progress. The documentation section of the code will be available in beta soon.
-https://github.com/restapix/resta
+https://github.com/php-resta/skeleton
 
 ## What are the features of the Resta?
 
