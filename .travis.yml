@@ -24,4 +24,5 @@ script:
 - php api factory create mobi factory:products resource:cakes
 - php api provider create mobi provider:cacheServiceProvider
 - php api provider create cacheServiceProvider
+- php api helper create mobi helper:general
 - php api route list mobi
