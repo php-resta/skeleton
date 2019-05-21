@@ -25,4 +25,5 @@ script:
 - php api provider create mobi provider:cacheServiceProvider
 - php api provider create cacheServiceProvider
 - php api helper create mobi helper:general
+- php api test create mobi test:unit
 - php api route list mobi
