@@ -11,7 +11,6 @@ class Config implements AccessorContracts
      */
     public function get()
     {
-        dd('asa');
         return 'get';
     }
 
