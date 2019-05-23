@@ -24,10 +24,11 @@
         "files": []
     },
     "require": {
-        "php-resta/resta-core":"dev-master",
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*",
+        "php-resta/resta-core": "dev-master",
+        "zendframework/zend-config": "^3.2",
         "zendframework/zend-crypt": "^3.3"
     },
     "config": {
