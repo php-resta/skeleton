@@ -144,7 +144,7 @@ class Exception
              *
              * @define Exception thrown if a value does not adhere to a defined valid data domain.
              */
-            'DomainException'=>401,
+            'DomainException'=>404,
 
             /**
              * InvalidArgumentException.
