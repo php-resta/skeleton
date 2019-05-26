@@ -2,8 +2,11 @@
 
 namespace Store\Config;
 
-class HttpHeaders {
-
+class HttpHeaders
+{
+    /**
+     * @var array
+     */
     public static $httpHeaders=[
 
         'host',
