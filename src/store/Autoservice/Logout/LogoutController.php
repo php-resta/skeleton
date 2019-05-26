@@ -10,7 +10,7 @@ class LogoutController
     public function postIndexAction()
     {
         return [
-            'authenticate'=>[
+            'authenticate' => [
                 'logout'   => auth()->logout()
             ]
         ];

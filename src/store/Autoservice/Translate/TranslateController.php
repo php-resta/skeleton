@@ -16,7 +16,7 @@ class TranslateController extends ApplicationProvider
     public function getIndexAction()
     {
         return [
-            'data'=>trans(get('trans'))
+            'data' => trans(get('trans'))
         ];
     }
 

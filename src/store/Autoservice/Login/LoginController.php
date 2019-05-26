@@ -10,7 +10,7 @@ class LoginController
     public function postIndexAction()
     {
         return [
-            'authenticate'=>auth()->login()
+            'authenticate' => auth()->login()
         ];
     }
 
