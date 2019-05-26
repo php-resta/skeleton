@@ -5,7 +5,7 @@ namespace Store\Packages\PushNotification\Slack;
 class SlackConnection
 {
     /**
-     * @var $hook
+     * @var string
      */
     protected $hook;
 

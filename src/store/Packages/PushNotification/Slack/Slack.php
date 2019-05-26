@@ -5,12 +5,12 @@ namespace Store\Packages\PushNotification\Slack;
 class Slack
 {
     /**
-     * @var $hook
+     * @var string
      */
     protected static $hook;
 
     /**
-     * @var $channel
+     * @var string
      */
     protected static $channel;
 
@@ -21,11 +21,11 @@ class Slack
     public static function channel($channel='default')
     {
         //we get configuration settings for slack.
-        $config=config('slack.'.$channel);
+        $config = config('slack.'.$channel);
 
         //channel and hook information.
-        self::$channel=$config['channel'];
-        self::$hook=$config['hook'];
+        self::$channel = $config['channel'];
+        self::$hook = $config['hook'];
 
         //return static object
         return new static();
