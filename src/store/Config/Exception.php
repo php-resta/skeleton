@@ -4,11 +4,15 @@ namespace Store\Config;
 
 class Exception
 {
-
     /**
      * project exception handler for local.
      *
-     * class exception container call access for every service.
+     * @param null $errNo
+     * @param null $errStr
+     * @param null $errFile
+     * @param null $errLine
+     * @param null $errType
+     * @param null $lang
      * @return array
      */
     public static function local($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null)
@@ -17,38 +21,28 @@ class Exception
 
             /**
              * Error file.
-             * @key errorFile
-             * @value $errFile
              */
-            'errorFile'=>$errFile,
+            'errorFile' => $errFile,
 
             /**
              * Error Line.
-             * @key errorLine
-             * @value $errLine
              */
-            'errorLine'=>$errLine,
+            'errorLine' => $errLine,
 
             /**
              * Error Type.
-             * @key errorType
-             * @value $errType
              */
-            'errorType'=>$errType,
+            'errorType' => $errType,
 
             /**
              * Error String.
-             * @key errorString
-             * @value $errStr
              */
-            'errorMessage'=>$errStr,
+            'errorMessage' => $errStr,
 
             /**
              * Error No.
-             * @key errorNo
-             * @value $errNo
              */
-            'errorNo'=>$errNo,
+            'errorNo' => $errNo,
         ];
     }
 
@@ -59,6 +53,7 @@ class Exception
      * @param null $errLine
      * @param null $errType
      * @param null $lang
+     * @param null $external
      * @return array
      */
     public static function production($errNo=null, $errStr=null, $errFile=null, $errLine=null,$errType=null, $lang=null,$external=null)
@@ -68,36 +63,26 @@ class Exception
 
             /**
              * Error file.
-             * @key errorFile
-             * @value $errFile
              */
             //'errorFile'=>$errFile,
 
             /**
              * Error Line.
-             * @key errorLine
-             * @value $errLine
              */
             //'errorLine'=>$errLine,
 
             /**
              * Error Type.
-             * @key errorType
-             * @value $errType
              */
             //'errorType'=>$errType,
 
             /**
              * Error String.
-             * @key errorString
-             * @value $errStr
              */
             'errorMessage'=>$errStr,
 
             /**
              * Error No.
-             * @key errorNo
-             * @value $errNo
              */
             //'errorNo'=>$errNo,
         ];
@@ -108,12 +93,12 @@ class Exception
      *
      * class exception type codes call access for every service.
      *
-     * @param string
+     * @param null|string $type
      * @return array
      */
     public static function exceptionTypeCodes($type=null){
 
-        $exceptionTypes=[
+        $exceptionTypes = [
 
             /**
              * UndefinedCallException.
@@ -121,7 +106,7 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined function
              * or if some arguments are missing.
              */
-            'Undefined'=>500,
+            'Undefined' => 500,
 
             /**
              * BadFunctionCallException.
@@ -129,7 +114,7 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined function
              * or if some arguments are missing.
              */
-            'BadFunctionCallException'=>500,
+            'BadFunctionCallException' => 500,
 
             /**
              * BadMethodCallException.
@@ -137,28 +122,28 @@ class Exception
              * @define Exception thrown if a callback refers to an undefined method
              * or if some arguments are missing.
              */
-            'BadMethodCallException'=>500,
+            'BadMethodCallException' => 500,
 
             /**
              * DomainException.
              *
              * @define Exception thrown if a value does not adhere to a defined valid data domain.
              */
-            'DomainException'=>404,
+            'DomainException' => 404,
 
             /**
              * InvalidArgumentException.
              *
              * @define Exception thrown if an argument is not of the expected type.
              */
-            'InvalidArgumentException'=>400,
+            'InvalidArgumentException' => 400,
 
             /**
              * LengthException.
              *
              * @define Exception thrown if a length is invalid.
              */
-            'LengthException'=>400,
+            'LengthException' => 400,
 
             /**
              * LogicException.
@@ -166,7 +151,7 @@ class Exception
              * @define Exception that represents error in the program logic.
              * This kind of exception should lead directly to a fix in your code.
              */
-            'LogicException'=>400,
+            'LogicException' => 400,
 
             /**
              * OutOfBoundsException.
@@ -174,7 +159,7 @@ class Exception
              * @define Exception thrown if a value is not a valid key.
              * This represents errors that cannot be detected at compile time.
              */
-            'OutOfBoundsException'=>400,
+            'OutOfBoundsException' => 400,
 
             /**
              * OutOfRangeException.
@@ -182,14 +167,14 @@ class Exception
              * @define Exception thrown when an illegal index was requested.
              * This represents errors that should be detected at compile time.
              */
-            'OutOfRangeException'=>400,
+            'OutOfRangeException' => 400,
 
             /**
              * OverflowException.
              *
              * @define Exception thrown when adding an element to a full container.
              */
-            'OverflowException'=>400,
+            'OverflowException' => 400,
 
             /**
              * RangeException.
@@ -198,14 +183,14 @@ class Exception
              * Normally this means there was an arithmetic error other than under/overflow.
              * This is the runtime version of DomainException.
              */
-            'RangeException'=>400,
+            'RangeException' => 400,
 
             /**
              * RuntimeException.
              *
              * @define Exception thrown if an error which can only be found on runtime occurs.
              */
-            'RuntimeException'=>400,
+            'RuntimeException' => 400,
 
             /**
              * UnderflowException.
@@ -213,7 +198,7 @@ class Exception
              * @define Exception thrown when performing an invalid operation on an empty container,
              * such as removing an element.
              */
-            'UnderflowException'=>400,
+            'UnderflowException' => 400,
 
             /**
              * UnexpectedValueException.
@@ -222,15 +207,13 @@ class Exception
              * Typically this happens when a function calls another function and expects
              * the return value to be of a certain type or value not including arithmetic or buffer related errors.
              */
-            'UnexpectedValueException'=>400
+            'UnexpectedValueException' => 400
         ];
 
         if($type!==null){
             return (isset($exceptionTypes[$type])) ? $exceptionTypes[$type] : $exceptionTypes['BadFunctionCallException'] ;
         }
         return $exceptionTypes;
-
-
     }
 
 }
