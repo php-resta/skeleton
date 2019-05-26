@@ -26,9 +26,9 @@ class Connection
     /**
      * @return array
      */
-    protected function configuration()
+    protected function configuration() : array
     {
-        $settings=config('database');
+        $settings = config('database');
 
         $connectionParams = array(
             'dbname'    => $settings['database'],
