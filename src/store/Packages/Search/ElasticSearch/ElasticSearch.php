@@ -7,17 +7,17 @@ use Elasticsearch\ClientBuilder as Search;
 class ElasticSearch
 {
     /**
-     * @var $client
+     * @var string
      */
     protected $client;
 
     /**
-     * @var $type
+     * @var string
      */
     protected $type;
 
     /**
-     * @var $search
+     * @var string
      */
     protected $search;
 
@@ -26,11 +26,8 @@ class ElasticSearch
      */
     public function __construct()
     {
-        /**
-         * @var $config array
-         */
-        $config=config('elasticsearch.hosts');
-        $this->client=Search::create()->setHosts($config)->build();
+        $config = config('elasticsearch.hosts');
+        $this->client = Search::create()->setHosts($config)->build();
     }
 
     /**
@@ -188,10 +185,10 @@ class ElasticSearch
     public function search($match,$fields=array())
     {
 
-        $matchFields=config('elasticsearch.'.$this->type.'.fields');
+        $matchFields = config('elasticsearch.'.$this->type.'.fields');
 
         if(count($fields)){
-            $matchFields=$fields;
+            $matchFields = $fields;
         }
 
         $params = [
@@ -236,16 +233,16 @@ class ElasticSearch
      */
     public function get()
     {
-        $sources=$this->search['hits']['hits'];
+        $sources = $this->search['hits']['hits'];
         
         $list=[];
 
         foreach ($sources as $key=>$source) {
 
-            $list[$key]['id']=$source['_id'];
-            $list[$key]['score']=$source['_score'];
+            $list[$key]['id'] = $source['_id'];
+            $list[$key]['score'] = $source['_score'];
             foreach ($source['_source'] as $resourceKey=>$resource){
-                $list[$key][$resourceKey]=$resource;
+                $list[$key][$resourceKey] = $resource;
             }
         }
 
@@ -258,7 +255,7 @@ class ElasticSearch
      */
     public function type($type)
     {
-        $this->type=$type;
+        $this->type = $type;
         return $this;
 
     }
