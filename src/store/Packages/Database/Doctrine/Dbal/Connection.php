@@ -7,8 +7,8 @@ use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Driver\Statement;
 
-class Connection {
-
+class Connection
+{
     /**
      * @var object $connection
      */
@@ -17,8 +17,8 @@ class Connection {
     /**
      * Connection constructor.
      */
-    public function __construct() {
-
+    public function __construct()
+    {
         $config = new Configuration();
         $this->connection = DriverManager::getConnection($this->configuration(), $config);
     }
