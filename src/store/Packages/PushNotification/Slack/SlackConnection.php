@@ -15,7 +15,7 @@ class SlackConnection
      */
     public function __construct($hook)
     {
-        $this->hook=$hook;
+        $this->hook = $hook;
     }
 
     /**
