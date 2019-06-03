@@ -11,3 +11,4 @@ src/store/commands/*
 !important tests/index.html
 .DS_Store
 nbproject
+docker/mysql/*
