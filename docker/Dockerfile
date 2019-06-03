@@ -10,6 +10,7 @@ RUN apt-get update \
         zlib1g-dev \
         git \
         zip \
-        unzip
+        unzip \
+        nano
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

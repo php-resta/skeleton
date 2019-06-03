@@ -27,6 +27,6 @@ services:
     php:
         container_name: php
         build: .
-        image: php:fpm
+        image: php7.4:fpm
         volumes:
         - .:/var/www/html
