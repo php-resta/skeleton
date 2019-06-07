@@ -14,3 +14,4 @@ RUN apt-get update \
         nano
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN echo 'alias api="php api"' >> ~/.bashrc
