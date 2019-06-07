@@ -1,21 +1,23 @@
 version: '3'
 services:
     web:
-        container_name: nginx
+        container_name: nginx-resta
         image: nginx:latest
+        restart: always
         ports:
         - "80:80"
         volumes:
         - .:/var/www/html/app
         - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
     redis:
-        container_name: redis
+        container_name: redis-resta
         image: redis
+        restart: always
         ports:
         - "6379:6379"
     mysql:
-        container_name: mysql
-        image: mysql
+        container_name: mysql-resta
+        image: mysql:latest
         ports:
         - "33061:3306"
         - "3306:3306"
@@ -23,11 +25,12 @@ services:
         - ./docker/mysql:/var/lib/mysql
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: resta
     php:
-        container_name: php
+        container_name: php-resta
         build: docker
         image: php:fpm
+        restart: always
         volumes:
         - .:/var/www/html/app
 networks:
