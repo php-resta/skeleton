@@ -7,6 +7,35 @@
     "content-hash": "38f65f879f8e706569d7e365c4bb39d2",
     "packages": [
         {
+            "name": "aligurbuz/lingua",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aligurbuz/Lingua.git",
+                "reference": "db49c23db4f5cf8da3e4d44999d98c68e7a8e08c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aligurbuz/Lingua/zipball/db49c23db4f5cf8da3e4d44999d98c68e7a8e08c",
+                "reference": "db49c23db4f5cf8da3e4d44999d98c68e7a8e08c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lingua\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "aligurbuz",
+                    "email": "galiant781@gmail.com"
+                }
+            ],
+            "time": "2019-06-08T12:20:38+00:00"
+        },
+        {
             "name": "aligurbuz/migratio",
             "version": "v2.7",
             "source": {
@@ -1982,15 +2011,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "0cac028bc76ad94e81cfaa43823024f5d2485ea3"
+                "reference": "72bfb752a8192aab33f6d438821675b5e61d07a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/0cac028bc76ad94e81cfaa43823024f5d2485ea3",
-                "reference": "0cac028bc76ad94e81cfaa43823024f5d2485ea3",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/72bfb752a8192aab33f6d438821675b5e61d07a0",
+                "reference": "72bfb752a8192aab33f6d438821675b5e61d07a0",
                 "shasum": ""
             },
             "require": {
+                "aligurbuz/lingua": "dev-master",
                 "aligurbuz/migratio": "^2.0",
                 "defuse/php-encryption": "^2.1",
                 "doctrine/dbal": "^2.7",
@@ -2057,7 +2087,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-06-08T11:50:37+00:00"
+            "time": "2019-06-08T12:29:23+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
