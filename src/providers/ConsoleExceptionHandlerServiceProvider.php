@@ -2,6 +2,7 @@
 
 namespace Providers;
 
+use Resta\Support\Utils;
 use Resta\Provider\ServiceProviderManager;
 use NunoMaduro\Collision\Provider as ConsoleExceptionHandler;
 
@@ -17,7 +18,8 @@ class ConsoleExceptionHandlerServiceProvider extends ServiceProviderManager
         // this provider should only be run for the console.
         // this attribute is set in the providers method in the manifest class.
         // this class will show you console errors in a more descriptive and colorful format.
-        (new ConsoleExceptionHandler)->register();
-
+        if(Utils::isNamespaceExists(ConsoleExceptionHandler::class)){
+            (new ConsoleExceptionHandler)->register();
+        }
     }
 }
