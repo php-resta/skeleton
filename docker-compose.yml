@@ -17,7 +17,7 @@ services:
         - "6379:6379"
     mysql:
         container_name: mysql-resta
-        image: mysql:latest
+        image: mysql:5.7
         ports:
         - "33061:3306"
         - "3306:3306"
@@ -26,6 +26,9 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: resta
+        networks:
+          default:
+            ipv4_address: 172.10.0.5
     php:
         container_name: php-resta
         build: docker
