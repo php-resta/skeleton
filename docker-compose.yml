@@ -34,7 +34,7 @@ services:
             ipv4_address: 172.10.0.5
     php:
         container_name: php-resta
-        build: docker
+        build: .
         image: php:fpm
         restart: always
         volumes:
