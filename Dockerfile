@@ -17,8 +17,3 @@ RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/
 
 RUN echo 'alias api="php api"' >> ~/.bashrc
 RUN echo 'cd /var/www/html/app' >> ~/.bashrc
-
-WORKDIR /var/www/html/app
-
-COPY ./ ./
-RUN composer install
