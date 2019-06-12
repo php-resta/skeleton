@@ -11,7 +11,12 @@ RUN apt-get update \
         git \
         zip \
         unzip \
-        nano
+        nano \
+        openssl \
+        libssl-dev \
+        libcurl4-openssl-dev
+RUN pecl install mongodb
+RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 

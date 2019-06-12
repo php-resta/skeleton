@@ -12,3 +12,4 @@ src/store/commands/*
 .DS_Store
 nbproject
 docker/mysql/*
+docker/mongo/*

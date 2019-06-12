@@ -39,6 +39,16 @@ services:
         restart: always
         volumes:
         - .:/var/www/html/app
+    mongo:
+        container_name: mongo-resta
+        image: mongo
+        ports:
+          - "27017:27017"
+        volumes:
+          - ./docker/mongo:/data/db
+        networks:
+          default:
+            ipv4_address: 172.10.0.7
 networks:
   default:
       driver: bridge
