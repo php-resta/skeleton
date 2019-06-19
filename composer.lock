@@ -751,7 +751,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -802,7 +802,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -847,7 +847,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -891,16 +891,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "196dc9dc422d8489ff060c681be567e8483148d9"
+                "reference": "12d54c516df34c668c55a4636f7a3c921ada9c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/196dc9dc422d8489ff060c681be567e8483148d9",
-                "reference": "196dc9dc422d8489ff060c681be567e8483148d9",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/12d54c516df34c668c55a4636f7a3c921ada9c4d",
+                "reference": "12d54c516df34c668c55a4636f7a3c921ada9c4d",
                 "shasum": ""
             },
             "require": {
@@ -947,11 +947,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-06-11T17:04:53+00:00"
+            "time": "2019-06-16T20:03:32+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -996,7 +996,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1048,7 +1048,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1093,7 +1093,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -1152,16 +1152,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.22",
+            "version": "v5.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "0c3ef774fdfcb38dce7dc52967107423e86224c5"
+                "reference": "b05653f5ecce996734d3facd06a81aff504b6a2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/0c3ef774fdfcb38dce7dc52967107423e86224c5",
-                "reference": "0c3ef774fdfcb38dce7dc52967107423e86224c5",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/b05653f5ecce996734d3facd06a81aff504b6a2f",
+                "reference": "b05653f5ecce996734d3facd06a81aff504b6a2f",
                 "shasum": ""
             },
             "require": {
@@ -1209,7 +1209,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-06-12T08:34:45+00:00"
+            "time": "2019-06-19T14:12:17+00:00"
         },
         {
             "name": "league/pipeline",
@@ -2011,12 +2011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "1ac61299db897853875bedd388326b52c7b5f598"
+                "reference": "c60bd4be6e3f8f8963bd4a4042329b9891286a2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/1ac61299db897853875bedd388326b52c7b5f598",
-                "reference": "1ac61299db897853875bedd388326b52c7b5f598",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/c60bd4be6e3f8f8963bd4a4042329b9891286a2e",
+                "reference": "c60bd4be6e3f8f8963bd4a4042329b9891286a2e",
                 "shasum": ""
             },
             "require": {
@@ -2087,7 +2087,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-06-16T16:55:56+00:00"
+            "time": "2019-06-19T19:27:04+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5110,16 +5110,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.1",
+            "version": "v1.42.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf"
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/671347603760a88b1e7288aaa9378f33687d7edf",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21707d6ebd05476854805e4f91b836531941bcd4",
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4",
                 "shasum": ""
             },
             "require": {
@@ -5172,7 +5172,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-04T11:31:08+00:00"
+            "time": "2019-06-18T15:35:16+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
