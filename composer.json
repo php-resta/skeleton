@@ -20,6 +20,7 @@
             "Providers\\": "src/providers",
             "Bootstrapper\\" : "bootstrapper",
             "Test\\" : "tests"
+
         },
         "files": []
     },
