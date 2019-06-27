@@ -36,39 +36,6 @@
             "time": "2019-06-08T12:20:38+00:00"
         },
         {
-            "name": "aligurbuz/migratio",
-            "version": "v2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aligurbuz/migratio.git",
-                "reference": "f681c6a459d09352241dfafe1834646c657a5d00"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aligurbuz/migratio/zipball/f681c6a459d09352241dfafe1834646c657a5d00",
-                "reference": "f681c6a459d09352241dfafe1834646c657a5d00",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Migratio\\": "Src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "aligurbuz",
-                    "email": "galiant781@gmail.com"
-                }
-            ],
-            "description": "It is a package that automatically creates your migration files",
-            "time": "2018-11-02T20:20:39+00:00"
-        },
-        {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
             "source": {
@@ -2011,17 +1978,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "d6fde72aba16363f2e75c8f9cccefe8451aaa2bd"
+                "reference": "1e848b0b2571fe50bd22539647055e5e19d9c8d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d6fde72aba16363f2e75c8f9cccefe8451aaa2bd",
-                "reference": "d6fde72aba16363f2e75c8f9cccefe8451aaa2bd",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/1e848b0b2571fe50bd22539647055e5e19d9c8d1",
+                "reference": "1e848b0b2571fe50bd22539647055e5e19d9c8d1",
                 "shasum": ""
             },
             "require": {
                 "aligurbuz/lingua": "dev-master",
-                "aligurbuz/migratio": "^2.0",
                 "defuse/php-encryption": "^2.1",
                 "doctrine/dbal": "^2.7",
                 "fzaninotto/faker": "^1.7",
@@ -2064,7 +2030,8 @@
             "autoload": {
                 "psr-4": {
                     "Resta\\": "src/resta/",
-                    "Resta\\Core\\Tests\\": "tests"
+                    "Resta\\Core\\Tests\\": "tests",
+                    "Migratio\\": "src/resta/Database/Migration/Src/"
                 },
                 "files": [
                     "src/resta/Foundation/ApplicationHelpers.php"
@@ -2087,7 +2054,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-06-27T07:41:29+00:00"
+            "time": "2019-06-27T08:27:44+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
