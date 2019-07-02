@@ -651,16 +651,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-30T00:37:05+00:00"
+            "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "illuminate/console",
@@ -1982,12 +1982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "ac1df1cdcb1b291fcca31764709c5492e46f8208"
+                "reference": "78b07d02ff0385b9ec220f2a0835974e587854f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/ac1df1cdcb1b291fcca31764709c5492e46f8208",
-                "reference": "ac1df1cdcb1b291fcca31764709c5492e46f8208",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/78b07d02ff0385b9ec220f2a0835974e587854f6",
+                "reference": "78b07d02ff0385b9ec220f2a0835974e587854f6",
                 "shasum": ""
             },
             "require": {
@@ -2058,7 +2058,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-07-01T13:56:22+00:00"
+            "time": "2019-07-02T07:35:06+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
