@@ -4,7 +4,7 @@ use Migratio\Contract\MigrationContract;
 use Migratio\Contract\WizardContract as Wizard;
 use Migratio\Contract\SchemaCapsuleContract as Schema;
 
-class PermissionCreate implements MigrationContract
+class LanguageCreate implements MigrationContract
 {
     /**
      * Run the migrations.
@@ -17,9 +17,9 @@ class PermissionCreate implements MigrationContract
         return $schema->create(function(Wizard $wizard){
 
             $wizard->auto_increment();
-            $wizard->name('name_id')->int()->index();
-            $wizard->name('route_name')->varchar(255)->index();
-            $wizard->name('role_id')->int()->index();
+            $wizard->name('language')->varchar(255)->index();
+            $wizard->name('status')->int()->index()->default(1);
+            $wizard->name('is_deleted')->int()->index()->default(0);
 
             $wizard->name('created_at')->dateTime();
             $wizard->name('updated_at')->dateTime();

@@ -24,11 +24,11 @@ class UserCreate implements MigrationContract
             $wizard->name('birthday')->date();
             $wizard->name('password')->varchar(255)->index();
             $wizard->name('email')->varchar(255)->unique();
-            $wizard->name('status')->enum([0,1])->index();
-            $wizard->name('is_deleted')->enum([0,1])->index();
+            $wizard->name('status')->enum([0,1])->index()->default(1);
+            $wizard->name('is_deleted')->enum([0,1])->index()->default(0);
             $wizard->name('userCode')->int()->index();
             $wizard->name('token')->varchar(255)->index();
-            $wizard->name('role_id')->varchar(255)->index()->default(1);
+            $wizard->name('role_id')->int()->index()->default(1);
             $wizard->name('created_at')->dateTime();
             $wizard->name('updated_at')->dateTime();
         });
