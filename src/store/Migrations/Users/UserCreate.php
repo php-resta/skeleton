@@ -28,6 +28,7 @@ class UserCreate implements MigrationContract
             $wizard->name('is_deleted')->enum([0,1])->index();
             $wizard->name('userCode')->int()->index();
             $wizard->name('token')->varchar(255)->index();
+            $wizard->name('role_id')->varchar(255)->index()->default(1);
             $wizard->name('created_at')->dateTime();
             $wizard->name('updated_at')->dateTime();
         });
