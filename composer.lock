@@ -1982,12 +1982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "38e597c53ba484c0e3433634a7a990bcbcc2bf3c"
+                "reference": "a3b2d50663a6807c7123457c66eb668aa603e417"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/38e597c53ba484c0e3433634a7a990bcbcc2bf3c",
-                "reference": "38e597c53ba484c0e3433634a7a990bcbcc2bf3c",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/a3b2d50663a6807c7123457c66eb668aa603e417",
+                "reference": "a3b2d50663a6807c7123457c66eb668aa603e417",
                 "shasum": ""
             },
             "require": {
@@ -2058,7 +2058,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-07-03T14:43:44+00:00"
+            "time": "2019-07-05T14:58:58+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5699,16 +5699,16 @@
     "packages-dev": [
         {
             "name": "filp/whoops",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33"
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
-                "reference": "1a1a1044ad00e285bd2825fac4c3a0443d90ad33",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/6fb502c23885701a991b0bba974b1a8eb6673577",
+                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577",
                 "shasum": ""
             },
             "require": {
@@ -5756,7 +5756,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2019-06-23T09:00:00+00:00"
+            "time": "2019-07-04T09:00:00+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
