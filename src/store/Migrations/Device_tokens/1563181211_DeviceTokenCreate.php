@@ -17,13 +17,17 @@ class DeviceTokenCreate implements MigrationContract
         return $schema->create(function(Wizard $wizard){
 
             $wizard->auto_increment();
-            $wizard->name('token')->varchar(255)->index();
-            $wizard->name('token_integer')->int(14)->index();
-            $wizard->name('device_hash')->longtext();
-            $wizard->name('expire')->int()->index();
+            $wizard->name('user_id')->int()->index();
+            $wizard->name('token')->varchar(255)->unique();
+            $wizard->name('token_integer')->bigint(20)->index();
+            $wizard->name('device_agent')->longtext();
+            $wizard->name('device_agent_integer')->bigint(20)->index();
+            $wizard->name('expire')->int();
 
             $wizard->name('created_at')->dateTime();
             $wizard->name('updated_at')->dateTime();
+
+            $wizard->table()->indexes('device_integers',['token_integer','device_agent_integer']);
 
         });
     }
