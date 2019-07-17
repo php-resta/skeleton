@@ -1415,16 +1415,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.21.0",
+            "version": "2.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "da6410b77f74eecd98d24ffb6dfecefccf3ca17f"
+                "reference": "a8bfb6631e3bc982427406d13ad817fc45d47b61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/da6410b77f74eecd98d24ffb6dfecefccf3ca17f",
-                "reference": "da6410b77f74eecd98d24ffb6dfecefccf3ca17f",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a8bfb6631e3bc982427406d13ad817fc45d47b61",
+                "reference": "a8bfb6631e3bc982427406d13ad817fc45d47b61",
                 "shasum": ""
             },
             "require": {
@@ -1478,7 +1478,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-07-14T17:06:46+00:00"
+            "time": "2019-07-17T07:49:05+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -1990,12 +1990,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "509d3c1444a9000bcb517c045b7cc2a04e6b2dcb"
+                "reference": "b86eb5d636b4381dbe8980ef214f853c62ca3b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/509d3c1444a9000bcb517c045b7cc2a04e6b2dcb",
-                "reference": "509d3c1444a9000bcb517c045b7cc2a04e6b2dcb",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b86eb5d636b4381dbe8980ef214f853c62ca3b64",
+                "reference": "b86eb5d636b4381dbe8980ef214f853c62ca3b64",
                 "shasum": ""
             },
             "require": {
@@ -2066,7 +2066,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-07-17T08:18:52+00:00"
+            "time": "2019-07-17T09:47:15+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
