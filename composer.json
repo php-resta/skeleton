@@ -28,7 +28,6 @@
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*",
-        "ocramius/package-versions": "^1.5",
         "php-resta/resta-core": "dev-master",
         "zendframework/zend-config": "^3.2",
         "zendframework/zend-crypt": "^3.3"
