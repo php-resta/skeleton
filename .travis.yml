@@ -3,6 +3,7 @@ install: composer install
 php:
 - '7.3'
 - '7.2'
+- '7.1'
 script:
 - composer dump-autoload -o
 - php api key generate
