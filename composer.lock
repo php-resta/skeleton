@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38f65f879f8e706569d7e365c4bb39d2",
+    "content-hash": "12a8c073d045c09104b6218001c5be0d",
     "packages": [
         {
             "name": "aligurbuz/lingua",
