@@ -2,9 +2,9 @@
 
 namespace Boot;
 
-use Resta\Foundation\ApplicationProvider;
 use Store\Traits\Annotations;
 use Resta\Contracts\BootContracts;
+use Resta\Foundation\ApplicationProvider;
 
 class ClientResponseIdentifier extends ApplicationProvider implements BootContracts
 {
