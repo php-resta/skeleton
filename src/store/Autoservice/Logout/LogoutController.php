@@ -2,7 +2,9 @@
 
 namespace Store\Autoservice\Logout;
 
-class LogoutController
+use Resta\Foundation\ApplicationProvider;
+
+class LogoutController extends ApplicationProvider
 {
     /**
      * @return array

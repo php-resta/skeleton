@@ -2,7 +2,9 @@
 
 namespace Store\Autoservice\Login;
 
-class LoginController
+use Resta\Foundation\ApplicationProvider;
+
+class LoginController extends ApplicationProvider
 {
     /**
      * @return array
