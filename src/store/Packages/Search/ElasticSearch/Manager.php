@@ -28,6 +28,7 @@ class Manager
     public function __construct($connections=array())
     {
         $this->client = Search::create()->setHosts($connections)->build();
+
     }
 
     /**
