@@ -4,7 +4,7 @@ namespace Store\Packages\Search\ElasticSearch;
 
 use Elasticsearch\ClientBuilder as Search;
 
-class ElasticSearch
+class Manager
 {
     /**
      * @var string
@@ -23,29 +23,29 @@ class ElasticSearch
 
     /**
      * ElasticSearch constructor.
+     * @param array $connections
      */
-    public function __construct()
+    public function __construct($connections=array())
     {
-        $config = config('elasticsearch.hosts');
-        $this->client = Search::create()->setHosts($config)->build();
+        $this->client = Search::create()->setHosts($connections)->build();
     }
 
     /**
-     * @param array $data
+     * @param array $params
      * @return bool
      */
-    public function ping($data=array())
+    public function ping($params=array())
     {
-        return $this->client->ping($data);
+        return $this->client->ping($params);
     }
 
     /**
-     * @param array $data
+     * @param array $params
      * @return array
      */
-    public function health($data=array())
+    public function health($params=array())
     {
-        return $this->client->cat()->health($data);
+        return $this->client->cat()->health($params);
     }
 
     /**
