@@ -32,6 +32,42 @@ class Manager
     }
 
     /**
+     * @param null $index
+     * @return array
+     */
+    public function allDatabases()
+    {
+        return $this->client->indices()->get(['index'=>'*']);
+    }
+
+    /**
+     * @param null $index
+     * @return array
+     */
+    public function createDatabase($index=null)
+    {
+        return $this->client->indices()->create(['index'=>$index]);
+    }
+
+    /**
+     * @param null $index
+     * @return array
+     */
+    public function deleteDatabase($index=null)
+    {
+        return $this->client->indices()->delete(['index'=>$index]);
+    }
+
+    /**
+     * @param null $index
+     * @return bool
+     */
+    public function existDatabase($index=null)
+    {
+        return $this->client->indices()->exists(['index'=>$index]);
+    }
+
+    /**
      * @param array $params
      * @return bool
      */
@@ -92,125 +128,84 @@ class Manager
     }
 
     /**
-     * @param null $index
-     * @return array
+     * @param array $params
+     * @return mixed
      */
-    public function deleteIndex($index=null)
+    public function createFields(...$params)
     {
-        return $this->client->indices()->delete(['index'=>$index]);
-    }
+        [$index,$fields] = current($params);
 
-    /**
-     * @param null $index
-     * @return bool
-     */
-    public function indexExists($index=null)
-    {
-        return $this->client->indices()->exists(['index'=>$index]);
-    }
-
-    /**
-     * @param null $index
-     * @return array
-     */
-    public function indexCreate($index=null)
-    {
-        return $this->client->indices()->create(['index'=>$index]);
-    }
-
-    /**
-     * @param null $index
-     * @param null $type
-     * @return bool
-     */
-    public function existsType($index=null,$type=null)
-    {
-        return $this->client->indices()->existsType(['index'=>$index,'type'=>$type]);
-    }
-
-    /**
-     * @param array $data
-     * @return array
-     */
-    public function setMap($data=array())
-    {
-        if(!array_key_exists("settings",$data)){
+        if(!array_key_exists("settings",$fields)){
             $settings=[
                 'number_of_shards' => 1,
                 'number_of_replicas' =>0
             ];
         }
         else{
-            $settings=$data['settings'];
+            $settings = $fields['settings'];
         }
+
         $params = [
-            'index' => $data['index'],
+            'index' => $index,
             'body' => [
                 'settings' => $settings,
                 'mappings' => [
-                    $data['type'] => [
-                        '_source' => [
-                            'enabled' => true
-                        ],
-                        'properties' => $data['properties']
-                    ]
+                    '_source' => [
+                        'enabled' => true
+                    ],
+                    'properties' => $fields
                 ]
             ]
         ];
+
+
         // Create the index with mappings and settings now
         return $this->client->indices()->create($params);
     }
 
 
     /**
-     * @param array $data
-     * @return array
+     * @param array $params
+     * @return mixed
      */
-    public function create($data=array())
+    public function insert(...$params)
     {
+        [$index,$data] = current($params);
+
         $params = [
-            'index' => config('elasticsearch.index'),
-            'type' =>$this->type,
-            'id' =>$data['id'],
-            'body' =>$data
+            'index' => $index,
+            //'type' =>$this->type,
+            'id' => $data['id'],
+            'body' => $data
         ];
         // Document will be indexed to my_index/my_type/my_id
         return $this->client->create($params);
     }
 
     /**
-     * @param $match
-     * @param array $fields
+     * @param array $params
      * @return $this
      */
-    public function search($match,$fields=array())
+    public function search(...$params)
     {
-
-        $matchFields = config('elasticsearch.'.$this->type.'.fields');
-
-        if(count($fields)){
-            $matchFields = $fields;
-        }
+        [$index,$fields,$match] = current($params);
 
         $params = [
-            'index' => config('elasticsearch.index'),
-            'type' => $this->type,
+            'index' => $index,
+            //'type' => $this->type,
             'body' => [
                 'query' => [
                     'multi_match' => [
                         'query' => $match,
-                        'type'=>'best_fields',
-                        'fields'=>$matchFields,
-                        'tie_breaker'=>'0.2',
-                        'minimum_should_match'=>'10%',
-                        'slop'=>'10'
+                        'fields'=>$fields,
+                        'fuzziness' => "AUTO",
                     ]
                 ]
             ]
         ];
 
-        $this->search=$this->client->search($params);
-        return $this;
+        $this->search = $this->client->search($params);
+        return $this->get();
     }
 
     /**
