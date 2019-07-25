@@ -2,6 +2,8 @@
 
 namespace Store\Packages\Database\Eloquent;
 
+use Illuminate\Events\Dispatcher;
+use Illuminate\Container\Container;
 use Store\Services\DatabaseConnection;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
@@ -34,6 +36,8 @@ class Connection
 
         // Make this Capsule instance available globally via static methods... (optional)
         $this->capsule->setAsGlobal();
+
+        $this->capsule->setEventDispatcher(new Dispatcher(new Container()));
 
         // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
         $this->capsule->bootEloquent();
