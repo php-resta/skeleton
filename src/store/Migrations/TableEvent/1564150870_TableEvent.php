@@ -4,7 +4,7 @@ use Migratio\Contract\MigrationContract;
 use Migratio\Contract\WizardContract as Wizard;
 use Migratio\Contract\SchemaCapsuleContract as Schema;
 
-class Table_events implements MigrationContract
+class TableEvent implements MigrationContract
 {
     /**
      * Run the migrations.
