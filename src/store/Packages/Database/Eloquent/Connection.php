@@ -10,9 +10,9 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 class Connection
 {
     /**
-     * @var Capsule $capsule
+     * @var Capsule
      */
-    public $capsule;
+    private $capsule;
 
     /**
      * Connection constructor.
