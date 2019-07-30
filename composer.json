@@ -28,6 +28,7 @@
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*",
+        "aws/aws-sdk-php": "^3.108",
         "elasticsearch/elasticsearch": "^7.1",
         "php-resta/resta-core": "dev-master",
         "zendframework/zend-config": "^3.2",

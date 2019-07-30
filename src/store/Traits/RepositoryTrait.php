@@ -12,7 +12,7 @@ trait RepositoryTrait
      */
     public function adapter()
     {
-        return app()->resolve($this->getRepositorySourceAdapter());
+        return app()->resolve($this->getRepositorySourceAdapter(),app()->get('bindings'));
     }
 
     /**
