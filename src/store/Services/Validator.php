@@ -86,7 +86,7 @@ class Validator
             throw new \UnexpectedValueException('it is not invalid as the date format for ['.$name.'])');
         }
         foreach ($validator->getMessages() as $messageId => $message) {
-            throw new \UnexpectedValueException($message.' ('.$messageId.' for ['.$name.'])');
+            exception($messageId,['key'=>$name])->invalidArgument($message.' ('.$messageId.' for ['.$name.'])');
         }
     }
 
