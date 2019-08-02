@@ -83,7 +83,7 @@ class Validator
     private static function getMessage($validator,$name)
     {
         if($validator===null){
-            throw new \UnexpectedValueException('it is not invalid as the date format for ['.$name.'])');
+            exception('invalidValidator',['key'=>$name])->invalidArgument('it is not invalid as the date format for ['.$name.'])');
         }
         foreach ($validator->getMessages() as $messageId => $message) {
             exception($messageId,['key'=>$name])->invalidArgument($message.' ('.$messageId.' for ['.$name.'])');
