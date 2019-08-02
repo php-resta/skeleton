@@ -15,7 +15,11 @@ class App extends ApplicationProvider implements BootContracts
      */
     public function boot()
     {
-        //boot somethings
+        $acceptLanguage = request()->headers->get('accept-language');
+
+        $language = $acceptLanguage ?? 'en';
+
+        $this->app->register('locale',$language);
     }
 
 }
