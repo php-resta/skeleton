@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.108.2",
+            "version": "3.108.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1bb860e0ef548355bd97e22549b378c62c7af6ad"
+                "reference": "5b2fda38f057bfab7ce74cc32d8c7d87b3e41437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1bb860e0ef548355bd97e22549b378c62c7af6ad",
-                "reference": "1bb860e0ef548355bd97e22549b378c62c7af6ad",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5b2fda38f057bfab7ce74cc32d8c7d87b3e41437",
+                "reference": "5b2fda38f057bfab7ce74cc32d8c7d87b3e41437",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-07-30T19:02:39+00:00"
+            "time": "2019-08-02T18:51:44+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2168,12 +2168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "0eaeb45185b1b175d77d2e4cb949f6a4200e13b3"
+                "reference": "d7884afe0f915f433e8247b9cfb69c8c141c0874"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/0eaeb45185b1b175d77d2e4cb949f6a4200e13b3",
-                "reference": "0eaeb45185b1b175d77d2e4cb949f6a4200e13b3",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d7884afe0f915f433e8247b9cfb69c8c141c0874",
+                "reference": "d7884afe0f915f433e8247b9cfb69c8c141c0874",
                 "shasum": ""
             },
             "require": {
@@ -2243,7 +2243,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-08-02T09:05:39+00:00"
+            "time": "2019-08-03T12:07:00+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
