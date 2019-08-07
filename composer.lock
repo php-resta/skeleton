@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.108.4",
+            "version": "3.108.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8ac2bc5d36ed0e3fe9b0ecdd2f407b91273b86e8"
+                "reference": "9cb7267b2ea6cd9ab46afb14400c52e58cd4be1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ac2bc5d36ed0e3fe9b0ecdd2f407b91273b86e8",
-                "reference": "8ac2bc5d36ed0e3fe9b0ecdd2f407b91273b86e8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9cb7267b2ea6cd9ab46afb14400c52e58cd4be1f",
+                "reference": "9cb7267b2ea6cd9ab46afb14400c52e58cd4be1f",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-08-05T18:08:07+00:00"
+            "time": "2019-08-06T18:08:33+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -966,7 +966,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -1017,7 +1017,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -1062,7 +1062,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1106,16 +1106,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "760ef316055ab69f711746e0455442d9b6b6db93"
+                "reference": "4ede24ddbf39ab7893c2c3d2d643ac13584db8ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/760ef316055ab69f711746e0455442d9b6b6db93",
-                "reference": "760ef316055ab69f711746e0455442d9b6b6db93",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/4ede24ddbf39ab7893c2c3d2d643ac13584db8ba",
+                "reference": "4ede24ddbf39ab7893c2c3d2d643ac13584db8ba",
                 "shasum": ""
             },
             "require": {
@@ -1162,11 +1162,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-07-29T14:26:41+00:00"
+            "time": "2019-08-06T14:57:14+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1211,7 +1211,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1263,7 +1263,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1308,16 +1308,16 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
-                "reference": "4381132a0e4ef67854a5ab16c71a0098e0805f64"
+                "reference": "6e83044aa8e4eda1d0e5eb41cb90d05a7936ed66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/queue/zipball/4381132a0e4ef67854a5ab16c71a0098e0805f64",
-                "reference": "4381132a0e4ef67854a5ab16c71a0098e0805f64",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/6e83044aa8e4eda1d0e5eb41cb90d05a7936ed66",
+                "reference": "6e83044aa8e4eda1d0e5eb41cb90d05a7936ed66",
                 "shasum": ""
             },
             "require": {
@@ -1363,20 +1363,20 @@
             ],
             "description": "The Illuminate Queue package.",
             "homepage": "https://laravel.com",
-            "time": "2019-07-18T13:28:11+00:00"
+            "time": "2019-08-01T13:58:47+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.30",
+            "version": "v5.8.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "1d82de27c37ee6e8493dac0521cbda5b9456626c"
+                "reference": "60fdf2cd0fe8092947f42add1681c34fa252af33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/1d82de27c37ee6e8493dac0521cbda5b9456626c",
-                "reference": "1d82de27c37ee6e8493dac0521cbda5b9456626c",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/60fdf2cd0fe8092947f42add1681c34fa252af33",
+                "reference": "60fdf2cd0fe8092947f42add1681c34fa252af33",
                 "shasum": ""
             },
             "require": {
@@ -1424,7 +1424,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-07-26T06:46:07+00:00"
+            "time": "2019-08-06T08:53:24+00:00"
         },
         {
             "name": "league/pipeline",
@@ -1714,16 +1714,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.22.0",
+            "version": "2.22.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "1a0e48b5f656065ba3c265b058b25d36c2162a5e"
+                "reference": "ec355b933f9b635fbc418c3b351e3886686f5a21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/1a0e48b5f656065ba3c265b058b25d36c2162a5e",
-                "reference": "1a0e48b5f656065ba3c265b058b25d36c2162a5e",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ec355b933f9b635fbc418c3b351e3886686f5a21",
+                "reference": "ec355b933f9b635fbc418c3b351e3886686f5a21",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1734,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
                 "kylekatarnls/multi-tester": "^1.1",
-                "phpmd/phpmd": "dev-php-7.1-compatibility",
+                "phpmd/phpmd": "^2.6",
                 "phpstan/phpstan": "^0.11",
                 "phpunit/phpunit": "^7.5 || ^8.0",
                 "squizlabs/php_codesniffer": "^3.4"
@@ -1777,7 +1777,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-07-28T09:02:12+00:00"
+            "time": "2019-08-07T08:59:53+00:00"
         },
         {
             "name": "opis/closure",
@@ -2168,12 +2168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "d04dace4dcee7c44fd5c527781527028e4964538"
+                "reference": "526252fd12897e495ce28e66f3731a4f848c259a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d04dace4dcee7c44fd5c527781527028e4964538",
-                "reference": "d04dace4dcee7c44fd5c527781527028e4964538",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/526252fd12897e495ce28e66f3731a4f848c259a",
+                "reference": "526252fd12897e495ce28e66f3731a4f848c259a",
                 "shasum": ""
             },
             "require": {
@@ -2243,7 +2243,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-08-06T11:22:34+00:00"
+            "time": "2019-08-07T10:32:44+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5823,16 +5823,16 @@
     "packages-dev": [
         {
             "name": "filp/whoops",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577"
+                "reference": "cde50e6720a39fdacb240159d3eea6865d51fd96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/6fb502c23885701a991b0bba974b1a8eb6673577",
-                "reference": "6fb502c23885701a991b0bba974b1a8eb6673577",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/cde50e6720a39fdacb240159d3eea6865d51fd96",
+                "reference": "cde50e6720a39fdacb240159d3eea6865d51fd96",
                 "shasum": ""
             },
             "require": {
@@ -5866,8 +5866,8 @@
             "authors": [
                 {
                     "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "homepage": "https://github.com/filp"
                 }
             ],
             "description": "php error handling for cool kids",
@@ -5880,7 +5880,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2019-07-04T09:00:00+00:00"
+            "time": "2019-08-07T09:00:00+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
