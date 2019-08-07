@@ -41,5 +41,16 @@ class Connection
 
         // Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
         $this->capsule->bootEloquent();
+
+    }
+
+    /**
+     * get connection for eloquent
+     *
+     * @return \Illuminate\Database\Connection
+     */
+    public function getConnection()
+    {
+        return $this->capsule->getConnection();
     }
 }

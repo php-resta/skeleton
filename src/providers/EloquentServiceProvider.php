@@ -4,6 +4,7 @@ namespace Providers;
 
 use Illuminate\Pagination\Paginator;
 use Resta\Provider\ServiceProviderManager;
+use Illuminate\Database\ConnectionInterface;
 use Store\Packages\Database\Eloquent\Connection as Eloquent;
 
 class EloquentServiceProvider extends ServiceProviderManager
@@ -19,7 +20,11 @@ class EloquentServiceProvider extends ServiceProviderManager
         // simple ActiveRecord implementation for working with your database.
         // each database table has a corresponding "Model" which is used to interact with that table.
         // models allow you to query for data in your tables, as well as insert new records into the table.
-        new Eloquent();
+        $eloquent = new Eloquent();
+
+        $this->app->bind(ConnectionInterface::class,function() use($eloquent){
+            return $eloquent->getConnection();
+        });
     }
 
     /**
