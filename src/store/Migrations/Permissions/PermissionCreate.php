@@ -17,7 +17,7 @@ class PermissionCreate implements MigrationContract
         return $schema->create(function(Wizard $wizard){
 
             $wizard->auto_increment();
-            $wizard->name('name_id')->int()->index();
+            $wizard->name('name_code')->int()->index();
             $wizard->name('route_name')->varchar(255)->index();
             $wizard->name('role_id')->int()->index();
 
