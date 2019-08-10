@@ -1666,20 +1666,20 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.2",
+            "version": "1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "8d0a041a565fc1e927e75f1d1bea5f34edf6e7d1"
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/8d0a041a565fc1e927e75f1d1bea5f34edf6e7d1",
-                "reference": "8d0a041a565fc1e927e75f1d1bea5f34edf6e7d1",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "replace": {
                 "myclabs/deep-copy": "self.version"
@@ -1687,8 +1687,6 @@
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
-                "phpstan/phpstan": "^0.9.2",
-                "phpstan/phpstan-phpunit": "^0.9.4",
                 "phpunit/phpunit": "^7.1"
             },
             "type": "library",
@@ -1712,7 +1710,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-08-09T12:38:39+00:00"
+            "time": "2019-08-09T12:45:53+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2170,12 +2168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "239ff9fb88840756d19ea70b9d8e24bcff948bc9"
+                "reference": "5e0470faf06b4cb8a571d51034c9fc976be749c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/239ff9fb88840756d19ea70b9d8e24bcff948bc9",
-                "reference": "239ff9fb88840756d19ea70b9d8e24bcff948bc9",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/5e0470faf06b4cb8a571d51034c9fc976be749c7",
+                "reference": "5e0470faf06b4cb8a571d51034c9fc976be749c7",
                 "shasum": ""
             },
             "require": {
@@ -2245,7 +2243,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-08-10T12:25:59+00:00"
+            "time": "2019-08-10T17:28:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
