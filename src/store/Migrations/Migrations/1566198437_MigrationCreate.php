@@ -17,6 +17,7 @@ class MigrationCreate implements MigrationContract
         return $schema->create(function(Wizard $wizard){
 
             $wizard->auto_increment();
+            $wizard->name('table_name')->text()->index();
             $wizard->name('name')->text()->index();
 
             $wizard->name('created_at')->timestamp();
