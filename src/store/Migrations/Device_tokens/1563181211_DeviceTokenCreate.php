@@ -24,8 +24,8 @@ class DeviceTokenCreate implements MigrationContract
             $wizard->name('device_agent_integer')->bigint(20)->index();
             $wizard->name('expire')->int();
 
-            $wizard->name('created_at')->dateTime();
-            $wizard->name('updated_at')->dateTime();
+            $wizard->name('created_at')->timestamp();
+            $wizard->name('updated_at')->timestamp();
 
             $wizard->table()->indexes('device_integers',['token_integer','device_agent_integer']);
 

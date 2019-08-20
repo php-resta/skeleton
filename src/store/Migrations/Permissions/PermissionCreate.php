@@ -21,8 +21,8 @@ class PermissionCreate implements MigrationContract
             $wizard->name('route_name')->varchar(255)->index();
             $wizard->name('role_id')->int()->index();
 
-            $wizard->name('created_at')->dateTime();
-            $wizard->name('updated_at')->dateTime();
+            $wizard->name('created_at')->timestamp();
+            $wizard->name('updated_at')->timestamp();
 
         });
     }

@@ -24,7 +24,7 @@ class TableEvent implements MigrationContract
             $wizard->name('event_name')->varchar(255)->index();
             $wizard->name('client_ip')->bigint(20)->index();
             $wizard->name('auth_id')->int(11)->index();
-            $wizard->name('created_at')->datetime();
+            $wizard->name('created_at')->timestamp();
             $wizard->table()->collation('utf8');
         
 

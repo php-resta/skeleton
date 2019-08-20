@@ -21,8 +21,8 @@ class PermissionNameCreate implements MigrationContract
             $wizard->name('name')->longtext();
             $wizard->name('lang')->int()->index()->default(1);
 
-            $wizard->name('created_at')->dateTime();
-            $wizard->name('updated_at')->dateTime();
+            $wizard->name('created_at')->timestamp();
+            $wizard->name('updated_at')->timestamp();
 
         });
     }

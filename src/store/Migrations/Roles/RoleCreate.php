@@ -22,8 +22,8 @@ class RoleCreate implements MigrationContract
             $wizard->name('is_deleted')->int()->default(0)->index();
             $wizard->name('role_state')->varchar(255)->index();
 
-            $wizard->name('created_at')->dateTime();
-            $wizard->name('updated_at')->dateTime();
+            $wizard->name('created_at')->timestamp();
+            $wizard->name('updated_at')->timestamp();
 
         });
     }

@@ -21,8 +21,8 @@ class LanguageCreate implements MigrationContract
             $wizard->name('status')->int()->index()->default(1);
             $wizard->name('is_deleted')->int()->index()->default(0);
 
-            $wizard->name('created_at')->dateTime();
-            $wizard->name('updated_at')->dateTime();
+            $wizard->name('created_at')->timestamp();
+            $wizard->name('updated_at')->timestamp();
 
         });
     }
