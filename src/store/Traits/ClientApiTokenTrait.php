@@ -2,6 +2,8 @@
 
 namespace Store\Traits;
 
+use DomainException;
+use InvalidArgumentException;
 use Store\Services\JsonWebToken;
 
 trait ClientApiTokenTrait
@@ -17,56 +19,59 @@ trait ClientApiTokenTrait
     }
 
     /**
-     * @return mixed
+     * @return mixed|void
      */
     private function getProcess()
     {
         //get token via query param for application
         //check jwt for api key belonging to client
-        $getToken=get($this->tokenKey);
+        $getToken = get($this->tokenKey);
         $this->jwtProcess($getToken);
+        app()->register('clientApiTokenKey',$this->tokenKey);
     }
 
     /**
-     * @return mixed
+     * @return mixed|void
      */
     private function headerProcess()
     {
-        $clientHeaders=headers();
-        $getToken=(isset($clientHeaders[$this->tokenKey])) ? $clientHeaders[$this->tokenKey][0] : null;
+        $clientHeaders = headers();
+        $getToken = (isset($clientHeaders[$this->tokenKey])) ? $clientHeaders[$this->tokenKey][0] : null;
         $this->jwtProcess($getToken);
+        app()->register('clientApiTokenKey',$this->tokenKey);
     }
 
     /**
      * @param $token
-     * @return bool|object
+     * @return bool|void
      */
     private function jwtProcess($token)
     {
-        $checkJwtToken=JsonWebToken::decode($token,$this->tokenSign);
-        $webTokenArray=json_decode(json_encode($checkJwtToken),1);
+        $checkJwtToken = JsonWebToken::decode($token,$this->tokenSign);
+        $webTokenArray = json_decode(json_encode($checkJwtToken),1);
 
         //check for web token array for api key
         foreach ($webTokenArray as $key=>$value){
             if(array_key_exists($key,$this->clientTokens()) && in_array($value,$this->clientTokens())){
                 return true;
             }
-            throw new \DomainException('Client api token is missing');
+            throw new DomainException('Client api token is missing');
         }
     }
 
 
     /**
+     * @param $key
      * @return string
-    */
+     */
     public function createToken($key)
     {
         //check client token for key
-        $tokens=$this->clientTokens();
-        $getTokenValue=(isset($tokens[$key])) ? $tokens[$key] : null;
+        $tokens = $this->clientTokens();
+        $getTokenValue = (isset($tokens[$key])) ? $tokens[$key] : null;
 
         if($getTokenValue===null) {
-            throw new \InvalidArgumentException('key is false');
+            throw new InvalidArgumentException('key is false');
         }
 
         return JsonWebToken::encode([$key=>$getTokenValue],$this->tokenSign);
