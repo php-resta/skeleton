@@ -27,7 +27,6 @@ trait ClientApiTokenTrait
         //check jwt for api key belonging to client
         $getToken = get($this->tokenKey);
         $this->jwtProcess($getToken);
-        app()->register('clientApiTokenKey',$this->tokenKey);
     }
 
     /**
@@ -38,7 +37,6 @@ trait ClientApiTokenTrait
         $clientHeaders = headers();
         $getToken = (isset($clientHeaders[$this->tokenKey])) ? $clientHeaders[$this->tokenKey][0] : null;
         $this->jwtProcess($getToken);
-        app()->register('clientApiTokenKey',$this->tokenKey);
     }
 
     /**
@@ -53,6 +51,7 @@ trait ClientApiTokenTrait
         //check for web token array for api key
         foreach ($webTokenArray as $key=>$value){
             if(array_key_exists($key,$this->clientTokens()) && in_array($value,$this->clientTokens())){
+                app()->register('clientApiTokenKey',$key);
                 return true;
             }
             throw new DomainException('Client api token is missing');
