@@ -15,24 +15,24 @@ class JsonWebToken
     {
         $tks = explode('.', $JsonWebToken);
         if (count($tks) != 3) {
-            throw new \UnexpectedValueException('Wrong number of segments');
+            throw new \UnexpectedValueException('Invalid Client Key');
         }
         list($headb64, $payloadb64, $cryptob64) = $tks;
         if (null === ($header = JsonWebToken::jsonDecode(JsonWebToken::urlsafeB64Decode($headb64)))
         ) {
-            throw new \UnexpectedValueException('Invalid segment encoding');
+            throw new \UnexpectedValueException('Invalid segment encoding for client key');
         }
         if (null === $payload = JsonWebToken::jsonDecode(JsonWebToken::urlsafeB64Decode($payloadb64))
         ) {
-            throw new \UnexpectedValueException('Invalid segment encoding');
+            throw new \UnexpectedValueException('Invalid segment encoding for client key');
         }
         $sig = JsonWebToken::urlsafeB64Decode($cryptob64);
         if ($verify) {
             if (empty($header->alg)) {
-                throw new \DomainException('Empty algorithm');
+                throw new \DomainException('Empty algorithm for client key');
             }
             if ($sig != JsonWebToken::sign("$headb64.$payloadb64", $key, $header->alg)) {
-                throw new \UnexpectedValueException('Signature verification failed');
+                throw new \UnexpectedValueException('Signature verification failed for client key');
             }
         }
         return $payload;
