@@ -27,3 +27,4 @@ script:
 - php api helper create mobi helper:general
 - php api test publish mobi
 - php api route list mobi
+- php api schedule create mobi schedule:collectReport
