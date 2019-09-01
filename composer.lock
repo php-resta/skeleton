@@ -1839,16 +1839,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8"
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/97e59c7a16464196a8b9c77c47df68e4a39a45c4",
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4",
                 "shasum": ""
             },
             "require": {
@@ -1886,7 +1886,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-08-12T20:17:41+00:00"
+            "time": "2019-09-01T07:51:21+00:00"
         },
         {
             "name": "opis/closure",
@@ -2277,12 +2277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "0b0dbfb237abbe48416e5a2797647f394a6afad3"
+                "reference": "e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/0b0dbfb237abbe48416e5a2797647f394a6afad3",
-                "reference": "0b0dbfb237abbe48416e5a2797647f394a6afad3",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4",
+                "reference": "e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4",
                 "shasum": ""
             },
             "require": {
@@ -2354,7 +2354,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-09-01T07:57:34+00:00"
+            "time": "2019-09-01T18:24:56+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
