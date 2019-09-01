@@ -14,7 +14,7 @@ RUN apt-get update \
         nano \
         openssl \
         libssl-dev \
-        libcurl4-openssl-dev
+        libcurl4-openssl-dev \
         libxml2-dev \
         && apt-get clean -y \
         && docker-php-ext-install soap \
