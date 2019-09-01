@@ -26,6 +26,7 @@ RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN apt-get install -y cron
 
 RUN echo 'alias api="php api"' >> ~/.bashrc
 RUN echo 'cd /var/www/html/app' >> ~/.bashrc
