@@ -52,6 +52,7 @@ trait ClientApiTokenTrait
         foreach ($webTokenArray as $key=>$value){
             if(array_key_exists($key,$this->clientTokens()) && in_array($value,$this->clientTokens())){
                 app()->register('clientApiTokenKey',$key);
+                app()->register('illuminator','clientApi',app()->get('clientApiTokenKey'));
                 return true;
             }
             throw new DomainException('Client api token is missing');
