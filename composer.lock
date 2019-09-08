@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.110.7",
+            "version": "3.110.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "57d9dd171a5afe0b48ce44f05be2d8875c2f7b34"
+                "reference": "3f222649634fa039c59f58082e60159a6bb59bbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/57d9dd171a5afe0b48ce44f05be2d8875c2f7b34",
-                "reference": "57d9dd171a5afe0b48ce44f05be2d8875c2f7b34",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3f222649634fa039c59f58082e60159a6bb59bbf",
+                "reference": "3f222649634fa039c59f58082e60159a6bb59bbf",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-08-30T18:07:59+00:00"
+            "time": "2019-09-06T18:21:14+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -966,7 +966,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -1017,7 +1017,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -1062,7 +1062,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1106,16 +1106,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "3ec7b1fe3877792711a77358d1ef0ae000f07b77"
+                "reference": "56635c5e683a2e3c6c01a8a3bcad3683223d3cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/3ec7b1fe3877792711a77358d1ef0ae000f07b77",
-                "reference": "3ec7b1fe3877792711a77358d1ef0ae000f07b77",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
+                "reference": "56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
                 "shasum": ""
             },
             "require": {
@@ -1162,11 +1162,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-08-25T08:12:42+00:00"
+            "time": "2019-08-31T17:01:57+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1211,7 +1211,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1263,7 +1263,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1308,7 +1308,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -1367,16 +1367,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v5.8.34",
+            "version": "v5.8.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "7aabcab4634a1c7865fa6acb6b1b810cf4b699ea"
+                "reference": "e63a495d3bf01654f70def1046fb925c4bb56506"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/7aabcab4634a1c7865fa6acb6b1b810cf4b699ea",
-                "reference": "7aabcab4634a1c7865fa6acb6b1b810cf4b699ea",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/e63a495d3bf01654f70def1046fb925c4bb56506",
+                "reference": "e63a495d3bf01654f70def1046fb925c4bb56506",
                 "shasum": ""
             },
             "require": {
@@ -1424,7 +1424,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-08-11T12:48:29+00:00"
+            "time": "2019-09-03T16:36:47+00:00"
         },
         {
             "name": "jeremeamia/superclosure",
@@ -1591,16 +1591,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.24.0",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
                 "shasum": ""
             },
             "require": {
@@ -1665,7 +1665,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-11-05T09:00:11+00:00"
+            "time": "2019-09-06T13:49:17+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -1890,16 +1890,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "92927e26d7fc3f271efe1f55bdbb073fbb2f0722"
+                "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/92927e26d7fc3f271efe1f55bdbb073fbb2f0722",
-                "reference": "92927e26d7fc3f271efe1f55bdbb073fbb2f0722",
+                "url": "https://api.github.com/repos/opis/closure/zipball/60a97fff133b1669a5b1776aa8ab06db3f3962b7",
+                "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7",
                 "shasum": ""
             },
             "require": {
@@ -1947,7 +1947,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2019-07-09T21:58:11+00:00"
+            "time": "2019-09-02T21:07:33+00:00"
         },
         {
             "name": "optimus/onion",
@@ -2277,12 +2277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4"
+                "reference": "cf8170feb413c6871f9f9cc1a41ef90a40440cbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4",
-                "reference": "e8ca0d8a8b8889c7afdee395f3eaf46cd91d77f4",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/cf8170feb413c6871f9f9cc1a41ef90a40440cbc",
+                "reference": "cf8170feb413c6871f9f9cc1a41ef90a40440cbc",
                 "shasum": ""
             },
             "require": {
@@ -2354,7 +2354,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-09-01T18:24:56+00:00"
+            "time": "2019-09-08T11:32:16+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
