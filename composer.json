@@ -18,6 +18,7 @@
             "Boot\\": "src/boot",
             "Store\\": "src/store",
             "Providers\\": "src/providers",
+            "Gateway\\": "src/gateway",
             "Bootstrapper\\" : "bootstrapper",
             "Test\\" : "tests"
 
