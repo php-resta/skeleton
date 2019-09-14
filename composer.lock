@@ -2277,12 +2277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "5b76956e91b9c07f82e008a71f2a7a7a2dd46a59"
+                "reference": "54ff295cb6832fd4f3101898fa0fcb40b72edfce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/5b76956e91b9c07f82e008a71f2a7a7a2dd46a59",
-                "reference": "5b76956e91b9c07f82e008a71f2a7a7a2dd46a59",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/54ff295cb6832fd4f3101898fa0fcb40b72edfce",
+                "reference": "54ff295cb6832fd4f3101898fa0fcb40b72edfce",
                 "shasum": ""
             },
             "require": {
@@ -2354,7 +2354,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-09-14T06:43:10+00:00"
+            "time": "2019-09-14T09:35:44+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3551,16 +3551,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687"
+                "reference": "68609e1261d215ea5b21b7987539cbfbe156ec3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/06a9a5947f47b3029d76118eb5c22802e5869687",
-                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/68609e1261d215ea5b21b7987539cbfbe156ec3e",
+                "reference": "68609e1261d215ea5b21b7987539cbfbe156ec3e",
                 "shasum": ""
             },
             "require": {
@@ -3614,7 +3614,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2019-08-11T12:43:14+00:00"
+            "time": "2019-09-14T09:02:43+00:00"
         },
         {
             "name": "sebastian/global-state",
