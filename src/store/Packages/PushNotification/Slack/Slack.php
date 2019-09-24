@@ -28,7 +28,7 @@ class Slack
         self::$hook = $config['hook'];
 
         //return static object
-        return new static();
+        return new self();
     }
 
     /**
