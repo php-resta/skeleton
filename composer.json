@@ -32,6 +32,7 @@
         "aws/aws-sdk-php": "^3.108",
         "elasticsearch/elasticsearch": "^7.1",
         "php-resta/resta-core": "dev-master",
+        "unsplash/unsplash": "^2.5",
         "zendframework/zend-config": "^3.2",
         "zendframework/zend-crypt": "^3.3"
     },
