@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.6",
+            "version": "3.112.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8dac6904e89d8fb7dcaf8044b964c7e77f332289"
+                "reference": "224955fcb7ca9edc8de3e4147c0b180aeaee5a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8dac6904e89d8fb7dcaf8044b964c7e77f332289",
-                "reference": "8dac6904e89d8fb7dcaf8044b964c7e77f332289",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/224955fcb7ca9edc8de3e4147c0b180aeaee5a48",
+                "reference": "224955fcb7ca9edc8de3e4147c0b180aeaee5a48",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-09-23T18:11:10+00:00"
+            "time": "2019-09-26T18:13:00+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2355,16 +2355,16 @@
         },
         {
             "name": "php-di/phpdoc-reader",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PhpDocReader.git",
-                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e"
+                "reference": "15678f7451c020226807f520efb867ad26fbbfcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/7d0de60b9341933c8afd172a6255cd7557601e0e",
-                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e",
+                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/15678f7451c020226807f520efb867ad26fbbfcf",
+                "reference": "15678f7451c020226807f520efb867ad26fbbfcf",
                 "shasum": ""
             },
             "require": {
@@ -2388,7 +2388,7 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2018-02-18T17:39:01+00:00"
+            "time": "2019-09-26T11:24:58+00:00"
         },
         {
             "name": "php-resta/resta-core",
@@ -2396,12 +2396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "5504f46d9125610d8780a3ec7c21c7d8da37eb8f"
+                "reference": "787a5f8b50d34f3bd61db9c64ca54f02e762da1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/5504f46d9125610d8780a3ec7c21c7d8da37eb8f",
-                "reference": "5504f46d9125610d8780a3ec7c21c7d8da37eb8f",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/787a5f8b50d34f3bd61db9c64ca54f02e762da1e",
+                "reference": "787a5f8b50d34f3bd61db9c64ca54f02e762da1e",
                 "shasum": ""
             },
             "require": {
@@ -2473,7 +2473,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-09-24T14:47:32+00:00"
+            "time": "2019-09-27T07:06:51+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
