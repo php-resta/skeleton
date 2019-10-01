@@ -15,7 +15,7 @@ class ExceptionExtender extends ApplicationProvider
     /**
      * @var array
      */
-    protected $extender = ['request'];
+    protected $extender = ['request','route'];
 
     /**
      * ExceptionExtender constructor.
@@ -56,8 +56,20 @@ class ExceptionExtender extends ApplicationProvider
         // the expected values ​​for the request object in the exception output.
         if($this->app->has('requestExpected') && config('app.requestWithError')===true){
             if($requestExpected = $this->app->get('requestExpected')){
-                $this->result['request']['expected'] = $requestExpected;
+                $this->result['errorDetails']['request']['expected'] = $requestExpected;
             }
+        }
+    }
+
+    /**
+     * get route data for exception extender
+     *
+     * @return void
+     */
+    public function route()
+    {
+        if($this->app->has('routeResolvedData')){
+            $this->result['errorDetails']['route'] = $this->app->get('routeResolvedData');
         }
     }
 }
