@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.10",
+            "version": "3.112.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d744986383812c6a9e52134adabbb5683e6750fe"
+                "reference": "ec29fd7cf36504fada118afe9c17025ce4c4ad89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d744986383812c6a9e52134adabbb5683e6750fe",
-                "reference": "d744986383812c6a9e52134adabbb5683e6750fe",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec29fd7cf36504fada118afe9c17025ce4c4ad89",
+                "reference": "ec29fd7cf36504fada118afe9c17025ce4c4ad89",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-09-27T18:09:39+00:00"
+            "time": "2019-09-30T18:45:33+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -568,16 +568,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v7.2.2",
+            "version": "v7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "eefeaa8decab4056d6457d179147cd885faf6653"
+                "reference": "f8b5d2beeeb22a5a59aabb183b5bcd7e70878d2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/eefeaa8decab4056d6457d179147cd885faf6653",
-                "reference": "eefeaa8decab4056d6457d179147cd885faf6653",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/f8b5d2beeeb22a5a59aabb183b5bcd7e70878d2f",
+                "reference": "f8b5d2beeeb22a5a59aabb183b5bcd7e70878d2f",
                 "shasum": ""
             },
             "require": {
@@ -624,7 +624,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2019-08-30T08:20:06+00:00"
+            "time": "2019-09-30T12:52:38+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -2396,12 +2396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "2a5901aabbce5028fda9971072b3a9698ffaf3a8"
+                "reference": "e0b94e6860ba2613abac424f85c5ab15b72e87fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/2a5901aabbce5028fda9971072b3a9698ffaf3a8",
-                "reference": "2a5901aabbce5028fda9971072b3a9698ffaf3a8",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/e0b94e6860ba2613abac424f85c5ab15b72e87fc",
+                "reference": "e0b94e6860ba2613abac424f85c5ab15b72e87fc",
                 "shasum": ""
             },
             "require": {
@@ -2473,7 +2473,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-09-28T08:20:37+00:00"
+            "time": "2019-10-01T12:37:49+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
