@@ -2,6 +2,7 @@
 
 namespace Store\Services;
 
+use Resta\Client\Client;
 use Resta\Contracts\ApplicationContracts;
 use Resta\Foundation\ApplicationProvider;
 
@@ -15,7 +16,7 @@ class ExceptionExtender extends ApplicationProvider
     /**
      * @var array
      */
-    protected $extender = ['request','route'];
+    protected $extender = ['request','route','client'];
 
     /**
      * ExceptionExtender constructor.
@@ -33,6 +34,13 @@ class ExceptionExtender extends ApplicationProvider
                 $this->{$item}();
             }
         }
+    }
+
+    public function client()
+    {
+        $this->result['errorDetails']['client']['GET']  = get();
+        $this->result['errorDetails']['client']['POST'] = post();
+        $this->result['errorDetails']['client']['PUT']  = json_decode(request()->getContent());
     }
 
     /**
