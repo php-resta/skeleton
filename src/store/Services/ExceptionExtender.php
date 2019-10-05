@@ -2,7 +2,7 @@
 
 namespace Store\Services;
 
-use Resta\Client\Client;
+use Resta\Support\Http;
 use Resta\Contracts\ApplicationContracts;
 use Resta\Foundation\ApplicationProvider;
 
@@ -38,9 +38,12 @@ class ExceptionExtender extends ApplicationProvider
 
     public function client()
     {
-        $this->result['errorDetails']['client']['GET']  = get();
-        $this->result['errorDetails']['client']['POST'] = post();
-        $this->result['errorDetails']['client']['PUT']  = json_decode(request()->getContent());
+        $http = new Http();
+
+        $this->result['errorDetails']['client']['GET']  = $http->httpMethodData();
+        $this->result['errorDetails']['client']['POST'] = $http->httpMethodData('post');
+        $this->result['errorDetails']['client']['PUT']  = $http->httpMethodData('put');
+        $this->result['errorDetails']['client']['DELETE']  = $http->httpMethodData('delete');
     }
 
     /**
