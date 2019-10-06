@@ -44,6 +44,7 @@ class ExceptionExtender extends ApplicationProvider
         $this->result['errorDetails']['client']['POST'] = $http->httpMethodData('post');
         $this->result['errorDetails']['client']['PUT']  = $http->httpMethodData('put');
         $this->result['errorDetails']['client']['DELETE']  = $http->httpMethodData('delete');
+        $this->result['errorDetails']['client']['Headers']  = headers();
     }
 
     /**
