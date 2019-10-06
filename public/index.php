@@ -2,6 +2,7 @@
 
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, PUT,DELETE,OPTIONS,HEAD');
+header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Headers: token,apikey,Content-Type');
 
 /**
