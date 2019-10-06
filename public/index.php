@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+
 /**
  * Resta core system composer vendor autoload.
  * For libraries that specify autoload information, Composer generates a vendor/autoload.php file.
