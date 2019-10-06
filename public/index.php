@@ -1,7 +1,7 @@
 <?php
 
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: *');
+header('Access-Control-Allow-Headers: token,apikey,Content-Type');
 
 /**
  * Resta core system composer vendor autoload.
