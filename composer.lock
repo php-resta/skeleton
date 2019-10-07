@@ -1891,16 +1891,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.25.0",
+            "version": "2.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "b70da677101cca7b584c7489770d2677c2733593"
+                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b70da677101cca7b584c7489770d2677c2733593",
-                "reference": "b70da677101cca7b584c7489770d2677c2733593",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
+                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1954,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-09-30T16:22:22+00:00"
+            "time": "2019-10-05T15:52:23+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2396,12 +2396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "fc4d017de51772090b262f1c6db81cb2a692b60b"
+                "reference": "a29f2e2569983e0741d9d01d79f377368adf7969"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/fc4d017de51772090b262f1c6db81cb2a692b60b",
-                "reference": "fc4d017de51772090b262f1c6db81cb2a692b60b",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/a29f2e2569983e0741d9d01d79f377368adf7969",
+                "reference": "a29f2e2569983e0741d9d01d79f377368adf7969",
                 "shasum": ""
             },
             "require": {
@@ -2473,7 +2473,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-10-05T15:14:49+00:00"
+            "time": "2019-10-07T14:53:22+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4068,16 +4068,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "6a9cc3ed7f61c6c2bc042d0594cdb807b6fea62c"
+                "reference": "5c7bd827617fcb9b13e04e423c31c0fb0bcf0160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/6a9cc3ed7f61c6c2bc042d0594cdb807b6fea62c",
-                "reference": "6a9cc3ed7f61c6c2bc042d0594cdb807b6fea62c",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/5c7bd827617fcb9b13e04e423c31c0fb0bcf0160",
+                "reference": "5c7bd827617fcb9b13e04e423c31c0fb0bcf0160",
                 "shasum": ""
             },
             "require": {
@@ -4134,7 +4134,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2019-08-26T07:52:58+00:00"
+            "time": "2019-09-29T21:19:44+00:00"
         },
         {
             "name": "symfony/console",
@@ -4337,7 +4337,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -4400,7 +4400,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -4499,16 +4499,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "b3d57a1c325f39f703b249bed7998ce8c64236b4"
+                "reference": "233f40cbebd595ffd91ddf291355f8a930a13777"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/b3d57a1c325f39f703b249bed7998ce8c64236b4",
-                "reference": "b3d57a1c325f39f703b249bed7998ce8c64236b4",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/233f40cbebd595ffd91ddf291355f8a930a13777",
+                "reference": "233f40cbebd595ffd91ddf291355f8a930a13777",
                 "shasum": ""
             },
             "require": {
@@ -4549,7 +4549,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-26T07:50:50+00:00"
+            "time": "2019-10-02T16:15:21+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -5064,16 +5064,16 @@
         },
         {
             "name": "symfony/security-csrf",
-            "version": "v3.4.31",
+            "version": "v3.4.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-csrf.git",
-                "reference": "c38e05808e508fed0cc47b1f3316d1b1e3f6beef"
+                "reference": "dff4e8a29445eb2d1509a289bcc9773ef00f2bb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/c38e05808e508fed0cc47b1f3316d1b1e3f6beef",
-                "reference": "c38e05808e508fed0cc47b1f3316d1b1e3f6beef",
+                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/dff4e8a29445eb2d1509a289bcc9773ef00f2bb3",
+                "reference": "dff4e8a29445eb2d1509a289bcc9773ef00f2bb3",
                 "shasum": ""
             },
             "require": {
@@ -5121,7 +5121,7 @@
             ],
             "description": "Symfony Security Component - CSRF Library",
             "homepage": "https://symfony.com",
-            "time": "2019-08-13T06:33:05+00:00"
+            "time": "2019-09-24T05:29:29+00:00"
         },
         {
             "name": "symfony/service-contracts",
