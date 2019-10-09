@@ -25,7 +25,7 @@ class ClientResponseIdentifier extends ApplicationProvider implements BootContra
         if($this->app->runningInConsole()===false){
 
             //We receive the content-type data sent by request.
-            $contentType = headers('content-type');
+            $contentType = headers('accept');
 
             // the content-type header value must start with
             // the application/ string value and specify the next data response type.
