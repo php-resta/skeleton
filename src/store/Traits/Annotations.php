@@ -23,7 +23,7 @@ trait Annotations
     {
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
-        return \application::annotationsLoaders($service,$arg,property_exists($this,'reports') ? $this->reports : false);
+        return \application::annotationsLoaders($service,$arg);
     }
 
     /**
@@ -34,6 +34,6 @@ trait Annotations
     {
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
-        return \application::annotationsLoaders($name,[],property_exists($this,'reports') ? $this->reports : false);
+        return \application::annotationsLoaders($name,[]);
     }
 }
