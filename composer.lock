@@ -702,12 +702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "cf2be08d0f08b0bbe4d9ab3f56a15194540eb02b"
+                "reference": "411b0764b8e24ea872579316e656f9311d6846a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/cf2be08d0f08b0bbe4d9ab3f56a15194540eb02b",
-                "reference": "cf2be08d0f08b0bbe4d9ab3f56a15194540eb02b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/411b0764b8e24ea872579316e656f9311d6846a0",
+                "reference": "411b0764b8e24ea872579316e656f9311d6846a0",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +760,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-30T09:27:27+00:00"
+            "time": "2019-10-30T10:56:22+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "ab8f2aed4b2b36cffa05c9d30ca2653883e5de1b"
+                "reference": "fae7640844ffeacfea8d47f566eadce0e0204720"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/ab8f2aed4b2b36cffa05c9d30ca2653883e5de1b",
-                "reference": "ab8f2aed4b2b36cffa05c9d30ca2653883e5de1b",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/fae7640844ffeacfea8d47f566eadce0e0204720",
+                "reference": "fae7640844ffeacfea8d47f566eadce0e0204720",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-10-30T09:52:29+00:00"
+            "time": "2019-10-30T11:02:49+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
