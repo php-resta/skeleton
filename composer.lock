@@ -702,12 +702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "411b0764b8e24ea872579316e656f9311d6846a0"
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/411b0764b8e24ea872579316e656f9311d6846a0",
-                "reference": "411b0764b8e24ea872579316e656f9311d6846a0",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/df36d8dae3979cf927d5bbbed6f0427f39aadfec",
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +760,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-30T10:56:22+00:00"
+            "time": "2019-10-30T11:22:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "fae7640844ffeacfea8d47f566eadce0e0204720"
+                "reference": "86e9e206ab0a2492974c7935d6fc89cf2f5505f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/fae7640844ffeacfea8d47f566eadce0e0204720",
-                "reference": "fae7640844ffeacfea8d47f566eadce0e0204720",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/86e9e206ab0a2492974c7935d6fc89cf2f5505f0",
+                "reference": "86e9e206ab0a2492974c7935d6fc89cf2f5505f0",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-10-30T11:02:49+00:00"
+            "time": "2019-10-30T13:59:52+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5462,12 +5462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "b58a531af74e2e836a8f00b49b30adf83bed8db7"
+                "reference": "8b24107fe8363d94ec6569217e0cc72664b8314c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/b58a531af74e2e836a8f00b49b30adf83bed8db7",
-                "reference": "b58a531af74e2e836a8f00b49b30adf83bed8db7",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/8b24107fe8363d94ec6569217e0cc72664b8314c",
+                "reference": "8b24107fe8363d94ec6569217e0cc72664b8314c",
                 "shasum": ""
             },
             "require": {
@@ -5513,7 +5513,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-28T20:30:34+00:00"
+            "time": "2019-10-30T13:23:44+00:00"
         },
         {
             "name": "theseer/tokenizer",
