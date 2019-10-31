@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.31",
+            "version": "3.112.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "dd708cda7df0def37e9dcb6e3640d4d122e4bd28"
+                "reference": "1e211dcb7dcf757b041890f072bbaa593b39512a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dd708cda7df0def37e9dcb6e3640d4d122e4bd28",
-                "reference": "dd708cda7df0def37e9dcb6e3640d4d122e4bd28",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1e211dcb7dcf757b041890f072bbaa593b39512a",
+                "reference": "1e211dcb7dcf757b041890f072bbaa593b39512a",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-10-29T18:07:59+00:00"
+            "time": "2019-10-30T18:37:36+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -469,12 +469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "45d9b132b262c1d03835cdeefd42938d881556fa"
+                "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/45d9b132b262c1d03835cdeefd42938d881556fa",
-                "reference": "45d9b132b262c1d03835cdeefd42938d881556fa",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
+                "reference": "ec3a55242203ffa6a4b27c58176da97ff0a7aec1",
                 "shasum": ""
             },
             "require": {
@@ -500,16 +500,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -528,7 +528,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2018-06-15T19:03:38+00:00"
+            "time": "2019-10-30T19:59:35+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "86e9e206ab0a2492974c7935d6fc89cf2f5505f0"
+                "reference": "7a0a4070909fd1addd55cd47b16a46db12efd0d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/86e9e206ab0a2492974c7935d6fc89cf2f5505f0",
-                "reference": "86e9e206ab0a2492974c7935d6fc89cf2f5505f0",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/7a0a4070909fd1addd55cd47b16a46db12efd0d7",
+                "reference": "7a0a4070909fd1addd55cd47b16a46db12efd0d7",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-10-30T13:59:52+00:00"
+            "time": "2019-10-31T08:15:50+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
