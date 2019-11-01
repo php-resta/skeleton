@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.32",
+            "version": "3.112.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1e211dcb7dcf757b041890f072bbaa593b39512a"
+                "reference": "9d8735e4eb252ea8fa3dd1bc11bfcd01f3fa6d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1e211dcb7dcf757b041890f072bbaa593b39512a",
-                "reference": "1e211dcb7dcf757b041890f072bbaa593b39512a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9d8735e4eb252ea8fa3dd1bc11bfcd01f3fa6d6c",
+                "reference": "9d8735e4eb252ea8fa3dd1bc11bfcd01f3fa6d6c",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-10-30T18:37:36+00:00"
+            "time": "2019-10-31T18:10:59+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -301,12 +301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "d82b6aa2b1b0b0a2f7e7454fa59085c4d7ac7e10"
+                "reference": "0d953e583594c86ff7d6867c8b28bfaab5f93255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d82b6aa2b1b0b0a2f7e7454fa59085c4d7ac7e10",
-                "reference": "d82b6aa2b1b0b0a2f7e7454fa59085c4d7ac7e10",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0d953e583594c86ff7d6867c8b28bfaab5f93255",
+                "reference": "0d953e583594c86ff7d6867c8b28bfaab5f93255",
                 "shasum": ""
             },
             "require": {
@@ -385,7 +385,7 @@
                 "sqlserver",
                 "sqlsrv"
             ],
-            "time": "2019-10-28T09:41:46+00:00"
+            "time": "2019-10-31T19:50:46+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "adfcc49e448d04173dd83e7935a41f315a32748f"
+                "reference": "c64316fe2b39ee9db8f71fcbebc49e6dfd04090d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/adfcc49e448d04173dd83e7935a41f315a32748f",
-                "reference": "adfcc49e448d04173dd83e7935a41f315a32748f",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/c64316fe2b39ee9db8f71fcbebc49e6dfd04090d",
+                "reference": "c64316fe2b39ee9db8f71fcbebc49e6dfd04090d",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-10-31T13:01:56+00:00"
+            "time": "2019-11-01T07:46:17+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
