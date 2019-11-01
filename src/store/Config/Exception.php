@@ -35,6 +35,11 @@ class Exception
             'errorType' => $errType,
 
             /**
+             * Error Type.
+             */
+            'errorInput' => self::getErrorInput(),
+
+            /**
              * Error String.
              */
             'errorMessage' => $errStr,
@@ -75,6 +80,11 @@ class Exception
              * Error Type.
              */
             //'errorType'=>$errType,
+
+            /**
+             * Error Type.
+             */
+            'errorInput' => self::getErrorInput(),
 
             /**
              * Error String.
@@ -214,6 +224,21 @@ class Exception
             return (isset($exceptionTypes[$type])) ? $exceptionTypes[$type] : $exceptionTypes['BadFunctionCallException'] ;
         }
         return $exceptionTypes;
+    }
+
+    /**
+     * get error input
+     *
+     * @return null|string
+     */
+    private static function getErrorInput()
+    {
+        if(app()->has('errorInput')){
+            $input = explode(':',app()->get('errorInput'));
+            return current($input);
+        }
+
+        return null;
     }
 
 }
