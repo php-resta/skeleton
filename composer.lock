@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "c64316fe2b39ee9db8f71fcbebc49e6dfd04090d"
+                "reference": "b790b8a472ee198d0d439a9025057637c6976656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/c64316fe2b39ee9db8f71fcbebc49e6dfd04090d",
-                "reference": "c64316fe2b39ee9db8f71fcbebc49e6dfd04090d",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b790b8a472ee198d0d439a9025057637c6976656",
+                "reference": "b790b8a472ee198d0d439a9025057637c6976656",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-01T07:46:17+00:00"
+            "time": "2019-11-01T12:16:41+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3298,12 +3298,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "d477130b23d419404dbd4bfea1aa557b3236bbc7"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d477130b23d419404dbd4bfea1aa557b3236bbc7",
-                "reference": "d477130b23d419404dbd4bfea1aa557b3236bbc7",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -3337,7 +3337,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-10-30T09:18:31+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "psr/simple-cache",
