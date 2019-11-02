@@ -35,8 +35,8 @@ class Manifest extends Kernel
         */
         'providers' => [
 
-            'EloquentServiceProvider'                   => EloquentServiceProvider::class,
-            'ConsoleExceptionHandlerServiceProvider'    => ConsoleExceptionHandlerServiceProvider::class,
+            'EloquentServiceProvider'                   => ['class' => EloquentServiceProvider::class,'status' => true],
+            'ConsoleExceptionHandlerServiceProvider'    => ['class' => ConsoleExceptionHandlerServiceProvider::class],
         ],
 
     ];
@@ -49,6 +49,6 @@ class Manifest extends Kernel
      */
     protected function providers(ApplicationContracts $app)
     {
-        $this->run['providers']['ConsoleExceptionHandlerServiceProvider'] = $app->console();
+        $this->run['providers']['ConsoleExceptionHandlerServiceProvider']['status'] = $app->console();
     }
 }
