@@ -36,5 +36,8 @@
         "zendframework/zend-config": "^3.2",
         "zendframework/zend-crypt": "^3.3"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "nunomaduro/collision": "dev-master"
+    }
 }
