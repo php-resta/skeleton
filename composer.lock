@@ -312,7 +312,7 @@
             "require": {
                 "doctrine/cache": "^1.0",
                 "doctrine/event-manager": "^1.0",
-                "ext-pdo": "*",
+                "ocramius/package-versions": "^1.2",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -1868,6 +1868,57 @@
             "time": "2019-10-25T18:33:07+00:00"
         },
         {
+            "name": "ocramius/package-versions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "6e9ddfbbbb1683df71cee3c7751a82edd26f92a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/6e9ddfbbbb1683df71cee3c7751a82edd26f92a1",
+                "reference": "6e9ddfbbbb1683df71cee3c7751a82edd26f92a1",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": "^7.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.8.6",
+                "doctrine/coding-standard": "^6.0.0",
+                "ext-zip": "*",
+                "infection/infection": "^0.13.4",
+                "phpunit/phpunit": "^8.2.5",
+                "vimeo/psalm": "^3.4.9"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "time": "2019-10-29T22:11:08+00:00"
+        },
+        {
             "name": "optimus/onion",
             "version": "1.0.0",
             "source": {
@@ -2195,12 +2246,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "c9df4db51d22b528689a53801c48da0a73461afe"
+                "reference": "209858a68b027d64a84f24cbc61f6ad7a1a86869"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/c9df4db51d22b528689a53801c48da0a73461afe",
-                "reference": "c9df4db51d22b528689a53801c48da0a73461afe",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/209858a68b027d64a84f24cbc61f6ad7a1a86869",
+                "reference": "209858a68b027d64a84f24cbc61f6ad7a1a86869",
                 "shasum": ""
             },
             "require": {
@@ -2267,7 +2318,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-02T14:09:20+00:00"
+            "time": "2019-11-04T06:49:32+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4039,12 +4090,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "24ef52b460db68c97fe4f3a9bfc6c3e4d62f1b34"
+                "reference": "d2be8f79d8abebeafd87cfb9ec656ecb27dfd873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/24ef52b460db68c97fe4f3a9bfc6c3e4d62f1b34",
-                "reference": "24ef52b460db68c97fe4f3a9bfc6c3e4d62f1b34",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/d2be8f79d8abebeafd87cfb9ec656ecb27dfd873",
+                "reference": "d2be8f79d8abebeafd87cfb9ec656ecb27dfd873",
                 "shasum": ""
             },
             "require": {
@@ -4080,7 +4131,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-12T00:35:04+00:00"
+            "time": "2019-10-30T12:55:29+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -4586,12 +4637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "67ed9f351ad0be7b3b8388282e1d487c32f148ae"
+                "reference": "0477394639dfc44076904921e0d63a601570746f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/67ed9f351ad0be7b3b8388282e1d487c32f148ae",
-                "reference": "67ed9f351ad0be7b3b8388282e1d487c32f148ae",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/0477394639dfc44076904921e0d63a601570746f",
+                "reference": "0477394639dfc44076904921e0d63a601570746f",
                 "shasum": ""
             },
             "require": {
@@ -4651,7 +4702,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2019-10-28T22:18:08+00:00"
+            "time": "2019-11-02T07:21:17+00:00"
         },
         {
             "name": "symfony/security-csrf",
@@ -4828,12 +4879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "1dacacd392004ac71d56f34de1463ec34b32203f"
+                "reference": "d275e8897e8dec9d97019e62171d30ef9921e0c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/1dacacd392004ac71d56f34de1463ec34b32203f",
-                "reference": "1dacacd392004ac71d56f34de1463ec34b32203f",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/d275e8897e8dec9d97019e62171d30ef9921e0c8",
+                "reference": "d275e8897e8dec9d97019e62171d30ef9921e0c8",
                 "shasum": ""
             },
             "require": {
@@ -4896,7 +4947,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-22T15:44:54+00:00"
+            "time": "2019-10-30T12:55:29+00:00"
         },
         {
             "name": "symfony/translation-contracts",
