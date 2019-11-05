@@ -34,7 +34,8 @@
         "php-resta/resta-core": "dev-master",
         "unsplash/unsplash": "^2.5",
         "zendframework/zend-config": "^3.2",
-        "zendframework/zend-crypt": "^3.3"
+        "zendframework/zend-crypt": "^3.3",
+        "giggsey/libphonenumber-for-php": "^8.0@dev"
     },
     "minimum-stability": "dev",
     "require-dev": {
