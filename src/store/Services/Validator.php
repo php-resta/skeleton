@@ -98,15 +98,9 @@ class Validator
     {
         $phoneUtil = PhoneNumberUtil::getInstance();
 
-        if($client->has('phone_code')){
-            $countryCode = $phoneUtil->getRegionCodeForCountryCode(
-                str_replace('+','',$client->input('phone_code'))
-            );
-        }
-        else{
-            $geo = self::geoPluginInstance();
-            $countryCode = $geo['geoplugin_countryCode'];
-        }
+        $countryCode = $phoneUtil->getRegionCodeForCountryCode(
+            str_replace('+','',$client->input('phone_code'))
+        );
 
         try {
             $swissNumberProto = $phoneUtil->parse($phone, $countryCode);
@@ -114,20 +108,17 @@ class Validator
             $valid = $phoneUtil->isValidNumber($swissNumberProto);
 
             if(false === $valid){
-                exception('phoneNumber',['key'=>$input.':'.$phone])->invalidArgument('phone number is not valid');
+                exception('phoneNumber',['key'=>$input.':'.$phone])
+                    ->invalidArgument('phone number is not valid');
             }
-
-            if(app()->has('phoneUtil')){
-                app()->terminate('phoneUtil');
-            }
-
-            app()->register('phoneUtil',$swissNumberProto);
 
         } catch (NumberParseException $e) {
             if(!is_numeric($countryCode)){
-                exception('phoneNumber',['key'=>'phone_code'.':'.$client->input('phone_code')])->invalidArgument($e->getMessage());
+                exception('phoneNumber',['key'=>'phone_code'.':'.$client->input('phone_code')])
+                    ->invalidArgument($e->getMessage());
             }
-            exception('phoneNumber',['key'=>$input.':'.$phone])->invalidArgument($e->getMessage());
+            exception('phoneNumber',['key'=>$input.':'.$phone])
+                ->invalidArgument($e->getMessage());
         }
     }
 
@@ -152,19 +143,5 @@ class Validator
     private static function checkArrayValidator($data)
     {
         return (is_array($data)) ? $data : [$data];
-    }
-
-    /**
-     * get geo plugin instance
-     *
-     * @return mixed
-     */
-    private static function geoPluginInstance()
-    {
-        if(false === app()->has('geoPluginInstance')){
-            app()->register('geoPluginInstance',json_decode(file_get_contents('http://www.geoplugin.net/json.gp'),1));
-        }
-
-        return app()->get('geoPluginInstance');
     }
 }
