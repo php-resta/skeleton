@@ -2363,12 +2363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "f1782b5af515cea7b8ab6e348c1019d65079d4af"
+                "reference": "fc1ea038c608409d967bc67dc7eef59a6451d0b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/f1782b5af515cea7b8ab6e348c1019d65079d4af",
-                "reference": "f1782b5af515cea7b8ab6e348c1019d65079d4af",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/fc1ea038c608409d967bc67dc7eef59a6451d0b1",
+                "reference": "fc1ea038c608409d967bc67dc7eef59a6451d0b1",
                 "shasum": ""
             },
             "require": {
@@ -2435,7 +2435,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-07T11:27:21+00:00"
+            "time": "2019-11-07T13:39:08+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
