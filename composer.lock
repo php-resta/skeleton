@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.114.1",
+            "version": "3.115.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "94d8df3d2de310df8475d76a729c88c6c1348be4"
+                "reference": "c705a740705bdfb7c23394a3a92adb2fe13fe149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/94d8df3d2de310df8475d76a729c88c6c1348be4",
-                "reference": "94d8df3d2de310df8475d76a729c88c6c1348be4",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c705a740705bdfb7c23394a3a92adb2fe13fe149",
+                "reference": "c705a740705bdfb7c23394a3a92adb2fe13fe149",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-06T23:05:00+00:00"
+            "time": "2019-11-07T19:27:35+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2363,12 +2363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "753ee55a98a21118636d0652c542910ef2d27717"
+                "reference": "30c3aa71c8115d33c19df0d11cf62d6f3f3921ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/753ee55a98a21118636d0652c542910ef2d27717",
-                "reference": "753ee55a98a21118636d0652c542910ef2d27717",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/30c3aa71c8115d33c19df0d11cf62d6f3f3921ed",
+                "reference": "30c3aa71c8115d33c19df0d11cf62d6f3f3921ed",
                 "shasum": ""
             },
             "require": {
@@ -2435,7 +2435,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-07T13:50:57+00:00"
+            "time": "2019-11-08T12:18:33+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4996,12 +4996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "0d20fa8a5a8998823d31c9d08d3b3b7f5a1c3ea9"
+                "reference": "33077a96146f0ab928c5b8094bd95fe82d33b046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/0d20fa8a5a8998823d31c9d08d3b3b7f5a1c3ea9",
-                "reference": "0d20fa8a5a8998823d31c9d08d3b3b7f5a1c3ea9",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/33077a96146f0ab928c5b8094bd95fe82d33b046",
+                "reference": "33077a96146f0ab928c5b8094bd95fe82d33b046",
                 "shasum": ""
             },
             "require": {
@@ -5023,7 +5023,7 @@
                 "symfony/console": "^3.4|^4.0|^5.0",
                 "symfony/dependency-injection": "^3.4|^4.0|^5.0",
                 "symfony/finder": "~2.8|~3.0|~4.0|^5.0",
-                "symfony/http-kernel": "^3.4|^4.0|^5.0",
+                "symfony/http-kernel": "^3.4|^4.0",
                 "symfony/intl": "^3.4|^4.0|^5.0",
                 "symfony/service-contracts": "^1.1.2|^2",
                 "symfony/var-dumper": "^3.4|^4.0|^5.0",
@@ -5064,7 +5064,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-05T17:23:20+00:00"
+            "time": "2019-11-08T08:33:02+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -5304,12 +5304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "2024406e8ec50078066823f3fa6c28bb22b5f04a"
+                "reference": "8f9c0b326786bf73e702e45bfb5facfcc6c839be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2024406e8ec50078066823f3fa6c28bb22b5f04a",
-                "reference": "2024406e8ec50078066823f3fa6c28bb22b5f04a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8f9c0b326786bf73e702e45bfb5facfcc6c839be",
+                "reference": "8f9c0b326786bf73e702e45bfb5facfcc6c839be",
                 "shasum": ""
             },
             "require": {
@@ -5362,7 +5362,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-10-17T07:32:17+00:00"
+            "time": "2019-11-07T21:14:12+00:00"
         },
         {
             "name": "unsplash/unsplash",
