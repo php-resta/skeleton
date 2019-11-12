@@ -218,12 +218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "28421fa006c5def1fd149fae025c0f22adb45346"
+                "reference": "090ec91febc44aeb9d80f4e8b7091f8e013e667a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/28421fa006c5def1fd149fae025c0f22adb45346",
-                "reference": "28421fa006c5def1fd149fae025c0f22adb45346",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/090ec91febc44aeb9d80f4e8b7091f8e013e667a",
+                "reference": "090ec91febc44aeb9d80f4e8b7091f8e013e667a",
                 "shasum": ""
             },
             "require": {
@@ -292,7 +292,7 @@
                 "redis",
                 "xcache"
             ],
-            "time": "2019-11-12T08:17:03+00:00"
+            "time": "2019-11-12T10:40:18+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc"
+                "reference": "f862853987130d73777ca038ec49d4ed5f0d5df4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9a9981c347c5c49d6dfe5cf826bb882b824080dc",
-                "reference": "9a9981c347c5c49d6dfe5cf826bb882b824080dc",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f862853987130d73777ca038ec49d4ed5f0d5df4",
+                "reference": "f862853987130d73777ca038ec49d4ed5f0d5df4",
                 "shasum": ""
             },
             "require": {
@@ -1981,7 +1981,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-11-08T13:50:10+00:00"
+            "time": "2019-11-12T14:22:35+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -2362,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "ca76abf7693ade3b6f01636e8f17f5acf14a5acf"
+                "reference": "b64e20331c1670a598ab706c623a9bc1ab03b33b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/ca76abf7693ade3b6f01636e8f17f5acf14a5acf",
-                "reference": "ca76abf7693ade3b6f01636e8f17f5acf14a5acf",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b64e20331c1670a598ab706c623a9bc1ab03b33b",
+                "reference": "b64e20331c1670a598ab706c623a9bc1ab03b33b",
                 "shasum": ""
             },
             "require": {
@@ -2434,7 +2434,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-12T08:59:18+00:00"
+            "time": "2019-11-12T15:20:40+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4799,12 +4799,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "7e8b84edff56f1def893e2d50eaea989244339b5"
+                "reference": "e51090a1ff375c4394f095e12f8f11556f9a54cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/7e8b84edff56f1def893e2d50eaea989244339b5",
-                "reference": "7e8b84edff56f1def893e2d50eaea989244339b5",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/e51090a1ff375c4394f095e12f8f11556f9a54cc",
+                "reference": "e51090a1ff375c4394f095e12f8f11556f9a54cc",
                 "shasum": ""
             },
             "require": {
@@ -4864,7 +4864,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2019-11-09T22:08:03+00:00"
+            "time": "2019-11-12T14:51:11+00:00"
         },
         {
             "name": "symfony/security-csrf",
@@ -5250,12 +5250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "8b24107fe8363d94ec6569217e0cc72664b8314c"
+                "reference": "76de473358fe802578a415d5bb43c296cf09d211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/8b24107fe8363d94ec6569217e0cc72664b8314c",
-                "reference": "8b24107fe8363d94ec6569217e0cc72664b8314c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/76de473358fe802578a415d5bb43c296cf09d211",
+                "reference": "76de473358fe802578a415d5bb43c296cf09d211",
                 "shasum": ""
             },
             "require": {
@@ -5301,7 +5301,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-30T13:23:44+00:00"
+            "time": "2019-11-12T14:51:11+00:00"
         },
         {
             "name": "theseer/tokenizer",
