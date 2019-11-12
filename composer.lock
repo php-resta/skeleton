@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.115.1",
+            "version": "3.115.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "43407075f446c202d9520498d4ebcbc5de439690"
+                "reference": "15792196be1b3b1b5663bca7b6cd021d005e2265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/43407075f446c202d9520498d4ebcbc5de439690",
-                "reference": "43407075f446c202d9520498d4ebcbc5de439690",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/15792196be1b3b1b5663bca7b6cd021d005e2265",
+                "reference": "15792196be1b3b1b5663bca7b6cd021d005e2265",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-08T19:17:23+00:00"
+            "time": "2019-11-11T19:22:34+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -218,12 +218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "4ab713973a6e97fb224adaa7864b7403221ad7bd"
+                "reference": "28421fa006c5def1fd149fae025c0f22adb45346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/4ab713973a6e97fb224adaa7864b7403221ad7bd",
-                "reference": "4ab713973a6e97fb224adaa7864b7403221ad7bd",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/28421fa006c5def1fd149fae025c0f22adb45346",
+                "reference": "28421fa006c5def1fd149fae025c0f22adb45346",
                 "shasum": ""
             },
             "require": {
@@ -290,10 +290,9 @@
                 "memcached",
                 "php",
                 "redis",
-                "riak",
                 "xcache"
             ],
-            "time": "2019-11-11T02:00:11+00:00"
+            "time": "2019-11-12T08:17:03+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -1690,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bd95e23bd212a96d75f4e6b2a105063a91fa1971"
+                "reference": "65f1f304d4e68759970a5c663ad2ae46faa47013"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bd95e23bd212a96d75f4e6b2a105063a91fa1971",
-                "reference": "bd95e23bd212a96d75f4e6b2a105063a91fa1971",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65f1f304d4e68759970a5c663ad2ae46faa47013",
+                "reference": "65f1f304d4e68759970a5c663ad2ae46faa47013",
                 "shasum": ""
             },
             "require": {
@@ -1760,7 +1759,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2019-09-09T11:53:32+00:00"
+            "time": "2019-11-11T17:21:38+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -2363,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "256cbc2963e7536a44a784ed8aa1234d3b3a3e75"
+                "reference": "ca76abf7693ade3b6f01636e8f17f5acf14a5acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/256cbc2963e7536a44a784ed8aa1234d3b3a3e75",
-                "reference": "256cbc2963e7536a44a784ed8aa1234d3b3a3e75",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/ca76abf7693ade3b6f01636e8f17f5acf14a5acf",
+                "reference": "ca76abf7693ade3b6f01636e8f17f5acf14a5acf",
                 "shasum": ""
             },
             "require": {
@@ -2435,7 +2434,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-11T08:47:33+00:00"
+            "time": "2019-11-12T08:59:18+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5350,12 +5349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8f9c0b326786bf73e702e45bfb5facfcc6c839be"
+                "reference": "4a773f923fd22fdff66f1d042648d73aa0d51bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8f9c0b326786bf73e702e45bfb5facfcc6c839be",
-                "reference": "8f9c0b326786bf73e702e45bfb5facfcc6c839be",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4a773f923fd22fdff66f1d042648d73aa0d51bdf",
+                "reference": "4a773f923fd22fdff66f1d042648d73aa0d51bdf",
                 "shasum": ""
             },
             "require": {
@@ -5408,7 +5407,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-11-07T21:14:12+00:00"
+            "time": "2019-11-11T16:50:21+00:00"
         },
         {
             "name": "unsplash/unsplash",
@@ -6096,12 +6095,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "6be66450953cdd4485c319abb959f3cb7f7aed36"
+                "reference": "b24b791f817116b29e52a63e8544884cf9a40757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/6be66450953cdd4485c319abb959f3cb7f7aed36",
-                "reference": "6be66450953cdd4485c319abb959f3cb7f7aed36",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/b24b791f817116b29e52a63e8544884cf9a40757",
+                "reference": "b24b791f817116b29e52a63e8544884cf9a40757",
                 "shasum": ""
             },
             "require": {
@@ -6144,7 +6143,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-10T09:37:33+00:00"
+            "time": "2019-11-10T17:54:30+00:00"
         }
     ],
     "aliases": [],
