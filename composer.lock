@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.115.2",
+            "version": "3.116.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "15792196be1b3b1b5663bca7b6cd021d005e2265"
+                "reference": "b0669936681365a6c5201a6d28bfa76553052912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/15792196be1b3b1b5663bca7b6cd021d005e2265",
-                "reference": "15792196be1b3b1b5663bca7b6cd021d005e2265",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b0669936681365a6c5201a6d28bfa76553052912",
+                "reference": "b0669936681365a6c5201a6d28bfa76553052912",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-11T19:22:34+00:00"
+            "time": "2019-11-12T19:15:09+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "65f1f304d4e68759970a5c663ad2ae46faa47013"
+                "reference": "f97cc755af78886da8b5878ab7db225fbbc0f8f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65f1f304d4e68759970a5c663ad2ae46faa47013",
-                "reference": "65f1f304d4e68759970a5c663ad2ae46faa47013",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f97cc755af78886da8b5878ab7db225fbbc0f8f3",
+                "reference": "f97cc755af78886da8b5878ab7db225fbbc0f8f3",
                 "shasum": ""
             },
             "require": {
@@ -1759,7 +1759,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2019-11-11T17:21:38+00:00"
+            "time": "2019-11-12T21:28:59+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -2362,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "b64e20331c1670a598ab706c623a9bc1ab03b33b"
+                "reference": "da461d16ae028827748248ae303b5d5cb9047753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b64e20331c1670a598ab706c623a9bc1ab03b33b",
-                "reference": "b64e20331c1670a598ab706c623a9bc1ab03b33b",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/da461d16ae028827748248ae303b5d5cb9047753",
+                "reference": "da461d16ae028827748248ae303b5d5cb9047753",
                 "shasum": ""
             },
             "require": {
@@ -2434,7 +2434,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-12T15:20:40+00:00"
+            "time": "2019-11-13T07:26:55+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3284,12 +3284,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
-                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/5628725d0e4d687e29575eb41f9d5ee7de33a84c",
+                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c",
                 "shasum": ""
             },
             "require": {
@@ -3323,7 +3323,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-11-01T11:05:21+00:00"
+            "time": "2019-11-12T16:45:05+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -5041,12 +5041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "5e9514d3994ed56afca7afb1c8f0fb2973592358"
+                "reference": "897fb68ee7933372517b551d6f08c6d4bb0b8c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/5e9514d3994ed56afca7afb1c8f0fb2973592358",
-                "reference": "5e9514d3994ed56afca7afb1c8f0fb2973592358",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/897fb68ee7933372517b551d6f08c6d4bb0b8c40",
+                "reference": "897fb68ee7933372517b551d6f08c6d4bb0b8c40",
                 "shasum": ""
             },
             "require": {
@@ -5057,6 +5057,7 @@
             "conflict": {
                 "symfony/config": "<3.4",
                 "symfony/dependency-injection": "<3.4",
+                "symfony/http-kernel": "<4.4",
                 "symfony/yaml": "<3.4"
             },
             "provide": {
@@ -5068,10 +5069,9 @@
                 "symfony/console": "^3.4|^4.0|^5.0",
                 "symfony/dependency-injection": "^3.4|^4.0|^5.0",
                 "symfony/finder": "~2.8|~3.0|~4.0|^5.0",
-                "symfony/http-kernel": "^3.4|^4.0",
+                "symfony/http-kernel": "^4.4",
                 "symfony/intl": "^3.4|^4.0|^5.0",
                 "symfony/service-contracts": "^1.1.2|^2",
-                "symfony/var-dumper": "^3.4|^4.0|^5.0",
                 "symfony/yaml": "^3.4|^4.0|^5.0"
             },
             "suggest": {
@@ -5109,7 +5109,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-09T09:30:00+00:00"
+            "time": "2019-11-12T17:18:47+00:00"
         },
         {
             "name": "symfony/translation-contracts",
