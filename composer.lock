@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.116.0",
+            "version": "3.117.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b0669936681365a6c5201a6d28bfa76553052912"
+                "reference": "6951cd08326d939f1fd1097a490fccb9751a59d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b0669936681365a6c5201a6d28bfa76553052912",
-                "reference": "b0669936681365a6c5201a6d28bfa76553052912",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6951cd08326d939f1fd1097a490fccb9751a59d7",
+                "reference": "6951cd08326d939f1fd1097a490fccb9751a59d7",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-12T19:15:09+00:00"
+            "time": "2019-11-14T19:27:06+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -651,12 +651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "81b340016900ccec86a1d4911f7661d14e248c0a"
+                "reference": "a959610ae8a77796d1613384dcea6dabe8f53503"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/81b340016900ccec86a1d4911f7661d14e248c0a",
-                "reference": "81b340016900ccec86a1d4911f7661d14e248c0a",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/a959610ae8a77796d1613384dcea6dabe8f53503",
+                "reference": "a959610ae8a77796d1613384dcea6dabe8f53503",
                 "shasum": ""
             },
             "require": {
@@ -693,7 +693,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2019-11-05T07:57:28+00:00"
+            "time": "2019-11-14T13:18:39+00:00"
         },
         {
             "name": "giggsey/libphonenumber-for-php",
@@ -701,12 +701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "f3a55dcb6fead9d4fb291c6dadda0564e5ae8d3f"
+                "reference": "e5643cc3e10b3e071632b23c973ec5fe20137a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/f3a55dcb6fead9d4fb291c6dadda0564e5ae8d3f",
-                "reference": "f3a55dcb6fead9d4fb291c6dadda0564e5ae8d3f",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/e5643cc3e10b3e071632b23c973ec5fe20137a56",
+                "reference": "e5643cc3e10b3e071632b23c973ec5fe20137a56",
                 "shasum": ""
             },
             "require": {
@@ -761,7 +761,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2019-10-30T11:52:30+00:00"
+            "time": "2019-11-13T09:59:46+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f97cc755af78886da8b5878ab7db225fbbc0f8f3"
+                "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f97cc755af78886da8b5878ab7db225fbbc0f8f3",
-                "reference": "f97cc755af78886da8b5878ab7db225fbbc0f8f3",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
+                "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
                 "shasum": ""
             },
             "require": {
@@ -1759,7 +1759,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2019-11-12T21:28:59+00:00"
+            "time": "2019-11-13T10:00:05+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -2362,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "da461d16ae028827748248ae303b5d5cb9047753"
+                "reference": "d3b937d26f70b8fa0f1bd5fada397f1e4304881a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/da461d16ae028827748248ae303b5d5cb9047753",
-                "reference": "da461d16ae028827748248ae303b5d5cb9047753",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d3b937d26f70b8fa0f1bd5fada397f1e4304881a",
+                "reference": "d3b937d26f70b8fa0f1bd5fada397f1e4304881a",
                 "shasum": ""
             },
             "require": {
@@ -2434,7 +2434,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-13T07:26:55+00:00"
+            "time": "2019-11-15T13:23:27+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4074,12 +4074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "9307cc18f444d0b4f6b56daceaa7e55174dfdfb5"
+                "reference": "8d5db9c0cecf8b6f79fa96583fae652224d897da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/9307cc18f444d0b4f6b56daceaa7e55174dfdfb5",
-                "reference": "9307cc18f444d0b4f6b56daceaa7e55174dfdfb5",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/8d5db9c0cecf8b6f79fa96583fae652224d897da",
+                "reference": "8d5db9c0cecf8b6f79fa96583fae652224d897da",
                 "shasum": ""
             },
             "require": {
@@ -4136,7 +4136,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2019-10-24T15:33:53+00:00"
+            "time": "2019-11-12T12:50:33+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -4301,12 +4301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "a5d46a33e8649ba802cebe520d188b04385572a2"
+                "reference": "9e4b3ac8fa3348b4811674d23de32d201de225ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/a5d46a33e8649ba802cebe520d188b04385572a2",
-                "reference": "a5d46a33e8649ba802cebe520d188b04385572a2",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/9e4b3ac8fa3348b4811674d23de32d201de225ce",
+                "reference": "9e4b3ac8fa3348b4811674d23de32d201de225ce",
                 "shasum": ""
             },
             "require": {
@@ -4347,7 +4347,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-03T02:12:45+00:00"
+            "time": "2019-11-11T12:53:10+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -5349,12 +5349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "4a773f923fd22fdff66f1d042648d73aa0d51bdf"
+                "reference": "69030c7fb574cfa02b1220f6a595358c956714d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4a773f923fd22fdff66f1d042648d73aa0d51bdf",
-                "reference": "4a773f923fd22fdff66f1d042648d73aa0d51bdf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/69030c7fb574cfa02b1220f6a595358c956714d8",
+                "reference": "69030c7fb574cfa02b1220f6a595358c956714d8",
                 "shasum": ""
             },
             "require": {
@@ -5407,7 +5407,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-11-11T16:50:21+00:00"
+            "time": "2019-11-15T12:37:35+00:00"
         },
         {
             "name": "unsplash/unsplash",
@@ -6023,12 +6023,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "c7edffb26b29cae972ca4afccb610a38ce8d0ccf"
+                "reference": "17b154f932c5874cdbda6d05796b6490eec9f9f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c7edffb26b29cae972ca4afccb610a38ce8d0ccf",
-                "reference": "c7edffb26b29cae972ca4afccb610a38ce8d0ccf",
+                "url": "https://api.github.com/repos/symfony/console/zipball/17b154f932c5874cdbda6d05796b6490eec9f9f7",
+                "reference": "17b154f932c5874cdbda6d05796b6490eec9f9f7",
                 "shasum": ""
             },
             "require": {
@@ -6087,7 +6087,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-10-24T15:33:53+00:00"
+            "time": "2019-11-13T07:12:39+00:00"
         },
         {
             "name": "symfony/debug",
