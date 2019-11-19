@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.117.2",
+            "version": "3.118.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3dc81df70f1cdf2842c85915548bffb870c1e1da"
+                "reference": "e4600c22cb69c94d1aa65bf91af5c225f2a109fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3dc81df70f1cdf2842c85915548bffb870c1e1da",
-                "reference": "3dc81df70f1cdf2842c85915548bffb870c1e1da",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e4600c22cb69c94d1aa65bf91af5c225f2a109fd",
+                "reference": "e4600c22cb69c94d1aa65bf91af5c225f2a109fd",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-15T19:21:02+00:00"
+            "time": "2019-11-18T19:13:19+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -218,12 +218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "e9b91cce6956a423d3e0c057c6428dfc59f06bc1"
+                "reference": "231a7ee3ef9542767e0ef1c18b14ae2f8e0837c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/e9b91cce6956a423d3e0c057c6428dfc59f06bc1",
-                "reference": "e9b91cce6956a423d3e0c057c6428dfc59f06bc1",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/231a7ee3ef9542767e0ef1c18b14ae2f8e0837c5",
+                "reference": "231a7ee3ef9542767e0ef1c18b14ae2f8e0837c5",
                 "shasum": ""
             },
             "require": {
@@ -292,7 +292,7 @@
                 "redis",
                 "xcache"
             ],
-            "time": "2019-11-15T14:34:43+00:00"
+            "time": "2019-11-19T00:18:54+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -1870,12 +1870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "e0715fb955475c4bf5560db6917f8ef1f3a6fc91"
+                "reference": "89d14fb06947e546857df0ff6b92f6e3cf02c452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e0715fb955475c4bf5560db6917f8ef1f3a6fc91",
-                "reference": "e0715fb955475c4bf5560db6917f8ef1f3a6fc91",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/89d14fb06947e546857df0ff6b92f6e3cf02c452",
+                "reference": "89d14fb06947e546857df0ff6b92f6e3cf02c452",
                 "shasum": ""
             },
             "require": {
@@ -1932,7 +1932,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-11-17T19:59:49+00:00"
+            "time": "2019-11-18T15:27:46+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2365,12 +2365,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "a4debd4d61dbf3f2b761d9f5fd124948bdca8079"
+                "reference": "e00988c77aff5af0bf04095c478e1ef4aa630899"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/a4debd4d61dbf3f2b761d9f5fd124948bdca8079",
-                "reference": "a4debd4d61dbf3f2b761d9f5fd124948bdca8079",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/e00988c77aff5af0bf04095c478e1ef4aa630899",
+                "reference": "e00988c77aff5af0bf04095c478e1ef4aa630899",
                 "shasum": ""
             },
             "require": {
@@ -2437,7 +2437,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-18T13:45:11+00:00"
+            "time": "2019-11-19T13:13:03+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5353,12 +5353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8208cc20fe677b0c423f948e5a9ba9349d22cd8a"
+                "reference": "badf167c2c0f5a4bdc522911ccd9a7f4e421178c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8208cc20fe677b0c423f948e5a9ba9349d22cd8a",
-                "reference": "8208cc20fe677b0c423f948e5a9ba9349d22cd8a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/badf167c2c0f5a4bdc522911ccd9a7f4e421178c",
+                "reference": "badf167c2c0f5a4bdc522911ccd9a7f4e421178c",
                 "shasum": ""
             },
             "require": {
@@ -5411,7 +5411,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-11-15T15:46:00+00:00"
+            "time": "2019-11-18T17:28:41+00:00"
         },
         {
             "name": "unsplash/unsplash",
