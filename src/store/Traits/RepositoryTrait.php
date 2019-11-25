@@ -12,6 +12,10 @@ trait RepositoryTrait
      */
     public function adapter()
     {
+        if(method_exists($this,'setAdapter')){
+            $this->setAdapter();
+        }
+
         return app()->resolve($this->getRepositorySourceAdapter(),app()->get('bindings'));
     }
 
