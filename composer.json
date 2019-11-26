@@ -20,7 +20,8 @@
             "Providers\\": "src/providers",
             "Gateway\\": "src/gateway",
             "Bootstrapper\\" : "bootstrapper",
-            "Test\\" : "tests"
+            "Test\\" : "tests",
+            "Stripe\\": "src/store/Packages/Payment/Stripe/lib"
 
         },
         "files": []
