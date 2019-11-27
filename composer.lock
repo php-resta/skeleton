@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.121.1",
+            "version": "3.123.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d766697d06ee0abff255f6c6d522c6e65a4cc767"
+                "reference": "3bf671629a3b2a5a5694f8dfee15686e586b33b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d766697d06ee0abff255f6c6d522c6e65a4cc767",
-                "reference": "d766697d06ee0abff255f6c6d522c6e65a4cc767",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3bf671629a3b2a5a5694f8dfee15686e586b33b6",
+                "reference": "3bf671629a3b2a5a5694f8dfee15686e586b33b6",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-11-22T19:14:53+00:00"
+            "time": "2019-11-26T19:08:40+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -592,12 +592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "830a6f6fdb4a6b7005ff914fe761e1a92ebb5cb8"
+                "reference": "07a5db3861a9865764e2c8fa7fcfdc46b4787d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/830a6f6fdb4a6b7005ff914fe761e1a92ebb5cb8",
-                "reference": "830a6f6fdb4a6b7005ff914fe761e1a92ebb5cb8",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/07a5db3861a9865764e2c8fa7fcfdc46b4787d62",
+                "reference": "07a5db3861a9865764e2c8fa7fcfdc46b4787d62",
                 "shasum": ""
             },
             "require": {
@@ -622,6 +622,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
                 "psr-4": {
                     "Elasticsearch\\": "src/Elasticsearch/"
                 }
@@ -644,7 +647,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2019-11-19T15:10:44+00:00"
+            "time": "2019-11-26T12:22:33+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -702,12 +705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "ddf2d2f0b833fa2169e6fffd820f434bacbd2dc4"
+                "reference": "356a97b1601edde8256dace68fe7ffeec0d777f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/ddf2d2f0b833fa2169e6fffd820f434bacbd2dc4",
-                "reference": "ddf2d2f0b833fa2169e6fffd820f434bacbd2dc4",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/356a97b1601edde8256dace68fe7ffeec0d777f9",
+                "reference": "356a97b1601edde8256dace68fe7ffeec0d777f9",
                 "shasum": ""
             },
             "require": {
@@ -762,7 +765,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2019-11-18T07:59:31+00:00"
+            "time": "2019-11-26T16:09:47+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -2366,12 +2369,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "bd0a28e2cd0aa123c1cd8da9027eb1d5bf2abc45"
+                "reference": "ba32c2f6ea86ed79082c7dd1996e096a51eb1182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/bd0a28e2cd0aa123c1cd8da9027eb1d5bf2abc45",
-                "reference": "bd0a28e2cd0aa123c1cd8da9027eb1d5bf2abc45",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/ba32c2f6ea86ed79082c7dd1996e096a51eb1182",
+                "reference": "ba32c2f6ea86ed79082c7dd1996e096a51eb1182",
                 "shasum": ""
             },
             "require": {
@@ -2438,7 +2441,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2019-11-21T12:14:28+00:00"
+            "time": "2019-11-27T09:35:46+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4206,12 +4209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516"
+                "reference": "00cdad0936d06fab136944bc2342b762b1c3a4a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
-                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/00cdad0936d06fab136944bc2342b762b1c3a4a2",
+                "reference": "00cdad0936d06fab136944bc2342b762b1c3a4a2",
                 "shasum": ""
             },
             "require": {
@@ -4248,7 +4251,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-20T13:31:17+00:00"
+            "time": "2019-11-25T16:36:22+00:00"
         },
         {
             "name": "symfony/finder",
