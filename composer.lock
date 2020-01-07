@@ -702,27 +702,30 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "400cefd25a23a3098486bfb52685b5367a464171"
+                "reference": "db9e56915c44625a19fad8b5948f7ca039673fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/400cefd25a23a3098486bfb52685b5367a464171",
-                "reference": "400cefd25a23a3098486bfb52685b5367a464171",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/db9e56915c44625a19fad8b5948f7ca039673fc5",
+                "reference": "db9e56915c44625a19fad8b5948f7ca039673fc5",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
+                "php": "^7.2.5",
+                "psr/http-client": "^1.0"
             },
             "require-dev": {
+                "ergebnis/composer-normalize": "^2.0",
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "php-http/client-integration-tests": "dev-phpunit8",
+                "phpunit/phpunit": "^8.5",
                 "psr/log": "^1.1"
             },
             "suggest": {
@@ -732,7 +735,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.5-dev"
+                    "dev-master": "7.0-dev"
                 }
             },
             "autoload": {
@@ -752,6 +755,11 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
@@ -765,7 +773,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-12-30T04:52:42+00:00"
+            "time": "2020-01-02T14:13:09+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2086,12 +2094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "7b65827cb9449d40ab15ab4912a9f4f042b1d4b0"
+                "reference": "01d765d1eb4f7328fa2c3edf93c96041f184a3b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/7b65827cb9449d40ab15ab4912a9f4f042b1d4b0",
-                "reference": "7b65827cb9449d40ab15ab4912a9f4f042b1d4b0",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/01d765d1eb4f7328fa2c3edf93c96041f184a3b9",
+                "reference": "01d765d1eb4f7328fa2c3edf93c96041f184a3b9",
                 "shasum": ""
             },
             "require": {
@@ -2100,7 +2108,6 @@
                 "doctrine/dbal": "^2.7",
                 "ext-json": "*",
                 "fzaninotto/faker": "^1.7",
-                "guzzlehttp/guzzle": "^6.2",
                 "illuminate/database": "^5.4",
                 "illuminate/events": "^5.8",
                 "illuminate/pagination": "^5.4",
@@ -2158,7 +2165,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-01-07T12:03:18+00:00"
+            "time": "2020-01-07T13:57:25+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2957,6 +2964,55 @@
                 "psr-14"
             ],
             "time": "2019-05-22T19:30:22+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "fd5d37ae5a76ee3c5301a762faf66bf9519132ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/fd5d37ae5a76ee3c5301a762faf66bf9519132ef",
+                "reference": "fd5d37ae5a76ee3c5301a762faf66bf9519132ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "time": "2019-09-04T06:46:09+00:00"
         },
         {
             "name": "psr/http-message",
