@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.131.0",
+            "version": "3.132.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "371ca02855c92c13e36fa5f6d38e68211354c979"
+                "reference": "b12a8adb23793baa2b69f8078d05ee59e816f1ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/371ca02855c92c13e36fa5f6d38e68211354c979",
-                "reference": "371ca02855c92c13e36fa5f6d38e68211354c979",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b12a8adb23793baa2b69f8078d05ee59e816f1ec",
+                "reference": "b12a8adb23793baa2b69f8078d05ee59e816f1ec",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-01-06T19:10:20+00:00"
+            "time": "2020-01-08T19:14:13+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2094,12 +2094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "01d765d1eb4f7328fa2c3edf93c96041f184a3b9"
+                "reference": "b6f4b0643a8eebadaa275fda19a227701d7cea87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/01d765d1eb4f7328fa2c3edf93c96041f184a3b9",
-                "reference": "01d765d1eb4f7328fa2c3edf93c96041f184a3b9",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/b6f4b0643a8eebadaa275fda19a227701d7cea87",
+                "reference": "b6f4b0643a8eebadaa275fda19a227701d7cea87",
                 "shasum": ""
             },
             "require": {
@@ -2165,7 +2165,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-01-07T13:57:25+00:00"
+            "time": "2020-01-09T07:38:08+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -5136,12 +5136,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "54be566c0462205280e31e2886a1824afa83ea6e"
+                "reference": "ca4d96b7b7eb9e3bc7551a8686ee7a2311df5481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/54be566c0462205280e31e2886a1824afa83ea6e",
-                "reference": "54be566c0462205280e31e2886a1824afa83ea6e",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca4d96b7b7eb9e3bc7551a8686ee7a2311df5481",
+                "reference": "ca4d96b7b7eb9e3bc7551a8686ee7a2311df5481",
                 "shasum": ""
             },
             "require": {
@@ -5192,7 +5192,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2020-01-01T17:09:02+00:00"
+            "time": "2020-01-08T08:27:15+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5404,6 +5404,7 @@
                 "crypt",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-crypt",
             "time": "2019-10-24T07:13:52+00:00"
         },
         {
@@ -5826,12 +5827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "bb2ab8bc2d006c771becdfd57ef22b3b525c1414"
+                "reference": "89c3fd5c299b940333bc6fe9f1b8db1b0912c759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/bb2ab8bc2d006c771becdfd57ef22b3b525c1414",
-                "reference": "bb2ab8bc2d006c771becdfd57ef22b3b525c1414",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/89c3fd5c299b940333bc6fe9f1b8db1b0912c759",
+                "reference": "89c3fd5c299b940333bc6fe9f1b8db1b0912c759",
                 "shasum": ""
             },
             "require": {
@@ -5874,7 +5875,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2020-01-04T13:00:46+00:00"
+            "time": "2020-01-08T17:29:02+00:00"
         }
     ],
     "aliases": [],
