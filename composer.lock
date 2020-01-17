@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.0",
+            "version": "3.133.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fc59f16e01317c7445204baaeff7224050153a97"
+                "reference": "27b4f0fbdf34a88df6788ffdefc3620511894676"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fc59f16e01317c7445204baaeff7224050153a97",
-                "reference": "fc59f16e01317c7445204baaeff7224050153a97",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/27b4f0fbdf34a88df6788ffdefc3620511894676",
+                "reference": "27b4f0fbdf34a88df6788ffdefc3620511894676",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-01-15T19:18:01+00:00"
+            "time": "2020-01-16T21:19:17+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -823,12 +823,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "39be17b98c24bf310876690af6d567967914a5d9"
+                "reference": "2c1455e8dd44c4cea97e7fcc8969dc7815a23eae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/39be17b98c24bf310876690af6d567967914a5d9",
-                "reference": "39be17b98c24bf310876690af6d567967914a5d9",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/2c1455e8dd44c4cea97e7fcc8969dc7815a23eae",
+                "reference": "2c1455e8dd44c4cea97e7fcc8969dc7815a23eae",
                 "shasum": ""
             },
             "require": {
@@ -890,7 +890,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2020-01-12T02:43:13+00:00"
+            "time": "2020-01-16T13:29:20+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1767,12 +1767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "9d98e56f2a76bb19487d3d82623b321545b632a7"
+                "reference": "5764ef0bdc52feafd750278404d23e9fdf8f6507"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/9d98e56f2a76bb19487d3d82623b321545b632a7",
-                "reference": "9d98e56f2a76bb19487d3d82623b321545b632a7",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5764ef0bdc52feafd750278404d23e9fdf8f6507",
+                "reference": "5764ef0bdc52feafd750278404d23e9fdf8f6507",
                 "shasum": ""
             },
             "require": {
@@ -1829,7 +1829,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-01-11T14:23:05+00:00"
+            "time": "2020-01-16T16:46:00+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2211,12 +2211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "d28aa11cc80eaabab1720c5ef83215cf53ede9ef"
+                "reference": "8ea99d2c539298b2b8ae7fd9e64ce2b76138e0bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d28aa11cc80eaabab1720c5ef83215cf53ede9ef",
-                "reference": "d28aa11cc80eaabab1720c5ef83215cf53ede9ef",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/8ea99d2c539298b2b8ae7fd9e64ce2b76138e0bf",
+                "reference": "8ea99d2c539298b2b8ae7fd9e64ce2b76138e0bf",
                 "shasum": ""
             },
             "require": {
@@ -2282,7 +2282,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-01-16T07:30:36+00:00"
+            "time": "2020-01-17T07:02:44+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2342,12 +2342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "f256f0b49e236c3b4705804d9998379282e0f75d"
+                "reference": "cf16f630f2211d388b8d254bf2ea936c232b3cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/f256f0b49e236c3b4705804d9998379282e0f75d",
-                "reference": "f256f0b49e236c3b4705804d9998379282e0f75d",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cf16f630f2211d388b8d254bf2ea936c232b3cb4",
+                "reference": "cf16f630f2211d388b8d254bf2ea936c232b3cb4",
                 "shasum": ""
             },
             "require": {
@@ -2387,7 +2387,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-01-12T12:26:24+00:00"
+            "time": "2020-01-16T08:49:07+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
