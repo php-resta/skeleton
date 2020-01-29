@@ -182,27 +182,78 @@ class Manager
         return $this->client->create($params);
     }
 
+    public function documents($index)
+    {
+        $params = [
+            'index' => $index,
+            //'type' => $this->type,
+            'body' => [
+                'query' => [
+                    'match_all' => []
+                ]
+            ],
+            'size' => 1000
+        ];
+
+        $this->search = $this->client->search($params);
+        return $this->get();
+    }
+
     /**
      * @param array $params
      * @return $this
      */
     public function search(...$params)
     {
-        [$index,$fields,$match] = current($params);
+        $currentParams = current($params);
 
-        $params = [
-            'index' => $index,
-            //'type' => $this->type,
-            'body' => [
-                'query' => [
-                    'multi_match' => [
-                        'query' => $match,
-                        'fields'=>$fields,
-                        'fuzziness' => "AUTO",
+        if(isset($currentParams[3])){
+            [$index,$fields,$match,$where] = current($params);
+
+            $params = [
+                'index' => $index,
+                //'type' => $this->type,
+                'body' => [
+                    'query' => [
+                        'bool' => [
+                            'filter' => [
+                                'term' => $where
+                            ],
+                            'must' => [
+                                'multi_match' => [
+                                    'query' => $match,
+                                    'fields'=>$fields,
+                                    'fuzziness' => "AUTO:1,5",
+                                ]
+                            ]
+                        ]
                     ]
                 ]
-            ]
-        ];
+            ];
+        }
+        else{
+            [$index,$fields,$match] = current($params);
+
+            $params = [
+                'index' => $index,
+                //'type' => $this->type,
+                'body' => [
+                    'query' => [
+                        'bool' => [
+                            'must' => [
+                                'multi_match' => [
+                                    'query' => $match,
+                                    'fields'=>$fields,
+                                    'fuzziness' => "AUTO",
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ];
+        }
+
+
 
         $this->search = $this->client->search($params);
         return $this->get();

@@ -11,7 +11,8 @@ namespace Store\Packages\Search;
  * @method static deleteDatabase($database=null)
  * @method static existDatabase($database=null)
  * @method static health($params=array())
- * @method static search($index=null,$fields=array(),$match=null)
+ * @method static search($index=null,$fields=array(),$match=null,$where=array())
+ * @method static documents($index)
  * @package Store\Packages\Search
  */
 class Search
