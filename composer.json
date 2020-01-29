@@ -39,6 +39,6 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "nunomaduro/collision": "dev-master"
+        "nunomaduro/collision": "^4.0"
     }
 }
