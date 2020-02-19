@@ -287,11 +287,11 @@ class Manager
 
             $wildcard = [];
 
-            foreach ($fields as $field){
+            /**foreach ($fields as $field){
 
                 $field = preg_replace('@\^(\d+)@is','',$field);
                 $wildcard[]['bool']['should']['wildcard'][$field]['value']='*'.$match.'*';
-            }
+            }**/
 
 
             $page = get('page',1);
@@ -318,7 +318,16 @@ class Manager
                                                 'fuzziness' => "AUTO:1,5",
                                             ]
                                         ],
-                                       $wildcard
+                                       [
+                                           'bool' => [
+                                               'should' => [
+                                                   'query_string' => [
+                                                       'query' => '*'.$match.'*',
+                                                       "fields" => $fields
+                                                   ]
+                                               ]
+                                           ]
+                                       ]
 
                                     ]
                                 ]
