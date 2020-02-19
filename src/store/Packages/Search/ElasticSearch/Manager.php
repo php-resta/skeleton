@@ -200,6 +200,75 @@ class Manager
     }
 
     /**
+     * @param mixed ...$params
+     * @return array
+     */
+    public function update(...$params)
+    {
+        $currentParams = current($params);
+
+        [$index,$value,$data] = $currentParams;
+
+        $params = [
+            'index' => $index,
+            'id' => $value,
+            'body' => [
+                'doc' => $data
+            ]
+        ];
+
+       try{
+           return $this->client->update($params);
+       }
+       catch (\Exception $exception){
+           return null;
+       }
+    }
+
+    /**
+     * @param mixed ...$params
+     * @return bool|void
+     */
+    public function exists(...$params)
+    {
+        [$index,$key,$value] = current($params);
+
+        $params = [
+            'index' => $index,
+            'body'  => [
+                'query' => [
+                    'bool' => [
+                        'must' => [
+                            [
+                                'term' => [
+                                    $key => $value
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            ];
+
+        try {
+            $result = $this->client->search($params);
+
+            if(isset($result['hits']['total']['value'])){
+                $value = $result['hits']['total']['value'];
+                if($value=='0'){
+                    return false;
+                }
+
+                return true;
+            }
+
+        } catch (\Exception $e) {
+            return false;
+        }
+
+    }
+
+    /**
      * @param array $params
      * @return $this
      */
@@ -207,10 +276,21 @@ class Manager
     {
         $currentParams = current($params);
 
+        $points = 0;
+
+        if(isset($currentParams[4])){
+            $points = $currentParams[4];
+        }
+
         if(isset($currentParams[3])){
             [$index,$fields,$match,$where] = current($params);
 
+            $page = get('page',1);
+            $from = $page-1;
+
             $params = [
+                'from' => $from,
+                'size' => config('app.pagination'),
                 'index' => $index,
                 //'type' => $this->type,
                 'body' => [
@@ -220,34 +300,47 @@ class Manager
                                 'term' => $where
                             ],
                             'must' => [
-                                'multi_match' => [
-                                    'query' => $match,
-                                    'fields'=>$fields,
-                                    'fuzziness' => "AUTO:1,5",
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ];
-        }
-        else{
-            [$index,$fields,$match] = current($params);
+                                'bool' => [
+                                    'should' => [
+                                        [
+                                            'multi_match' => [
+                                                'query' => $match,
+                                                'fields'=>$fields,
+                                                'fuzziness' => "AUTO:1,5",
+                                            ]
+                                        ],
+                                        [
+                                            'bool' => [
+                                                'should' => [
+                                                    'wildcard' => [
+                                                        'category_name' => [
+                                                            'value' => '*piz*',
+                                                            'boost' => 1
+                                                        ]
 
-            $params = [
-                'index' => $index,
-                //'type' => $this->type,
-                'body' => [
-                    'query' => [
-                        'bool' => [
-                            'must' => [
-                                'multi_match' => [
-                                    'query' => $match,
-                                    'fields'=>$fields,
-                                    'fuzziness' => "AUTO",
+                                                    ]
+                                                ]
+                                            ]
+                                        ],
+                                        [
+                                            'bool' => [
+                                                'should' => [
+                                                    'wildcard' => [
+                                                        'menu_item_name' => [
+                                                            'value' => '*piz*',
+                                                            'boost' => 1
+                                                        ]
+
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+
+                                    ]
                                 ]
                             ]
-                        ]
+                        ],
+
                     ]
                 ]
             ];
@@ -256,7 +349,8 @@ class Manager
 
 
         $this->search = $this->client->search($params);
-        return $this->get();
+
+        return $this->get($points);
     }
 
     /**
@@ -278,7 +372,7 @@ class Manager
     /**
      * @return mixed
      */
-    public function get()
+    public function get($points)
     {
         $sources = $this->search['hits']['hits'];
         
@@ -286,14 +380,25 @@ class Manager
 
         foreach ($sources as $key=>$source) {
 
-            $list[$key]['id'] = $source['_id'];
-            $list[$key]['score'] = $source['_score'];
-            foreach ($source['_source'] as $resourceKey=>$resource){
-                $list[$key][$resourceKey] = $resource;
+            if($source['_score']>$points){
+                $list[$key]['id'] = $source['_id'];
+                $list[$key]['score'] = $source['_score'];
+                foreach ($source['_source'] as $resourceKey=>$resource){
+                    $list[$key][$resourceKey] = $resource;
+                }
             }
+
         }
 
-        return $list;
+        if(count($sources)=='0'){
+            return [];
+        }
+
+        if(count($list)){
+            return $list;
+        }
+
+        return $this->get(0);
     }
 
     /**

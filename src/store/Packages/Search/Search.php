@@ -7,11 +7,13 @@ namespace Store\Packages\Search;
  * @method static allDatabases()
  * @method static createDatabase($database=null)
  * @method static insert($index=null,$data=array())
+ * @method static update($index,$idValue,$data=array())
+ * @method static exists($index,$key,$value)
  * @method static createFields($index=null,$fields=array())
  * @method static deleteDatabase($database=null)
  * @method static existDatabase($database=null)
  * @method static health($params=array())
- * @method static search($index=null,$fields=array(),$match=null,$where=array())
+ * @method static search($index=null,$fields=array(),$match=null,$where=array(),$point=0)
  * @method static documents($index)
  * @package Store\Packages\Search
  */
