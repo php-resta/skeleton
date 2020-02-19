@@ -285,6 +285,15 @@ class Manager
         if(isset($currentParams[3])){
             [$index,$fields,$match,$where] = current($params);
 
+            $wildcard = [];
+
+            foreach ($fields as $field){
+
+                $field = preg_replace('@\^(\d+)@is','',$field);
+                $wildcard[]['bool']['should']['wildcard'][$field]['value']='*'.$match.'*';
+            }
+
+
             $page = get('page',1);
             $from = $page-1;
 
@@ -309,32 +318,7 @@ class Manager
                                                 'fuzziness' => "AUTO:1,5",
                                             ]
                                         ],
-                                        [
-                                            'bool' => [
-                                                'should' => [
-                                                    'wildcard' => [
-                                                        'category_name' => [
-                                                            'value' => '*piz*',
-                                                            'boost' => 1
-                                                        ]
-
-                                                    ]
-                                                ]
-                                            ]
-                                        ],
-                                        [
-                                            'bool' => [
-                                                'should' => [
-                                                    'wildcard' => [
-                                                        'menu_item_name' => [
-                                                            'value' => '*piz*',
-                                                            'boost' => 1
-                                                        ]
-
-                                                    ]
-                                                ]
-                                            ]
-                                        ]
+                                       $wildcard
 
                                     ]
                                 ]
