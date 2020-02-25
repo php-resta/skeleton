@@ -231,7 +231,16 @@ class Manager
      */
     public function exists(...$params)
     {
-        [$index,$key,$value] = current($params);
+        $currentParams = current($params);
+
+        if(isset($currentParams[2])){
+            [$index,$key,$value] = $currentParams;
+        }
+
+        if(is_array($currentParams[1])){
+            [$index,$key] = $currentParams;
+        }
+
 
         $params = [
             'index' => $index,
@@ -283,16 +292,7 @@ class Manager
         }
 
         if(isset($currentParams[3])){
-            [$index,$fields,$match,$where] = current($params);
-
-            $wildcard = [];
-
-            /**foreach ($fields as $field){
-
-                $field = preg_replace('@\^(\d+)@is','',$field);
-                $wildcard[]['bool']['should']['wildcard'][$field]['value']='*'.$match.'*';
-            }**/
-
+            [$index,$fields,$match,$where] = $currentParams;
 
             $page = get('page',1);
             $from = $page-1;
@@ -306,7 +306,7 @@ class Manager
                     'query' => [
                         'bool' => [
                             'filter' => [
-                                'term' => $where
+                                $where
                             ],
                             'must' => [
                                 'bool' => [
