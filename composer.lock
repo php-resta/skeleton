@@ -593,12 +593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "8c6aab9defc94644fae4dc88e8b4371f6f2d5213"
+                "reference": "5979197f4b6c49cb6c53705d6bca62d3fcff25f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/8c6aab9defc94644fae4dc88e8b4371f6f2d5213",
-                "reference": "8c6aab9defc94644fae4dc88e8b4371f6f2d5213",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/5979197f4b6c49cb6c53705d6bca62d3fcff25f0",
+                "reference": "5979197f4b6c49cb6c53705d6bca62d3fcff25f0",
                 "shasum": ""
             },
             "require": {
@@ -648,7 +648,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2020-02-27T09:25:26+00:00"
+            "time": "2020-02-28T14:13:56+00:00"
         },
         {
             "name": "ezimuel/guzzlestreams",
@@ -2215,12 +2215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "13f89e931cdac0007cabcac8eb2cebe25ce293c7"
+                "reference": "978f8c8f7c4558928fdd04558131921b52eb428e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/13f89e931cdac0007cabcac8eb2cebe25ce293c7",
-                "reference": "13f89e931cdac0007cabcac8eb2cebe25ce293c7",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/978f8c8f7c4558928fdd04558131921b52eb428e",
+                "reference": "978f8c8f7c4558928fdd04558131921b52eb428e",
                 "shasum": ""
             },
             "require": {
@@ -2286,7 +2286,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-02-28T10:09:41+00:00"
+            "time": "2020-02-28T14:19:27+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
