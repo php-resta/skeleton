@@ -35,7 +35,8 @@
         "php-resta/resta-core": "dev-master",
         "zendframework/zend-config": "^3.2",
         "zendframework/zend-crypt": "^3.3",
-        "giggsey/libphonenumber-for-php": "^8.0@dev"
+        "giggsey/libphonenumber-for-php": "^8.0@dev",
+        "ext-pdo": "*"
     },
     "minimum-stability": "dev",
     "require-dev": {
