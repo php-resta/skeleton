@@ -1771,12 +1771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "658941fb7b48e3a9202c7a6b4bd1c3bd68db48ee"
+                "reference": "ca197a5e31acb17e1ac6fe2708b65e367534ec1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/658941fb7b48e3a9202c7a6b4bd1c3bd68db48ee",
-                "reference": "658941fb7b48e3a9202c7a6b4bd1c3bd68db48ee",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ca197a5e31acb17e1ac6fe2708b65e367534ec1b",
+                "reference": "ca197a5e31acb17e1ac6fe2708b65e367534ec1b",
                 "shasum": ""
             },
             "require": {
@@ -1833,7 +1833,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-02-24T22:19:22+00:00"
+            "time": "2020-02-28T09:38:36+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2215,12 +2215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "37e8ab0bcfa38710fd93069985e42d9263122b59"
+                "reference": "13f89e931cdac0007cabcac8eb2cebe25ce293c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/37e8ab0bcfa38710fd93069985e42d9263122b59",
-                "reference": "37e8ab0bcfa38710fd93069985e42d9263122b59",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/13f89e931cdac0007cabcac8eb2cebe25ce293c7",
+                "reference": "13f89e931cdac0007cabcac8eb2cebe25ce293c7",
                 "shasum": ""
             },
             "require": {
@@ -2286,7 +2286,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-02-26T06:58:27+00:00"
+            "time": "2020-02-28T10:09:41+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3191,12 +3191,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c"
+                "reference": "e1cb6eca27ccfd46567a2837eeba62bc5fecdee2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/5628725d0e4d687e29575eb41f9d5ee7de33a84c",
-                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/e1cb6eca27ccfd46567a2837eeba62bc5fecdee2",
+                "reference": "e1cb6eca27ccfd46567a2837eeba62bc5fecdee2",
                 "shasum": ""
             },
             "require": {
@@ -3230,7 +3230,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-11-12T16:45:05+00:00"
+            "time": "2020-02-28T08:38:25+00:00"
         },
         {
             "name": "psr/simple-cache",
