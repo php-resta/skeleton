@@ -37,16 +37,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.24",
+            "version": "3.133.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "726426e1514be5220d55ecf02eb1f938a3b4a105"
+                "reference": "5527195465ac42cb5127a60b84eb2d8dc3b0d5c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/726426e1514be5220d55ecf02eb1f938a3b4a105",
-                "reference": "726426e1514be5220d55ecf02eb1f938a3b4a105",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5527195465ac42cb5127a60b84eb2d8dc3b0d5c9",
+                "reference": "5527195465ac42cb5127a60b84eb2d8dc3b0d5c9",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-27T19:13:45+00:00"
+            "time": "2020-03-02T19:20:19+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -807,12 +807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "d429c468fdc8d7b68aefc6f5a2cb7fee0cc26ee9"
+                "reference": "095dc721e8a090124b69005b14c1aeec93141c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/d429c468fdc8d7b68aefc6f5a2cb7fee0cc26ee9",
-                "reference": "d429c468fdc8d7b68aefc6f5a2cb7fee0cc26ee9",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/095dc721e8a090124b69005b14c1aeec93141c86",
+                "reference": "095dc721e8a090124b69005b14c1aeec93141c86",
                 "shasum": ""
             },
             "require": {
@@ -867,7 +867,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2020-02-12T11:21:37+00:00"
+            "time": "2020-03-02T09:12:35+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -1771,12 +1771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "ca197a5e31acb17e1ac6fe2708b65e367534ec1b"
+                "reference": "94fddb83ff3c79ed50f97659376573831fe7ceec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ca197a5e31acb17e1ac6fe2708b65e367534ec1b",
-                "reference": "ca197a5e31acb17e1ac6fe2708b65e367534ec1b",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/94fddb83ff3c79ed50f97659376573831fe7ceec",
+                "reference": "94fddb83ff3c79ed50f97659376573831fe7ceec",
                 "shasum": ""
             },
             "require": {
@@ -1833,7 +1833,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-02-28T09:38:36+00:00"
+            "time": "2020-03-03T10:15:13+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2215,12 +2215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-resta/resta-core.git",
-                "reference": "978f8c8f7c4558928fdd04558131921b52eb428e"
+                "reference": "d1a325e4186fa88c056986a1ed7119e23502fe75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/978f8c8f7c4558928fdd04558131921b52eb428e",
-                "reference": "978f8c8f7c4558928fdd04558131921b52eb428e",
+                "url": "https://api.github.com/repos/php-resta/resta-core/zipball/d1a325e4186fa88c056986a1ed7119e23502fe75",
+                "reference": "d1a325e4186fa88c056986a1ed7119e23502fe75",
                 "shasum": ""
             },
             "require": {
@@ -2286,7 +2286,7 @@
                 "restapi",
                 "restfull"
             ],
-            "time": "2020-02-28T14:19:27+00:00"
+            "time": "2020-03-03T10:53:58+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2399,12 +2399,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "7462d5f123dfc080dfdf26897032a6513644fc95"
+                "reference": "aa06ba38ed9e5133feb70ea95b42a2e5354f52b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/7462d5f123dfc080dfdf26897032a6513644fc95",
-                "reference": "7462d5f123dfc080dfdf26897032a6513644fc95",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/aa06ba38ed9e5133feb70ea95b42a2e5354f52b8",
+                "reference": "aa06ba38ed9e5133feb70ea95b42a2e5354f52b8",
                 "shasum": ""
             },
             "require": {
@@ -2437,7 +2437,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-02-18T18:59:58+00:00"
+            "time": "2020-03-01T10:45:06+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -4605,12 +4605,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "81352f944947455b68f400513f32b41f213b7a36"
+                "reference": "d8e76c104127675d0ea3df3be0f2ae24a8619027"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/81352f944947455b68f400513f32b41f213b7a36",
-                "reference": "81352f944947455b68f400513f32b41f213b7a36",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/d8e76c104127675d0ea3df3be0f2ae24a8619027",
+                "reference": "d8e76c104127675d0ea3df3be0f2ae24a8619027",
                 "shasum": ""
             },
             "require": {
@@ -4649,7 +4649,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2020-02-27T09:26:54+00:00"
+            "time": "2020-03-02T11:55:35+00:00"
         },
         {
             "name": "symfony/process",
@@ -6292,12 +6292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "912a09f6d5fd29f1d36a586300d1e393dca91c91"
+                "reference": "22e058fa10a94dc67624c8750ed0621a7e4762b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/912a09f6d5fd29f1d36a586300d1e393dca91c91",
-                "reference": "912a09f6d5fd29f1d36a586300d1e393dca91c91",
+                "url": "https://api.github.com/repos/symfony/string/zipball/22e058fa10a94dc67624c8750ed0621a7e4762b7",
+                "reference": "22e058fa10a94dc67624c8750ed0621a7e4762b7",
                 "shasum": ""
             },
             "require": {
@@ -6353,7 +6353,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2020-02-21T07:43:56+00:00"
+            "time": "2020-02-29T10:07:16+00:00"
         }
     ],
     "aliases": [],
