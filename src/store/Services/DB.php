@@ -82,7 +82,7 @@ class DB
             'DATETIME' => 'datetime',
             'DATE' => 'date',
             'DOUBLE' => 'float',
-            'TIMESTAMP' => 'string'
+            'TIMESTAMP' => 'datetime'
         );
 
         return isset($trans[$type]) ? $trans[$type] : null ;
