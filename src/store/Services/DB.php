@@ -94,14 +94,32 @@ class DB
 
         $table = current($table);
 
-        if(!is_null($table)){
-            $select = $this->getConnection()->query('SELECT * FROM '.$table);
-            $columnCount = $select->columnCount();
+        $select = $this->getConnection()->query('SHOW COLUMNS FROM '.$table);
 
-            for ($counter = 0; $counter < $columnCount; $counter++){
-                $meta = $select->getColumnMeta($counter);
-                $list[$meta['name']] = $this->getNativeType($meta['native_type']);
+        foreach ($select->fetchAll() as $values){
+            if(preg_match('@int@is',$values['Type'])){
+                $type = 'integer';
+                $list[$values['Field']] = $type;
             }
+
+            elseif(preg_match('@timestamp@is',$values['Type'])){
+                $type = 'datetime';
+                $list[$values['Field']] = $type;
+            }
+
+            elseif(preg_match('@float|double@is',$values['Type'])){
+                $type = 'float';
+                $list[$values['Field']] = $type;
+            }
+
+            else{
+
+                $type = 'string';
+                $list[$values['Field']] = $type;
+            }
+
+
+
         }
 
         return $list;
