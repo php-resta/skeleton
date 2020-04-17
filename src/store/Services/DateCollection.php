@@ -3,6 +3,7 @@
 namespace Store\Services;
 
 use Carbon\Carbon;
+use Carbon\CarbonInterface;
 use Carbon\CarbonPeriod;
 
 class DateCollection
@@ -26,7 +27,7 @@ class DateCollection
     }
 
     /**
-     * @return mixed
+     * @return CarbonInterface
      */
     public function now()
     {

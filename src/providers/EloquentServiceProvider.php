@@ -22,6 +22,9 @@ class EloquentServiceProvider extends ServiceProviderManager
         // models allow you to query for data in your tables, as well as insert new records into the table.
         $eloquent = new Eloquent();
 
+        //We save the eloquent object in the container.
+        $this->app->register('connection',$eloquent);
+
         $this->app->bind(ConnectionInterface::class,function() use($eloquent){
             return $eloquent->getConnection();
         });
