@@ -131,7 +131,11 @@ class DB
         return $this->getConnection()->query('SHOW KEYS FROM '.$table)->fetchAll();
     }
 
-    public function getUniques($table)
+    /**
+     * @param $table
+     * @return array
+     */
+    public function getUniques($table) : array
     {
         $keys = $this->getKeys($table);
 
