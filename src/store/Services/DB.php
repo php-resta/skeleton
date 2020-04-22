@@ -10,6 +10,8 @@ use PDO;
  * @method static array config()
  * @method static array fieldTypes($table=null)
  * @method static string nativeType($type=null)
+ * @method static string keys($table=null)
+ * @method static string uniques($table=null)
  * @package Store\Services
  */
 class DB
@@ -117,9 +119,28 @@ class DB
                 $type = 'string';
                 $list[$values['Field']] = $type;
             }
+        }
 
+        return $list;
+    }
 
+    public function getKeys($table)
+    {
+        $table = current($table);
 
+        return $this->getConnection()->query('SHOW KEYS FROM '.$table)->fetchAll();
+    }
+
+    public function getUniques($table)
+    {
+        $keys = $this->getKeys($table);
+
+        $list = [];
+
+        foreach ($keys as $data){
+            if($data['Non_unique']=='0' && $data['Key_name']!=='PRIMARY'){
+                $list[$data['Key_name']][] = $data['Column_name'];
+            }
         }
 
         return $list;
