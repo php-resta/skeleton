@@ -2,6 +2,8 @@
 
 namespace Store\Traits;
 
+use Store\Services\DeviceDetectService;
+
 /**
  * Trait ServiceAnnotationsController
  * @method \Predis\Client redis
@@ -35,5 +37,15 @@ trait Annotations
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
         return \application::annotationsLoaders($name,[]);
+    }
+
+    /**
+     * mobile detect service class
+     *
+     * @return DeviceDetectService
+     */
+    public function device()
+    {
+        return app()->resolve(DeviceDetectService::class);
     }
 }
