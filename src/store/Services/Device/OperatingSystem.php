@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Store\Services;
+namespace Store\Services\Device;
 
 use Illuminate\Support\Str;
 

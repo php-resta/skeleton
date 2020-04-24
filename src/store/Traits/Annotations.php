@@ -2,7 +2,7 @@
 
 namespace Store\Traits;
 
-use Store\Services\DeviceDetectService;
+use Store\Services\Device\DeviceDetectService;
 
 /**
  * Trait ServiceAnnotationsController

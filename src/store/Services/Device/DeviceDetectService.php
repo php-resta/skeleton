@@ -1,9 +1,8 @@
 <?php
 
-namespace Store\Services;
+namespace Store\Services\Device;
 
 use Mobile_Detect;
-use Src\Store\Services\OperatingSystem;
 
 class DeviceDetectService
 {
