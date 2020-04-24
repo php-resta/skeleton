@@ -14,6 +14,8 @@ class DateCollection
     protected $locale=null;
 
     /**
+     * get diff value for date
+     *
      * @param $int integer
      * @return string
      */
@@ -27,6 +29,8 @@ class DateCollection
     }
 
     /**
+     * get now value for date
+     *
      * @return CarbonInterface
      */
     public function now()
@@ -35,6 +39,38 @@ class DateCollection
     }
 
     /**
+     * get today value for date
+     *
+     * @return CarbonInterface
+     */
+    public function today()
+    {
+        return Carbon::today();
+    }
+
+    /**
+     * get tomorrow value for date
+     *
+     * @return CarbonInterface
+     */
+    public function tomorrow()
+    {
+        return Carbon::tomorrow();
+    }
+
+    /**
+     * get tomorrow value for date
+     *
+     * @return CarbonInterface
+     */
+    public function yesterday()
+    {
+        return Carbon::yesterday();
+    }
+
+    /**
+     * get period value for date
+     *
      * @param $date
      * @param $period
      * @return CarbonPeriod
@@ -45,6 +81,8 @@ class DateCollection
     }
 
     /**
+     * set locale value for date
+     *
      * @param null $locale
      * @return $this
      */
