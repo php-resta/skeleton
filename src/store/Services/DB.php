@@ -19,7 +19,7 @@ class DB
     /**
      * @var null|mixed
      */
-    private static $instance;
+    protected static $instance;
 
     /**
      * @var null|mixed
@@ -46,7 +46,7 @@ class DB
             $this->connection = new PDO($dsn, $this->config['user'], $this->config['password']);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            self::$instance=true;
+            self::$instance = true;
         }
     }
 
@@ -55,24 +55,28 @@ class DB
      *
      * @return array
      */
-    public function getConfig() : array
+    protected function getConfig() : array
     {
         return $this->config;
     }
 
     /**
+     * get db connection
+     *
      * @return PDO
      */
-    public function getConnection()
+    protected function getConnection()
     {
         return $this->connection;
     }
 
     /**
+     * get native type
+     *
      * @param null|string $type
      * @return mixed|null
      */
-    public function getNativeType($type=null) {
+    protected function getNativeType($type=null) {
 
         $trans = array(
             'VAR_STRING' => 'string',
@@ -90,7 +94,13 @@ class DB
         return isset($trans[$type]) ? $trans[$type] : null ;
     }
 
-    public function getFieldTypes($table=null)
+    /**
+     * get field types
+     *
+     * @param array $table
+     * @return array
+     */
+    protected function getFieldTypes($table = array())
     {
         $list = [];
 
@@ -124,7 +134,13 @@ class DB
         return $list;
     }
 
-    public function getKeys($table)
+    /**
+     * get keys from db
+     *
+     * @param array $table
+     * @return array
+     */
+    protected function getKeys($table = array())
     {
         $table = current($table);
 
@@ -132,17 +148,22 @@ class DB
     }
 
     /**
-     * @param $table
+     * get uniques from db
+     *
+     * @param array $table
      * @return array
      */
-    public function getUniques($table) : array
+    protected function getUniques($table = array()) : array
     {
         $keys = $this->getKeys($table);
 
         $list = [];
 
         foreach ($keys as $data){
-            if($data['Non_unique']=='0' && $data['Key_name']!=='PRIMARY'){
+            if(
+                $data['Non_unique']=='0'
+                && $data['Key_name']!=='PRIMARY'
+            ){
                 $list[$data['Key_name']][] = $data['Column_name'];
             }
         }
@@ -151,6 +172,8 @@ class DB
     }
 
     /**
+     * magic static method for db annotations
+     *
      * @param $name
      * @param $arguments
      * @return null|mixed
@@ -158,6 +181,22 @@ class DB
     public static function __callStatic($name, $arguments)
     {
         if(method_exists($self = new self,$method = 'get'.ucfirst($name))){
+            return $self->{$method}($arguments);
+        }
+
+        return null;
+    }
+
+    /**
+     * magic dynamic method for db annotations
+     *
+     * @param $name
+     * @param $arguments
+     * @return null|mixed
+     */
+    public function __call($name, $arguments)
+    {
+        if(method_exists($self = $this,$method = 'get'.ucfirst($name))){
             return $self->{$method}($arguments);
         }
 
