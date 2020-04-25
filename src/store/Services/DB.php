@@ -7,7 +7,7 @@ use PDO;
 /**
  * Class DB
  * @method static PDO connection()
- * @method static array config()
+ * @method static array config($config = array())
  * @method static array fieldTypes($table=null)
  * @method static string nativeType($type=null)
  * @method static string keys($table=null)
@@ -53,10 +53,15 @@ class DB
     /**
      * get config
      *
+     * @param array $config
      * @return array
      */
-    protected function getConfig() : array
+    protected function getConfig($config = array()) : array
     {
+        if(count($config)){
+            $this->config = current($config);
+        }
+
         return $this->config;
     }
 
