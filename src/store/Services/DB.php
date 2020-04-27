@@ -3,12 +3,18 @@
 namespace Store\Services;
 
 use PDO;
+use Resta\Support\Utils;
+use Resta\Support\Generator\Generator;
+use Resta\Exception\FileNotFoundException;
 
 /**
  * Class DB
  * @method static PDO connection()
  * @method static array config($config = array())
  * @method static array fieldTypes($table=null)
+ * @method static array fields($table=null)
+ * @method static array generateEntity($table=null)
+ * @method static array columns($table=null)
  * @method static string nativeType($type=null)
  * @method static string keys($table=null)
  * @method static string uniques($table=null)
@@ -24,7 +30,7 @@ class DB
     /**
      * @var null|mixed
      */
-    protected $connection;
+    protected static $connection;
 
     /**
      * @var null|mixed
@@ -39,14 +45,13 @@ class DB
     {
         $this->config = (is_null($config)) ? DatabaseConnection::getConfig() : $config;
 
-        if(is_null(self::$instance)){
+        if(is_null(self::$connection)){
 
             //get pdo dsn
             $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
-            $this->connection = new PDO($dsn, $this->config['user'], $this->config['password']);
-            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
+            static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            self::$instance = true;
         }
     }
 
@@ -72,7 +77,7 @@ class DB
      */
     protected function getConnection()
     {
-        return $this->connection;
+        return static::$connection;
     }
 
     /**
@@ -97,6 +102,27 @@ class DB
         );
 
         return isset($trans[$type]) ? $trans[$type] : null ;
+    }
+
+    /**
+     * get field types
+     *
+     * @param array $table
+     * @return array
+     */
+    protected function getFields($table = array())
+    {
+        $list = [];
+
+        $table = current($table);
+
+        $select = $this->getConnection()->query('SHOW COLUMNS FROM '.$table);
+
+        foreach ($select->fetchAll() as $values){
+            $list[] = $values['Field'];
+        }
+
+        return $list;
     }
 
     /**
@@ -153,6 +179,19 @@ class DB
     }
 
     /**
+     * get keys from db
+     *
+     * @param array $table
+     * @return array
+     */
+    protected function getColumns($table = array())
+    {
+        $table = current($table);
+
+        return $this->getConnection()->query('SHOW FULL COLUMNS FROM '.$table)->fetchAll();
+    }
+
+    /**
      * get uniques from db
      *
      * @param array $table
@@ -190,6 +229,114 @@ class DB
         }
 
         return null;
+    }
+
+    /**
+     * generate entity for database columns
+     *
+     * @param $table
+     *
+     * @throws FileNotFoundException
+     */
+    public function getGenerateEntity($table)
+    {
+        $columns = $this->getColumns($table);
+
+        $table = current($table);
+
+        $entityDirectory = path()->model().''.DIRECTORY_SEPARATOR.'Entity';
+
+        if(!file_exists(app()->path()->model())){
+            files()->makeDirectory(app()->path()->model());
+        }
+
+        if(!file_exists($entityDirectory)){
+            files()->makeDirectory($entityDirectory);
+        }
+
+        $list = [];
+
+        foreach ($columns as $column) {
+            $list[] = $column['Field'];
+        }
+
+        if(!file_exists($entityDirectory.''.DIRECTORY_SEPARATOR.''.ucfirst($table))){
+            $generator = new Generator($entityDirectory.''.DIRECTORY_SEPARATOR.''.ucfirst($table),$table.'');
+            $generator->createClass();
+        }
+        else{
+            $generator = new Generator($entityDirectory.''.DIRECTORY_SEPARATOR.''.ucfirst($table),$table.'');
+        }
+
+
+        $abstractClassPath = $entityDirectory.''.DIRECTORY_SEPARATOR.''.ucfirst($table).''.DIRECTORY_SEPARATOR.'Entity';
+        $abstractNamespace = Utils::getNamespace($abstractClassPath.''.DIRECTORY_SEPARATOR.''.ucfirst($table).'Abstract');
+
+        $generator->createClassExtend($abstractNamespace,ucfirst($table).'Abstract');
+
+        $generator = new Generator($abstractClassPath,$table.'Abstract');
+
+        $generator->createClass();
+
+        $method =array_merge([
+            '__construct'
+        ],array_merge($list,['__get']));
+
+        $generator->createMethod($method);
+
+        $generator->createMethodParameters([
+            '__construct' => '$query',
+            '__get' => '$name'
+        ]);
+
+        $methodBodyList = [];
+        $createMethodAccessibleProperty = [];
+        $createMethodDocument = [];
+        $createClassDocument = [];
+
+        foreach ($list as $item) {
+            $methodBodyList[$item] = 'return self::$query->'.$item.';';
+            $createClassDocument[] = '@property $this '.$item;
+            $createMethodAccessibleProperty[$item] = 'protected static';
+            $createMethodDocument[$item] = [
+                '@return mixed'
+            ];
+        }
+
+        $generator->createClassDocument($createClassDocument);
+
+        $generator->createMethodDocument(array_merge($createMethodDocument,[
+            '__construct' => [
+                ''.$table.' constructor.',
+                '@param null|object $query'
+            ],
+            '__get' =>[
+                'access entity object with magic method',
+                '',
+                '@param $name',
+                '@return mixed'
+            ]
+        ]));
+
+        $createMethodBody = array_merge([
+            '__construct' => 'self::$query = $query;',
+            '__get' => 'return static::{$name}();'
+        ],$methodBodyList);
+
+        $generator->createMethodBody($createMethodBody);
+
+        $generator->createMethodAccessibleProperty($createMethodAccessibleProperty);
+
+
+        $generator->createClassProperty([
+            'protected static $query;'
+        ]);
+
+        $generator->createClassPropertyDocument([
+            'protected static $query' => [
+                '@var object|null'
+            ]
+        ]);
     }
 
     /**
