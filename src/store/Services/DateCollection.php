@@ -11,7 +11,7 @@ class DateCollection
     /**
      * @var null
      */
-    protected $locale=null;
+    protected $locale = null;
 
     /**
      * get diff value for date
@@ -35,7 +35,7 @@ class DateCollection
      */
     public function now()
     {
-        return Carbon::now();
+        return Carbon::now('America/New_York');
     }
 
     /**
@@ -46,6 +46,16 @@ class DateCollection
     public function today()
     {
         return Carbon::today();
+    }
+
+    /**
+     * get today value for date
+     *
+     * @return CarbonInterface
+     */
+    public function hour()
+    {
+        return $this->now()->format('H:i');
     }
 
     /**
