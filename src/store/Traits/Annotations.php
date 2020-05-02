@@ -34,6 +34,10 @@ trait Annotations
      */
     public function __get($name)
     {
+        if(property_exists($this,$name)){
+            return $this->{$name};
+        }
+
         //in this magic way, the annotations described above are managed by
         //the application static preloader class to be loaded as requested by the application.
         return \application::annotationsLoaders($name,[]);
