@@ -18,7 +18,7 @@ use Resta\Exception\FileNotFoundException;
  * @method static string nativeType($type=null)
  * @method static string keys($table=null)
  * @method static string uniques($table=null)
- * @method static string tables()
+ * @method static array tables()
  * @package Store\Services
  */
 class DB
