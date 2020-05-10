@@ -18,6 +18,7 @@ use Resta\Exception\FileNotFoundException;
  * @method static string nativeType($type=null)
  * @method static string keys($table=null)
  * @method static string uniques($table=null)
+ * @method static string tables()
  * @package Store\Services
  */
 class DB
@@ -210,6 +211,24 @@ class DB
             ){
                 $list[$data['Key_name']][] = $data['Column_name'];
             }
+        }
+
+        return $list;
+    }
+
+    /**
+     * get tables from database
+     *
+     * @return array
+     */
+    protected function getTables()
+    {
+        $list = [];
+        
+        $dbTables = $this->getConnection()->query('SHOW TABLES FROM '.$this->config['database'])->fetchAll();
+
+        foreach ($dbTables as $dbTable) {
+            $list[] = $dbTable['Tables_in_devmunch'];
         }
 
         return $list;
