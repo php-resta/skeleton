@@ -18,6 +18,7 @@ use Resta\Exception\FileNotFoundException;
  * @method static string nativeType($type=null)
  * @method static string keys($table=null)
  * @method static string uniques($table=null)
+ * @method static array index($table=null)
  * @method static array tables()
  * @package Store\Services
  */
@@ -190,6 +191,19 @@ class DB
         $table = current($table);
 
         return $this->getConnection()->query('SHOW FULL COLUMNS FROM '.$table)->fetchAll();
+    }
+
+    /**
+     * get keys from db
+     *
+     * @param array $table
+     * @return array
+     */
+    protected function getIndex($table = array())
+    {
+        $table = current($table);
+
+        return $this->getConnection()->query('SHOW INDEXES FROM '.$table)->fetchAll();
     }
 
     /**
