@@ -201,9 +201,20 @@ class DB
      */
     protected function getIndex($table = array())
     {
-        $table = current($table);
+        $keys = $this->getKeys($table);
 
-        return $this->getConnection()->query('SHOW INDEXES FROM '.$table)->fetchAll();
+        $list = [];
+
+        foreach ($keys as $data){
+            if(
+                $data['Non_unique']=='1'
+                && $data['Key_name']!=='PRIMARY'
+            ){
+                $list[$data['Key_name']][] = $data['Column_name'];
+            }
+        }
+
+        return $list;
     }
 
     /**
