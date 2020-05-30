@@ -16,7 +16,9 @@ class HookController extends ApplicationProvider
     public function getIndexAction()
     {
         return [
-            'hook'=>'do somethings'
+            'hook' => [
+                'time' => date('Y-m-d H:i:s')
+            ]
         ];
     }
 
