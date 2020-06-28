@@ -35,7 +35,7 @@ class DateCollection
      */
     public function now()
     {
-        return Carbon::now('America/New_York');
+        return Carbon::now('Europe/Istanbul');
     }
 
     /**
