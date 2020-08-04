@@ -79,6 +79,17 @@ class DateCollection
     }
 
     /**
+     * carbon parse date
+     *
+     * @param $date
+     * @return string
+     */
+    public function parse($date)
+    {
+        return Carbon::createFromFormat('Y-m-d',$date)->format('Y-m-d');
+    }
+
+    /**
      * get period value for date
      *
      * @param $date
