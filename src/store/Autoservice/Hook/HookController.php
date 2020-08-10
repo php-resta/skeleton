@@ -17,7 +17,8 @@ class HookController extends ApplicationProvider
     {
         return [
             'hook' => [
-                'time' => date('Y-m-d H:i:s')
+                'time' => date('Y-m-d H:i:s'),
+                'host' => gethostname()
             ]
         ];
     }
