@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96c0fb31837180153829edad987c67ba",
+    "content-hash": "513e9d424a278d9d9bfbac921defac74",
     "packages": [
         {
             "name": "aligurbuz/lingua",
@@ -5645,6 +5645,56 @@
             "time": "2020-07-06T13:34:54+00:00"
         },
         {
+            "name": "twilio/sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "202642ad4ae3a77e021419871dd617b185b6db01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/202642ad4ae3a77e021419871dd617b185b6db01",
+                "reference": "202642ad4ae3a77e021419871dd617b185b6db01",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3 || ^7.0",
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twilio\\": "src/Twilio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twilio API Team",
+                    "email": "api@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "time": "2020-07-24T17:22:09+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "2.6.x-dev",
             "source": {
@@ -6658,7 +6708,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "php-resta/resta-core": 20,
-        "giggsey/libphonenumber-for-php": 20
+        "giggsey/libphonenumber-for-php": 20,
+        "twilio/sdk": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
@@ -6666,7 +6717,8 @@
         "ext-curl": "*",
         "ext-dom": "*",
         "ext-json": "*",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "ext-fileinfo": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"

@@ -37,7 +37,8 @@
         "zendframework/zend-crypt": "^3.3",
         "giggsey/libphonenumber-for-php": "^8.0@dev",
         "ext-pdo": "*",
-      "ext-fileinfo": "*"
+      "ext-fileinfo": "*",
+        "twilio/sdk": "dev-master"
     },
     "minimum-stability": "dev",
     "require-dev": {
