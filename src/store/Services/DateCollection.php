@@ -14,6 +14,19 @@ class DateCollection
     protected $locale = null;
 
     /**
+     * @var string
+     */
+    protected $timezone = 'Europe/Istanbul';
+
+    /**
+     * DateCollection constructor.
+     */
+    public function __construct()
+    {
+        $this->timezone = 'Europe/Istanbul';
+    }
+
+    /**
      * get diff value for date
      *
      * @param $int integer
@@ -31,11 +44,26 @@ class DateCollection
     /**
      * get now value for date
      *
+     * @param $format
+     * @param $data
+     * @param null $tz
+     * @return CarbonInterface
+     */
+    public function createFormat($format,$data,$tz = null)
+    {
+        $tz     = is_null($tz) ? $this->timezone : $tz;
+
+        return Carbon::createFromFormat($format,$data,$tz);
+    }
+
+    /**
+     * get now value for date
+     *
      * @return CarbonInterface
      */
     public function now()
     {
-        return Carbon::now('Europe/Istanbul');
+        return Carbon::now($this->timezone);
     }
 
     /**
