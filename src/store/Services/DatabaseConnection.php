@@ -12,8 +12,7 @@ class DatabaseConnection
         if(config('database')!==null){
 
             if(environment() == 'local'){
-                $defaultConnection = config('database.default');
-                return config('database.connections.'.$defaultConnection);
+                return config('database.connections.local');
             }
             else{
                 return config('database.connections.'.gethostname());
