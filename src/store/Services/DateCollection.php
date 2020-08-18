@@ -23,7 +23,9 @@ class DateCollection
      */
     public function __construct()
     {
-        $this->timezone = 'Europe/Istanbul';
+        $timezoneContainer = app()->get('restaurant_timezone');
+
+        $this->timezone = $timezoneContainer ?? 'Europe/Istanbul';
     }
 
     /**
