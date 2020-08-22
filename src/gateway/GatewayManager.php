@@ -11,11 +11,28 @@ class GatewayManager
      * @var array
      */
     protected $config = [
-        'host'          => '172.10.0.6',
-        'password'      => null,
-        'port'          => 6379,
-        'scheme'        => 'tcp',
-        'database'      => 0,
+        '06d44f6b6bba' => [
+            'host'          => '172.10.0.6',
+            'password'      => null,
+            'port'          => 6379,
+            'scheme'        => 'tcp',
+            'database'      => 0,
+        ],
+        'ip-172-31-4-101' => [
+            'host'          => 'localhost',
+            'password'      => null,
+            'port'          => 6379,
+            'scheme'        => 'tcp',
+            'database'      => 0,
+        ],
+        'ip-172-26-47-155' => [
+            'host'          => 'localhost',
+            'password'      => null,
+            'port'          => 6379,
+            'scheme'        => 'tcp',
+            'database'      => 0,
+        ],
+
     ];
 
     /**
@@ -26,7 +43,7 @@ class GatewayManager
     public function __construct()
     {
        if(is_null(static::$redis)){
-           static::$redis = (new Redis($this->config))->client();
+           static::$redis = (new Redis($this->config[gethostname()]))->client();
        }
     }
 
