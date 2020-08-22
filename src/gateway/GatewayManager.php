@@ -57,8 +57,8 @@ class GatewayManager
         if(is_callable($callback)){
             header('Content-Type: application/json');
 
-            if(static::$redis->hexists($_GET['restaurant_code'],$this->hashing())){
-               echo static::$redis->hget($_GET['restaurant_code'],$this->hashing());
+            if(static::$redis->hexists($_GET['restaurant_code'] ?? 0,$this->hashing())){
+               echo static::$redis->hget($_GET['restaurant_code'] ?? 0,$this->hashing());
                exit();
             }
 
