@@ -7,17 +7,24 @@ use Predis\Client as Client;
 class Redis
 {
     /**
-     * @var \Resta\Config\ConfigProcess
+     * @var array
      */
     private $redisConfig;
 
     /**
      * Redis constructor.
+     * @param array $config
      */
-    public function __construct()
+    public function __construct($config = [])
     {
         //redis configuration for app
-        $this->redisConfig=config('redis.redis.default');
+        if(is_array($config) && count($config)){
+            $this->redisConfig = $config;
+        }
+        else{
+            $this->redisConfig = config('redis.redis.default');
+        }
+
     }
 
     /**

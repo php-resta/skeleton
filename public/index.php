@@ -13,8 +13,13 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Autho
  */
 require_once '../bootstrapper'.DIRECTORY_SEPARATOR.'ApplicationStart.php';
 
+use Gateway\GatewayManager;
 use Resta\Foundation\Application;
 
-$app = new Application(false);
-echo $app->handle();
+(new GatewayManager())->handle(function(){
+    $app = new Application(false);
+    echo $app->handle();
+});
+
+
 
