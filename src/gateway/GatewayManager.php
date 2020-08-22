@@ -38,23 +38,38 @@ class GatewayManager
     public function handle(callable $callback = null)
     {
         if(is_callable($callback)){
-            /**header('Content-Type: application/json');
+            header('Content-Type: application/json');
 
-            $headers = apache_request_headers();
-            $token = $headers['Token'] ?? null;
-            $apikey = $headers['Apikey'] ?? null;
-
-            echo json_encode([
-                'a'             => static::$redis->get('a'),
-                'hostname'      => gethostname(),
-                'token'         => $token,
-                'apikey'        => $apikey,
-                'requestUri'    => $_SERVER['REQUEST_URI']
-            ]);
-
-            exit();**/
+            if(static::$redis->hexists($_GET['restaurant_code'],$this->hashing())){
+               echo static::$redis->hget($_GET['restaurant_code'],$this->hashing());
+               exit();
+            }
 
             return call_user_func($callback);
         }
+    }
+
+    protected function hashing()
+    {
+        $requestUri = $_SERVER['REQUEST_URI'];
+        $string = $requestUri.'_'.$this->getHeaders().'_'.$_GET['restaurant_code'];
+        return crc32($string);
+    }
+
+    /**
+     * get headers with crc32 hash
+     *
+     * @return int
+     */
+    protected function getHeaders()
+    {
+        $headers = apache_request_headers();
+        $token = $headers['Token'] ?? null;
+        $apikey = $headers['Apikey'] ?? null;
+
+        return crc32(serialize(json_encode([
+            $apikey,
+            $token
+        ])));
     }
 }
