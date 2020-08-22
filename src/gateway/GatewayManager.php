@@ -69,7 +69,7 @@ class GatewayManager
     protected function hashing()
     {
         $requestUri = $_SERVER['REQUEST_URI'];
-        $string = $requestUri.'_'.$this->getHeaders().'_'.$_GET['restaurant_code'];
+        $string = $requestUri.'_'.$this->getHeaders().'_'.$_GET['restaurant_code'] ?? 0;
         return crc32($string);
     }
 
