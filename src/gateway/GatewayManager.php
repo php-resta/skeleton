@@ -58,7 +58,7 @@ class GatewayManager
             header('Content-Type: application/json');
 
             if(isset($_GET['restaurant_code']) && !is_null($_GET['restaurant_code'])){
-                if(static::$redis->hexists($_GET['restaurant_code'] ?? 0,$this->hashing())){
+                if(static::$redis->hexists($_GET['restaurant_code'],$this->hashing())){
                     echo static::$redis->hget($_GET['restaurant_code'] ?? 0,$this->hashing());
                     exit();
                 }
@@ -71,7 +71,7 @@ class GatewayManager
     protected function hashing()
     {
         $requestUri = $_SERVER['REQUEST_URI'];
-        $string = $requestUri.'_'.$this->getHeaders().'_'.isset($_GET['restaurant_code']) ? $_GET['restaurant_code'] : 0;
+        $string = $requestUri.'_'.$this->getHeaders().'_'.$_GET['restaurant_code'];
         return crc32($string);
     }
 
