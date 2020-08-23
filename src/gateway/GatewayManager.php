@@ -65,6 +65,7 @@ class GatewayManager
             }
 
             return call_user_func($callback);
+
         }
     }
 
