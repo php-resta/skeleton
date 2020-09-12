@@ -226,6 +226,34 @@ class Manager
     }
 
     /**
+     * @param null $index
+     * @return mixed
+     */
+    public function getAllDocument($index = null)
+    {
+
+        $params = [
+            'index' => $index,
+            'size' => 100,
+            'body'  => [
+                'query' => [
+                    'match_all' => (object)[]
+                ]
+            ]
+        ];
+
+        try {
+            $result = $this->client->search($params);
+
+            return $result;
+
+        } catch (\Exception $e) {
+           exception('elasticSearch')->invalidArgument($e->getMessage());
+        }
+
+    }
+
+    /**
      * @param mixed ...$params
      * @return bool|void
      */
