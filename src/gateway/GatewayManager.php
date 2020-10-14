@@ -11,7 +11,7 @@ class GatewayManager
      * @var array
      */
     protected $config = [
-        '06d44f6b6bba' => [
+        '7721a551cee1' => [
             'host'          => '172.10.0.6',
             'password'      => null,
             'port'          => 6379,
