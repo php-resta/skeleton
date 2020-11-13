@@ -226,6 +226,29 @@ class Manager
     }
 
     /**
+     * @param mixed ...$params
+     * @return array
+     */
+    public function deleteDocument(...$params)
+    {
+        $currentParams = current($params);
+
+        [$index,$value] = $currentParams;
+
+        $params = [
+            'index' => $index,
+            'id' => $value
+        ];
+
+        try{
+            return $this->client->delete($params);
+        }
+        catch (\Exception $exception){
+            return null;
+        }
+    }
+
+    /**
      * @param null $index
      * @return mixed
      */

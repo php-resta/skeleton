@@ -8,6 +8,7 @@ namespace Store\Packages\Search;
  * @method static createDatabase($database=null)
  * @method static insert($index=null,$data=array())
  * @method static update($index,$idValue,$data=array())
+ * @method static deleteDocument($index,$idValue)
  * @method static exists($index,$key,$value)
  * @method static createFields($index=null,$fields=array())
  * @method static deleteDatabase($database=null)
