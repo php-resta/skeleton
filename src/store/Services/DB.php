@@ -49,10 +49,26 @@ class DB
 
         if(is_null(self::$connection)){
 
-            //get pdo dsn
-            $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
-            static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
-            static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            if(isset($this->config['read']) && $this->config['write']){
+
+                if(httpMethod()=='get'){
+                    $this->config = $this->config['read'];
+                }
+                else{
+                    $this->config = $this->config['write'];
+                }
+                //get pdo dsn
+                $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
+                static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
+                static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }
+            else{
+                //get pdo dsn
+                $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
+                static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
+                static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }
+
 
         }
     }
