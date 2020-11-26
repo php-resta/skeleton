@@ -47,27 +47,22 @@ class DB
     {
         $this->config = (is_null($config)) ? DatabaseConnection::getConfig() : $config;
 
-        if(is_null(self::$connection)){
+        if(isset($this->config['read']) && $this->config['write']){
 
-            if(isset($this->config['read']) && $this->config['write']){
-
-                if(httpMethod()=='get'){
-                    $this->config = $this->config['read'];
-                }
-                else{
-                    $this->config = $this->config['write'];
-                }
-                //get pdo dsn
-                $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
-                static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
-                static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            if(httpMethod()=='get'){
+                $this->config = $this->config['read'];
             }
             else{
-                //get pdo dsn
-                $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
-                static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
-                static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $this->config = $this->config['write'];
             }
+        }
+
+        if(is_null(self::$connection)){
+
+            //get pdo dsn
+            $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
+            static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
+            static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
         }
