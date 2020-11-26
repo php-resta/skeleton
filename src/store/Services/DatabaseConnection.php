@@ -15,7 +15,17 @@ class DatabaseConnection
                 return config('database.connections.local');
             }
             else{
-                return config('database.connections.'.gethostname());
+                $config = config('database.connections.'.gethostname());
+
+                if(isset($config['read']) && httpMethod()=='get'){
+                    return $config['read'];
+                }
+
+                if(isset($config['write']) && httpMethod()!=='get'){
+                    return $config['write'];
+                }
+
+                return $config;
             }
         }
 
