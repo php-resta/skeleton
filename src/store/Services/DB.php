@@ -55,6 +55,10 @@ class DB
             else{
                 $this->config = $this->config['write'];
             }
+
+            if(app()->has('cluster') && app()->get('cluster')=='write'){
+                $this->config = $this->config['write'];
+            }
         }
 
         if(is_null(self::$connection)){
@@ -63,8 +67,6 @@ class DB
             $dsn=''.$this->config['driver'].':host='.$this->config['host'].';dbname='.$this->config['database'].'';
             static::$connection = new PDO($dsn, $this->config['user'], $this->config['password']);
             static::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
         }
     }
 
@@ -279,7 +281,15 @@ class DB
      */
     public static function __callStatic($name, $arguments)
     {
-        if(method_exists($self = new self,$method = 'get'.ucfirst($name))){
+        $self = new self();
+
+        if($name=='connection' && isset($arguments[0]) && $arguments[0]=='write'){
+            static::$connection = null;
+            app()->register('cluster','write');
+            $self = new self();
+        }
+
+        if(method_exists($self,$method = 'get'.ucfirst($name))){
             return $self->{$method}($arguments);
         }
 
