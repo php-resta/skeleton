@@ -23,50 +23,33 @@ class Connection
 
         $configdb = DatabaseConnection::getConfig();
 
-        if(isset($configdb['read'],$configdb['write'])){
+        if(isset($configdb['read']) && $configdb['write']){
 
             $readConfig = $configdb['read'];
             $writeConfig = $configdb['write'];
 
-
             $this->capsule->addConnection([
                 'read' => [
-                    'driver'    => (isset($readConfig['driver'])) ? $readConfig['driver'] : 'mysql' ,
-                    'host'      => (isset($readConfig['host'])) ? $readConfig['host'] : '127.0.0.1',
-                    'database'  => (isset($readConfig['database'])) ? $readConfig['database'] : 'test',
-                    'username'  => (isset($readConfig['user'])) ? $readConfig['user'] : 'root',
-                    'password'  => (isset($readConfig['password'])) ? $readConfig['password'] : 'root',
-                    'charset'   => 'utf8',
-                    'collation' => 'utf8_unicode_ci',
-                    'prefix'    => '',
-                    'strict'    => true,
-                    'modes'  => [
-                        //'ONLY_FULL_GROUP_BY',
-                        'STRICT_TRANS_TABLES',
-                        'NO_ZERO_IN_DATE',
-                        'NO_ZERO_DATE',
-                        'ERROR_FOR_DIVISION_BY_ZERO',
-                        'NO_ENGINE_SUBSTITUTION',
-                    ]
+                    'host' => $readConfig['host']
                 ],
                 'write' => [
-                    'driver'    => (isset($writeConfig['driver'])) ? $writeConfig['driver'] : 'mysql' ,
-                    'host'      => (isset($writeConfig['host'])) ? $writeConfig['host'] : '127.0.0.1',
-                    'database'  => (isset($writeConfig['database'])) ? $writeConfig['database'] : 'test',
-                    'username'  => (isset($writeConfig['user'])) ? $writeConfig['user'] : 'root',
-                    'password'  => (isset($writeConfig['password'])) ? $writeConfig['password'] : 'root',
-                    'charset'   => 'utf8',
-                    'collation' => 'utf8_unicode_ci',
-                    'prefix'    => '',
-                    'strict'    => true,
-                    'modes'  => [
-                        //'ONLY_FULL_GROUP_BY',
-                        'STRICT_TRANS_TABLES',
-                        'NO_ZERO_IN_DATE',
-                        'NO_ZERO_DATE',
-                        'ERROR_FOR_DIVISION_BY_ZERO',
-                        'NO_ENGINE_SUBSTITUTION',
-                    ]
+                    'host' => $writeConfig['host']
+                ],
+                'driver'    => (isset($readConfig['driver'])) ? $readConfig['driver'] : 'mysql' ,
+                'database'  => (isset($readConfig['database'])) ? $readConfig['database'] : 'test',
+                'username'  => (isset($readConfig['user'])) ? $readConfig['user'] : 'root',
+                'password'  => (isset($readConfig['password'])) ? $readConfig['password'] : 'root',
+                'charset'   => 'utf8',
+                'collation' => 'utf8_unicode_ci',
+                'prefix'    => '',
+                'strict'    => true,
+                'modes'  => [
+                    //'ONLY_FULL_GROUP_BY',
+                    'STRICT_TRANS_TABLES',
+                    'NO_ZERO_IN_DATE',
+                    'NO_ZERO_DATE',
+                    'ERROR_FOR_DIVISION_BY_ZERO',
+                    'NO_ENGINE_SUBSTITUTION',
                 ]
 
             ]);
