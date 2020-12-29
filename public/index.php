@@ -16,10 +16,8 @@ require_once '../bootstrapper'.DIRECTORY_SEPARATOR.'ApplicationStart.php';
 use Gateway\GatewayManager;
 use Resta\Foundation\Application;
 
-(new GatewayManager())->handle(function(){
-    $app = new Application(false);
-    echo $app->handle();
-});
+$app = new Application(false);
+echo $app->handle();
 
 
 
