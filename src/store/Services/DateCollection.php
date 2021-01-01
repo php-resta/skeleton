@@ -2,9 +2,10 @@
 
 namespace Store\Services;
 
+use Exception;
 use Carbon\Carbon;
-use Carbon\CarbonInterface;
 use Carbon\CarbonPeriod;
+use Carbon\CarbonInterface;
 
 class DateCollection
 {
@@ -49,13 +50,19 @@ class DateCollection
      * @param $format
      * @param $data
      * @param null $tz
-     * @return CarbonInterface
+     * @return CarbonInterface|void
      */
     public function createFormat($format,$data,$tz = null)
     {
         $tz     = is_null($tz) ? $this->timezone : $tz;
 
-        return Carbon::createFromFormat($format,$data,$tz);
+        try{
+            return Carbon::createFromFormat($format,$data,$tz);
+        }
+        catch (Exception $exception){
+            exception()->invalidArgument($exception->getMessage());
+        }
+
     }
 
     /**
@@ -81,7 +88,7 @@ class DateCollection
     /**
      * get today value for date
      *
-     * @return CarbonInterface
+     * @return mixed
      */
     public function hour()
     {
