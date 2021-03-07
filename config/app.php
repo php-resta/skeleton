@@ -1,0 +1,160 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application URL
+    |--------------------------------------------------------------------------
+    |
+    | This configuration keyi is based on component requests in your http requests.
+    | it is the key you can need.You can make a request using this key in libraries like Guzzle.
+    | it is a key that can be used in general and should be considered by the developer.
+    |
+    */
+    'url' => environment('APP_URL', 'http://13.58.224.140'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Documentation Hook
+    |--------------------------------------------------------------------------
+    |
+    | These are the keys to be automatically included in the documentation parameters
+    | to be created for the application.With these keys, we prevent you from writing
+    | the same keys over and over to the file that will create your documentation.
+    |
+    */
+    'docHook' => [
+        'params'=> [
+            'token'=> [
+                'status'    => false,
+                'http'      => ['get','post'],
+                'required'  => true,
+                'type'      => 'string'
+            ]
+        ]
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Hateoas
+    |--------------------------------------------------------------------------
+    |
+    | This architectural style lets you use hypermedia links in the response contents so that
+    | the client can dynamically navigate to the appropriate resource by traversing the hypermedia links.
+    | This is conceptually the same as a web user navigating through web pages by clicking
+    | the appropriate hyperlinks in order to achieve a final goal.
+    |
+    */
+    'hateoas' => environment('hateoas',false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Locale Configuration
+    |--------------------------------------------------------------------------
+    |
+    | The application locale determines the default locale that will be used
+    | by the translation service provider. You are free to set this value
+    | to any of the locales which will be supported by the application.
+    |
+    */
+    'locale' => environment('locale','en'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Fallback Locale
+    |--------------------------------------------------------------------------
+    |
+    | The fallback locale determines the locale to use when the current one
+    | is not available. You may change the value to correspond to any of
+    | the language folders that are provided through your application.
+    |
+    */
+    'fallback_locale' => 'en',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Logger
+    |--------------------------------------------------------------------------
+    |
+    | To help you learn more about what's happening within your application
+    | System provides robust logging services that allow you to log messages to files
+    | By default, the value is true, you can change it according to your environment.
+    | The Logger service is managed in the config directory in your application directory.
+    |
+    */
+    'logger' => environment('logger',true),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Console Logger
+    |--------------------------------------------------------------------------
+    |
+    | To help you learn more about what's happening within your application
+    | System provides robust logging services that allow you to log messages to files
+    | By default, the value is true, you can change it according to your environment.
+    | The Console logger service is managed in the config directory in your application directory.
+    |
+    */
+    'consoleLogger' => environment('consoleLogger',true),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Response Configuration
+    |--------------------------------------------------------------------------
+    |
+    | The application response determines the default output type that will be used
+    | by the result service endpoint. You are free to set this value
+    | to any of the response which will be supported by the application.
+    |
+    */
+    'response' => environment('response','json'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Timezone
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the default timezone for your application, which
+    | will be used by the PHP date and date-time functions. We have gone
+    | ahead and set this to a sensible default for you out of the box.
+    |
+    */
+    'timezone' => environment('timezone','UTC'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Stop Watch
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the stopwatch for your application,
+    | The Stopwatch component provides a way to profile code.The Stopwatch component provides
+    | an easy and consistent way to measure execution time of certain parts
+    | of code so that you don't constantly have to parse micro time by yourself
+    |
+    */
+    'watch' => environment('watch',false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Stop Watch
+    |--------------------------------------------------------------------------
+    |
+    | You can write and edit pagination data
+    | here as an help for your database output or collection data
+    |
+    */
+    'pagination' => 10,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Container cache file
+     |--------------------------------------------------------------------------
+     |
+     | Writes your saved values ​​for this key container to a file with the extension json.
+     | This is to prevent your classes from loading over and over again each time.
+     |
+     */
+     'containerCacheFile' => app()->path()->kernel().''.DIRECTORY_SEPARATOR.'service.json',
+
+];

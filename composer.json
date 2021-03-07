@@ -13,15 +13,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "src/app",
+            "App\\": "app",
             "Src\\": "src",
             "Boot\\": "src/boot",
             "Store\\": "src/store",
             "Providers\\": "src/providers",
             "Gateway\\": "src/gateway",
             "Bootstrapper\\" : "bootstrapper",
-            "Test\\" : "tests",
-            "Stripe\\": "src/store/Packages/Payment/Stripe/lib"
+            "Test\\" : "tests"
 
         },
         "files": []

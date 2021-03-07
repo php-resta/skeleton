@@ -1,0 +1,171 @@
+<?php
+
+namespace App\Munch\Api\V1\Model\Helper;
+
+use Illuminate\Database\Eloquent\Builder;
+
+trait Event
+{
+    use TableChanges,Constructor;
+
+    /**
+     * @var array
+     */
+    protected static $orderStrings = ['ASC','DESC'];
+
+    /**
+     * @var array
+     */
+    protected static $whereOperators = ['>','>=','<','<=','=','!=','<>'];
+
+    /**
+     * get fillable values
+     *
+     * @return array
+     */
+    public static function getFillableValues()
+    {
+        return (new self())->fillable;
+    }
+
+    /**
+     * eloquent model static boot
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        $self = (new self());
+
+        static::creating(function($model){
+            if(in_array('sequence',$model->fillable)){
+                $model->increment('sequence',1);
+            }
+
+        });
+
+        static::saved(function($model){
+            //$model->getTableChanges($model,'updated');
+        });
+
+        /**
+         * authenticate global scope
+         */
+        static::addGlobalScope('authenticate',function (Builder $builder){
+            //$builder->authenticate();
+        });
+
+        /**
+         * with queries global scope
+         */
+        static::addGlobalScope('withes',function (Builder $builder) use($self){
+            $builder->with($self->withQueries);
+        });
+
+        /**
+         * with queries global scope
+         */
+        static::addGlobalScope('queries',function (Builder $builder) use($self){
+            if(count($self->baseQueries)){
+                $baseQueries = $self->baseQueries;
+
+                if(isset($baseQueries['count'])){
+                    $builder->select([DB::raw("COUNT(id) as total")]);
+                }
+
+                //query group statement
+                if(isset($baseQueries['group'])){
+                    foreach ((array)$baseQueries['group'] as $groupValue){
+                        if(!in_array($groupValue,$self->getFillable())){
+                            return false;
+                        }
+                    }
+                    $builder->groupBy($baseQueries['group']);
+                }
+            }
+        });
+
+        /**
+         * select queries global scope
+         */
+        static::addGlobalScope('select',function (Builder $builder) use($self){
+            if(count($select = $self->selectQueries)){
+                $builder->select($select);
+            }
+        });
+
+        /**
+         * select queries global scope
+         */
+        static::addGlobalScope('sum',function (Builder $builder) use($self){
+            if(count($sum = $self->sumQueries)){
+                foreach ($sum as $sumValue){
+                    if(in_array($sumValue,$self->fillable)){
+                        $builder->select(array_merge([DB::raw("SUM({$sumValue}) as {$sumValue}_sum")]));
+                    }
+                }
+
+            }
+        });
+
+        /**
+         * filter queries global scope
+         */
+        static::addGlobalScope('filter', function (Builder $builder) use($self){
+
+            $filter = $self->filterQueries;
+
+            if(count($filter)){
+                foreach ($filter as $key=>$item){
+                    if(in_array($key,$self->fillable)){
+
+                        if($key!=='order'){
+                            if(is_array($item)){
+
+                                $itemArrayList = [];
+
+                                foreach ($item as $operator=>$value){
+                                    if(in_array((string)$operator,$self::$whereOperators)){
+
+                                        $builder->where($key,$operator,$value);
+                                    }
+                                    else{
+                                        $itemArrayList[] = $value;
+                                    }
+                                }
+
+                                if(count($itemArrayList)){
+                                    $builder->whereIn($key,$itemArrayList);
+                                }
+
+                            }
+                            else{
+                                $builder->where($key,$item);
+                            }
+
+                        }
+                    }
+                }
+
+                if(isset($filter['order']) && is_string($filter['order'])
+                    && in_array(strtoupper($filter['order']),static::$orderStrings)){
+                    $builder->orderBy('id',$filter['order']);
+                }
+
+                if(isset($filter['order']) && is_array($filter['order'])){
+                    if(count($filter['order'])==1){
+                        foreach ($filter['order'] as $orderField=>$orderValue){
+                            if(in_array(strtoupper($orderValue),static::$orderStrings) && in_array($orderField,$self->fillable)){
+                                $builder->orderBy($orderField,$orderValue);
+                            }
+                        }
+                    }
+
+                }
+            }
+            else{
+                $builder->orderBy('id','desc');
+            }
+        });
+    }
+}

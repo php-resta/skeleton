@@ -1,0 +1,22 @@
+<?php
+
+namespace __controllerNamespace__;
+
+use App\Munch\Api\V1\ServiceAnnotationsManager;
+
+abstract class App
+{
+    //get service annotations
+    use ServiceAnnotationsManager;
+
+    /**
+     * service restrictions method.
+     *
+     * restrictions for production environment
+     * @return array
+     */
+    public function restrictions()
+    {
+        return [];
+    }
+}

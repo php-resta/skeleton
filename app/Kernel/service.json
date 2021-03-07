@@ -1,0 +1,12 @@
+{
+    "providers-deferrable-classes": {
+        "App\\Munch\\Kernel\\Providers\\EntityServiceProvider": "cache-loaded",
+        "App\\Kernel\\Providers\\EntityServiceProvider": "cache-loaded"
+    },
+    "container": {
+        "entities": "C:32:\"SuperClosure\\SerializableClosure\":565:{a:5:{s:4:\"code\";s:422:\"function ($table) {\n    $list = [];\n    $entityFile = app()->namespace()->model() . '\\\\Entity\\\\' . ucfirst($table) . '\\\\' . ucfirst($table);\n    if (class_exists($entityFile)) {\n        $class = new \\ReflectionClass($entityFile);\n        $methods = $class->getMethods(\\ReflectionMethod::IS_PROTECTED);\n        foreach ($methods as $key => $object) {\n            $list[] = $object->name;\n        }\n    }\n    return $list;\n}\";s:7:\"context\";a:0:{}s:7:\"binding\";N;s:5:\"scope\";s:42:\"App\\Kernel\\Providers\\EntityServiceProvider\";s:8:\"isStatic\";b:0;}}"
+    },
+    "container-format": {
+        "entities": "closure"
+    }
+}
