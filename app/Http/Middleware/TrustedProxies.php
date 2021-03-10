@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use InvalidArgumentException;
 use Resta\Contracts\HandleContracts;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -31,7 +32,7 @@ class TrustedProxies implements HandleContracts
 
         // check for a trusted proxy.
         if(request()->isFromTrustedProxy()===false){
-            throw new \InvalidArgumentException('You are not the trusted proxy');
+            throw new InvalidArgumentException('You are not the trusted proxy');
         }
     }
 }

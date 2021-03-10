@@ -13,24 +13,24 @@ class ClientApiToken implements HandleContracts
     /**
      * @var string
      */
-    protected $tokenFormat='header'; //get or header
+    protected $tokenFormat = 'header'; //get or header
 
     /**
      * @var string
      */
-    protected $tokenKey='apikey';
+    protected $tokenKey = 'apikey';
 
     /**
      * @var string
      */
-    protected $tokenSign='ApiKey';
+    protected $tokenSign = 'ApiKey';
 
     /**
      * @method clientTokens
      * @define All Client Tokens
      * @return array
      */
-    private function clientTokens()
+    private function clientTokens() : array
     {
         return [
             'testApiClient'=>'api123456'
