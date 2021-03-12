@@ -13,6 +13,7 @@ return [
         'repository'        => root.''.DIRECTORY_SEPARATOR.'app',
         'factory'           => root.''.DIRECTORY_SEPARATOR.'app',
         'kernel'            => root.''.DIRECTORY_SEPARATOR.'app',
+        'environmentFile'   => root,
     ],
     'namespace' => [
         'controller'                => 'App\Http',

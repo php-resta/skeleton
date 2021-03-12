@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers\Ping;
 
 class PingController extends App
@@ -12,7 +14,7 @@ class PingController extends App
     public function index() : array
     {
         return [
-            'endpoint' => 'Ping'
+            'endpoint' => 'hello ping'
         ];
     }
 }
