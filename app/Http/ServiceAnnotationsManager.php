@@ -2,8 +2,8 @@
 
 namespace App\Http;
 
-use Store\Traits\Annotations;
 use App\Client\ClientManager;
+use Store\Traits\Annotations;
 use Resta\Contracts\ContainerContracts;
 use Resta\Contracts\ApplicationContracts;
 
