@@ -9,8 +9,8 @@ class Authenticate implements HandleContracts
     /**
      * @return void
      */
-    public function handle()
+    public function handle() : void
     {
-        dd(111222);
+        //do something
     }
 }

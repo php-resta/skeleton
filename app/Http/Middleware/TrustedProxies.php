@@ -11,7 +11,7 @@ class TrustedProxies implements HandleContracts
     /**
      * @return void
      */
-    public function handle()
+    public function handle() : void
     {
         // tell Symfony about your reverse proxy
         request()->setTrustedProxies(

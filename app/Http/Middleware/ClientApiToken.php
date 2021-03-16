@@ -2,10 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use Resta\Contracts\HandleContracts;
 use Store\Traits\ClientApiTokenTrait;
 
-class ClientApiToken implements HandleContracts
+class ClientApiToken
 {
     //client token trait
     use ClientApiTokenTrait;
@@ -33,7 +32,7 @@ class ClientApiToken implements HandleContracts
     private function clientTokens() : array
     {
         return [
-            'testApiClient'=>'api123456'
+            'testApiClient' => 'api123456'
         ];
     }
 }

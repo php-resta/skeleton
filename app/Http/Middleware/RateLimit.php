@@ -21,7 +21,7 @@ class RateLimit extends MiddlewareRateLimit implements HandleContracts
     /**
      * @return void
      */
-    public function handle()
+    public function handle() : void
     {
         parent::handle();
     }
