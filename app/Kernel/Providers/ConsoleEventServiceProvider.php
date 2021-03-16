@@ -22,7 +22,6 @@ class ConsoleEventServiceProvider extends ServiceProviderManager
             event()->addListener('console','default',function($args){
                 call_user_func_array([$this,'createControllerForMigrationPull'],[$args]);
                 call_user_func_array([$this,'createModelForMigrationPush'],[$args]);
-                //call_user_func_array([$this,'createTestForController'],[$args]);
             });
         }
     }

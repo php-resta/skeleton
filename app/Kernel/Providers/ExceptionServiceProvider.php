@@ -3,7 +3,6 @@
 namespace App\Kernel\Providers;
 
 use Resta\Provider\ServiceProviderManager;
-use Store\Packages\PushNotification\Slack\Slack;
 
 class ExceptionServiceProvider extends ServiceProviderManager
 {
@@ -15,11 +14,7 @@ class ExceptionServiceProvider extends ServiceProviderManager
     public function register()
     {
        $this->app->register('exceptionResponse',function($response,$status){
-
            //500 Internal Server Error Slash Push Notification
-           if(environment()=='production' && $status=='500'){
-               //Slack::channel('500')->push(json_encode($response));
-           }
        });
     }
 }

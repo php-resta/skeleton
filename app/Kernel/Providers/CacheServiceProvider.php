@@ -13,8 +13,6 @@ class CacheServiceProvider extends ServiceProviderManager
      */
     public function register()
     {
-        $this->app->register('cache','UsersController:index',function($data){
-            return (isset($data['data']) && count($data['data'])) ? true : false;
-        });
+        //
     }
 }

@@ -32,7 +32,7 @@ class AuthenticateServiceProvider extends ServiceProviderManager
         /**
          * The process you can do after the authenticate query. You should definitely return boolean to callback.
          */
-        $this->app->register('authenticate','after',function($auth){
+        $this->app->register('authenticate','after',function(){
             return true;
         });
 
