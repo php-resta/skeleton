@@ -7,7 +7,7 @@ namespace App\Client;
  * @package App\Mobi\Api\V1
  */
 class ClientManager
-{ 
+{
     /**
      * @param $name
      * @return void|mixed

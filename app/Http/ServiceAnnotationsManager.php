@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use Store\Traits\Annotations;
+use App\Client\ClientManager;
 use Resta\Contracts\ContainerContracts;
 use Resta\Contracts\ApplicationContracts;
 

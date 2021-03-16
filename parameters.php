@@ -14,6 +14,7 @@ return [
         'factory'           => root.''.DIRECTORY_SEPARATOR.'app',
         'kernel'            => root.''.DIRECTORY_SEPARATOR.'app',
         'environmentFile'   => root,
+        'client'            => root.''.DIRECTORY_SEPARATOR.'app',
     ],
     'namespace' => [
         'controller'                => 'App\Http',
@@ -26,6 +27,7 @@ return [
         'kernel'                    => 'App',
         'manifest'                  => 'App\Kernel',
         'eventDispatcherManager'    => 'App\Http',
+        'client'                    => 'App',
     ]
 
 ];
