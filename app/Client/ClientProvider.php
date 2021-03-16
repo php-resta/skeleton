@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Client;
+namespace App\Client;
 
 use ArrayAccess;
 use Resta\Client\Client as ClientManager;

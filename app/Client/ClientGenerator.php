@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Client;
+namespace App\Client;
 
 trait ClientGenerator
 {

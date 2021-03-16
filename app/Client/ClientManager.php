@@ -1,24 +1,13 @@
 <?php
 
-namespace App\Munch\Api\V1;
-
-use App\Munch\Api\V1\Client\Orders\OrdersManager;
+namespace App\Client;
 
 /**
  * Class ClientManager
- * @property OrdersManager orders
  * @package App\Mobi\Api\V1
  */
 class ClientManager
 { 
-    /**
-     * @return OrdersManager
-     */
-    protected function orders()
-    {
-        return new OrdersManager();
-    }
-            
     /**
      * @param $name
      * @return void|mixed
