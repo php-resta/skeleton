@@ -15,6 +15,7 @@ return [
         'kernel'            => root.''.DIRECTORY_SEPARATOR.'app',
         'environmentFile'   => root,
         'client'            => root.''.DIRECTORY_SEPARATOR.'app',
+        'model'             => root.''.DIRECTORY_SEPARATOR.'app',
     ],
     'namespace' => [
         'controller'                => 'App\Http',
@@ -29,6 +30,7 @@ return [
         'eventDispatcherManager'    => 'App\Http',
         'client'                    => 'App',
         'builder'                   => 'App\Model',
+        'model'                     => 'App',
     ]
 
 ];
