@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Entity\Users;
+namespace App\Model\Entity\Users;
 
-use App\Munch\Api\V1\Model\Entity\Users\Entity\UsersAbstract;
+use App\Model\Entity\Users\Entity\UsersAbstract;
 
 class Users extends UsersAbstract
 {

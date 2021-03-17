@@ -14,7 +14,7 @@ class PingController extends App
     public function index() : array
     {
         return [
-            'endpoint' => 'hello ping'
+            'endpoint' => $this->builder->user()->get()
         ];
     }
 }

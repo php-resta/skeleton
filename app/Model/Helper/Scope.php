@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Helper;
+namespace App\Model\Helper;
 
 use Resta\Support\Str;
 use Illuminate\Database\Eloquent\Builder;

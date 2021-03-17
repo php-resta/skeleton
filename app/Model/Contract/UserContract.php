@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Contract;
+namespace App\Model\Contract;
 
 use Resta\Contracts\ClientContract;
 

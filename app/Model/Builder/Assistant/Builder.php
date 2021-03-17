@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Builder\Assistant;
+namespace App\Model\Builder\Assistant;
 
 trait Builder
 {

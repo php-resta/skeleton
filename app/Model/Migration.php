@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Munch\Api\V1\Model;
+namespace App\Model;
 
-use App\Munch\Api\V1\Model\Helper\Scope;
-use App\Munch\Api\V1\Model\Helper\Event;
+use App\Model\Helper\Scope;
+use App\Model\Helper\Event;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**

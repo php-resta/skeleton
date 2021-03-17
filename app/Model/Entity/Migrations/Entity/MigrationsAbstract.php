@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Entity\Migrations\Entity;
+namespace App\Model\Entity\Migrations\Entity;
 
 /**
 * @property $this id

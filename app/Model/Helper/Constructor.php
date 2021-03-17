@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Munch\Api\V1\Model\Helper;
+namespace App\Model\Helper;
 
 /**
  * Trait Constructor
