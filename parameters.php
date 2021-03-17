@@ -28,6 +28,7 @@ return [
         'manifest'                  => 'App\Kernel',
         'eventDispatcherManager'    => 'App\Http',
         'client'                    => 'App',
+        'builder'                   => 'App\Model',
     ]
 
 ];
