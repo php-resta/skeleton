@@ -14,7 +14,7 @@ class AuthenticateException extends Exception
     /**
      * @var string $lang
      */
-    protected $lang = 'Authenticate';
+    protected string $lang = 'Authenticate';
 
     /**
      * AuthenticateException constructor.
